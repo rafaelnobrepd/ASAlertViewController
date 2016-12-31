@@ -22,7 +22,7 @@ pod "ASAlertViewController"
 
 ## Author
 
-adria, adriano@adrianosouzacosta.com
+Adriano Souza Costa, adriano@adrianosouzacosta.com
 
 ## License
 
