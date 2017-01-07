@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		0A1CB7371E184F9300567316 /* ASAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CB7361E184F9300567316 /* ASAlertViewController.swift */; };
-		0A1CB7391E184FA400567316 /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1CB7381E184FA400567316 /* ASAlertView.swift */; };
+		0A8928C81E21326B007720F9 /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8928C51E21326B007720F9 /* ASAlertView.swift */; };
+		0A8928C91E21326B007720F9 /* ASAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8928C71E21326B007720F9 /* ASAlertViewController.swift */; };
 		0B8DBAB184BB7E8E1D9C5E3386A8DEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
 		1E498F7D3971E1A75FD9D55CD7E17CEE /* Pods-ASAlertViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,9 +62,9 @@
 		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		098260AB3D662A76CD2E33168FE0B5C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A1CB7361E184F9300567316 /* ASAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertViewController.swift; sourceTree = "<group>"; };
-		0A1CB7381E184FA400567316 /* ASAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
-		0A1CB73A1E18538D00567316 /* ASAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
+		0A8928C51E21326B007720F9 /* ASAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
+		0A8928C71E21326B007720F9 /* ASAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertViewController.swift; sourceTree = "<group>"; };
+		0A8928CB1E21327C007720F9 /* ASAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		11C2DF80B63BAECDFC81226991F4F1C7 /* ASAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-umbrella.h"; sourceTree = "<group>"; };
@@ -159,42 +159,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A1CB7311E184F6A00567316 /* Components */ = {
+		0A8928CA1E21327C007720F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A8928CB1E21327C007720F9 /* ASAlertView.xib */,
 			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		0A1CB7321E184F6A00567316 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				0A1CB7361E184F9300567316 /* ASAlertViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		0A1CB7331E184F6A00567316 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0A1CB7341E184F6A00567316 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		0A1CB7351E184F6A00567316 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0A1CB7381E184FA400567316 /* ASAlertView.swift */,
-				0A1CB73A1E18538D00567316 /* ASAlertView.xib */,
-			);
-			path = View;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
@@ -250,21 +220,11 @@
 		55C81066CA26D54B3C8821A384A02461 /* ASAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7CFA1E93F8E70B27D37B4C327CA61DC3 /* Classes */,
+				0A8928CA1E21327C007720F9 /* Resources */,
+				0A8928C51E21326B007720F9 /* ASAlertView.swift */,
+				0A8928C71E21326B007720F9 /* ASAlertViewController.swift */,
 			);
 			path = ASAlertViewController;
-			sourceTree = "<group>";
-		};
-		7CFA1E93F8E70B27D37B4C327CA61DC3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				0A1CB7311E184F6A00567316 /* Components */,
-				0A1CB7321E184F6A00567316 /* Controller */,
-				0A1CB7331E184F6A00567316 /* Model */,
-				0A1CB7341E184F6A00567316 /* Utils */,
-				0A1CB7351E184F6A00567316 /* View */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -561,8 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7532D65E16F35848861E6A0EA18E34D /* ASAlertViewController-dummy.m in Sources */,
-				0A1CB7391E184FA400567316 /* ASAlertView.swift in Sources */,
-				0A1CB7371E184F9300567316 /* ASAlertViewController.swift in Sources */,
+				0A8928C91E21326B007720F9 /* ASAlertViewController.swift in Sources */,
+				0A8928C81E21326B007720F9 /* ASAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
