@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		9CC24048A7A2ED337B11DDA9 /* Pods_ASAlertViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA0F46101BD4E312AA1AABE /* Pods_ASAlertViewController_Tests.framework */; };
-		F35B7AD5B66A2BB241775451 /* Pods_ASAlertViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFCB0E40F2A35577E7B1B35 /* Pods_ASAlertViewController_Example.framework */; };
+		60AD5A2CFB966E66A244340D /* Pods_ASAlertViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016A06BA81862B7287907EE0 /* Pods_ASAlertViewController_Example.framework */; };
+		C138642AF15A9820BB65D83C /* Pods_ASAlertViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A6A82C3CF460215BF8AE268 /* Pods_ASAlertViewController_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DFF88CDD250021DCF52737F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1161BE3B24B926DA40642814 /* Pods-ASAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		275BE4E51D5F73867669C76A /* ASAlertViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASAlertViewController.podspec; path = ../ASAlertViewController.podspec; sourceTree = "<group>"; };
-		50106998856ABE929A004542 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5C4D81BCF96E3D90FBC00E65 /* Pods-ASAlertViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Tests/Pods-ASAlertViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		016A06BA81862B7287907EE0 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B856473FC0DD64A33B523 /* ASAlertViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ASAlertViewController.podspec; path = ../ASAlertViewController.podspec; sourceTree = "<group>"; };
+		3CE1A3F109FB178BDEBC0D14 /* Pods-ASAlertViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Tests/Pods-ASAlertViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DDEE20CC6C533C9DFE96507 /* Pods-ASAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4277F9B33A55129E9C4DEAB1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ASAlertViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASAlertViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* ASAlertViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASAlertViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9DA0F46101BD4E312AA1AABE /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABFCB0E40F2A35577E7B1B35 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D13D9904F3B11993D9FCE6C1 /* Pods-ASAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Tests/Pods-ASAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F6B0CBC06A763D7DAA36D08F /* Pods-ASAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB4C3DB1978A4A6E1FFCEE2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9A6A82C3CF460215BF8AE268 /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A433452E2EF612E4E3A26EB6 /* Pods-ASAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Tests/Pods-ASAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC8AF9C738C691E189B554DB /* Pods-ASAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASAlertViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35B7AD5B66A2BB241775451 /* Pods_ASAlertViewController_Example.framework in Frameworks */,
+				60AD5A2CFB966E66A244340D /* Pods_ASAlertViewController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,29 +62,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC24048A7A2ED337B11DDA9 /* Pods_ASAlertViewController_Tests.framework in Frameworks */,
+				C138642AF15A9820BB65D83C /* Pods_ASAlertViewController_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		369593C9142C6B75C24CF1AC /* Frameworks */ = {
+		47BF0CB0C00D7E25B46D7BA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ABFCB0E40F2A35577E7B1B35 /* Pods_ASAlertViewController_Example.framework */,
-				9DA0F46101BD4E312AA1AABE /* Pods_ASAlertViewController_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		409D6E99BDA99AFB925525A3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F6B0CBC06A763D7DAA36D08F /* Pods-ASAlertViewController_Example.debug.xcconfig */,
-				1161BE3B24B926DA40642814 /* Pods-ASAlertViewController_Example.release.xcconfig */,
-				5C4D81BCF96E3D90FBC00E65 /* Pods-ASAlertViewController_Tests.debug.xcconfig */,
-				D13D9904F3B11993D9FCE6C1 /* Pods-ASAlertViewController_Tests.release.xcconfig */,
+				3DDEE20CC6C533C9DFE96507 /* Pods-ASAlertViewController_Example.debug.xcconfig */,
+				CC8AF9C738C691E189B554DB /* Pods-ASAlertViewController_Example.release.xcconfig */,
+				3CE1A3F109FB178BDEBC0D14 /* Pods-ASAlertViewController_Tests.debug.xcconfig */,
+				A433452E2EF612E4E3A26EB6 /* Pods-ASAlertViewController_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -96,8 +87,8 @@
 				607FACD21AFB9204008FA782 /* Example for ASAlertViewController */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				409D6E99BDA99AFB925525A3 /* Pods */,
-				369593C9142C6B75C24CF1AC /* Frameworks */,
+				47BF0CB0C00D7E25B46D7BA2 /* Pods */,
+				A335627510D7817836F9020F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,11 +143,20 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				275BE4E51D5F73867669C76A /* ASAlertViewController.podspec */,
-				50106998856ABE929A004542 /* README.md */,
-				0DFF88CDD250021DCF52737F /* LICENSE */,
+				157B856473FC0DD64A33B523 /* ASAlertViewController.podspec */,
+				4277F9B33A55129E9C4DEAB1 /* README.md */,
+				8EB4C3DB1978A4A6E1FFCEE2 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A335627510D7817836F9020F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016A06BA81862B7287907EE0 /* Pods_ASAlertViewController_Example.framework */,
+				9A6A82C3CF460215BF8AE268 /* Pods_ASAlertViewController_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ASAlertViewController_Example" */;
 			buildPhases = (
-				29EDD913217222232482E10B /* [CP] Check Pods Manifest.lock */,
+				1FB59B868BBA5FE552184DC1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				97BBBAE982A1082BD7040584 /* [CP] Embed Pods Frameworks */,
-				99E68000063007F2C22C9BF2 /* [CP] Copy Pods Resources */,
+				8BAB3E11856117FD62809B5F /* [CP] Embed Pods Frameworks */,
+				EB96ED6C03DD6A8BCFD19AD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ASAlertViewController_Tests" */;
 			buildPhases = (
-				7F3FE90A6E9F536535B93290 /* [CP] Check Pods Manifest.lock */,
+				728484BA8990230432CE3ED5 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				510A7D3C464B8DA7CF40D018 /* [CP] Embed Pods Frameworks */,
-				D7439A4D6C595D82519AAABF /* [CP] Copy Pods Resources */,
+				3D177B532C654D5DD2BC2CF6 /* [CP] Embed Pods Frameworks */,
+				F303D4C4809F3B218FB61B58 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +220,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MM4N959BB5;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -265,7 +266,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29EDD913217222232482E10B /* [CP] Check Pods Manifest.lock */ = {
+		1FB59B868BBA5FE552184DC1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,7 +281,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		510A7D3C464B8DA7CF40D018 /* [CP] Embed Pods Frameworks */ = {
+		3D177B532C654D5DD2BC2CF6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,7 +296,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASAlertViewController_Tests/Pods-ASAlertViewController_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F3FE90A6E9F536535B93290 /* [CP] Check Pods Manifest.lock */ = {
+		728484BA8990230432CE3ED5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +311,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		97BBBAE982A1082BD7040584 /* [CP] Embed Pods Frameworks */ = {
+		8BAB3E11856117FD62809B5F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,7 +326,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99E68000063007F2C22C9BF2 /* [CP] Copy Pods Resources */ = {
+		EB96ED6C03DD6A8BCFD19AD6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,7 +341,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASAlertViewController_Example/Pods-ASAlertViewController_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D7439A4D6C595D82519AAABF /* [CP] Copy Pods Resources */ = {
+		F303D4C4809F3B218FB61B58 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,7 +495,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B0CBC06A763D7DAA36D08F /* Pods-ASAlertViewController_Example.debug.xcconfig */;
+			baseConfigurationReference = 3DDEE20CC6C533C9DFE96507 /* Pods-ASAlertViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -511,7 +512,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1161BE3B24B926DA40642814 /* Pods-ASAlertViewController_Example.release.xcconfig */;
+			baseConfigurationReference = CC8AF9C738C691E189B554DB /* Pods-ASAlertViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -528,9 +529,10 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C4D81BCF96E3D90FBC00E65 /* Pods-ASAlertViewController_Tests.debug.xcconfig */;
+			baseConfigurationReference = 3CE1A3F109FB178BDEBC0D14 /* Pods-ASAlertViewController_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MM4N959BB5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -549,9 +551,10 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D13D9904F3B11993D9FCE6C1 /* Pods-ASAlertViewController_Tests.release.xcconfig */;
+			baseConfigurationReference = A433452E2EF612E4E3A26EB6 /* Pods-ASAlertViewController_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = MM4N959BB5;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

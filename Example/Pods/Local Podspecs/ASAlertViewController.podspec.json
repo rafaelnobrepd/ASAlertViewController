@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of ASAlertViewController.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/ASAlertViewController",
+  "homepage": "https://github.com/adriano@adrianosouzacosta.com/ASAlertViewController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "adria": "adriano@adrianosouzacosta.com"
+    "adriano@adrianosouzacosta.com": "adriano@adrianosouzacosta.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/ASAlertViewController.git",
+    "git": "https://github.com/adriano@adrianosouzacosta.com/ASAlertViewController.git",
     "tag": "0.1.0"
   },
   "platforms": {

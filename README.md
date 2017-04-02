@@ -1,6 +1,6 @@
 # ASAlertViewController
 
-[![CI Status](http://img.shields.io/travis/adria/ASAlertViewController.svg?style=flat)](https://travis-ci.org/adria/ASAlertViewController)
+[![CI Status](http://img.shields.io/travis/adriano@adrianosouzacosta.com/ASAlertViewController.svg?style=flat)](https://travis-ci.org/adriano@adrianosouzacosta.com/ASAlertViewController)
 [![Version](https://img.shields.io/cocoapods/v/ASAlertViewController.svg?style=flat)](http://cocoapods.org/pods/ASAlertViewController)
 [![License](https://img.shields.io/cocoapods/l/ASAlertViewController.svg?style=flat)](http://cocoapods.org/pods/ASAlertViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ASAlertViewController.svg?style=flat)](http://cocoapods.org/pods/ASAlertViewController)
@@ -22,7 +22,7 @@ pod "ASAlertViewController"
 
 ## Author
 
-Adriano Souza Costa, adriano@adrianosouzacosta.com
+adriano@adrianosouzacosta.com, adriano@adrianosouzacosta.com
 
 ## License
 

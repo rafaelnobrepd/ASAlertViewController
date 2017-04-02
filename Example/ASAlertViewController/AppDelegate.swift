@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  ASAlertViewController
 //
-//  Created by adria on 12/31/2016.
-//  Copyright (c) 2016 adria. All rights reserved.
+//  Created by adriano@adrianosouzacosta.com on 03/31/2017.
+//  Copyright (c) 2017 adriano@adrianosouzacosta.com. All rights reserved.
 //
 
 import UIKit
