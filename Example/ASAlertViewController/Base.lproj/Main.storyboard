@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-Gq-AVo">
-                                <rect key="frame" x="30" y="249" width="260" height="70"/>
+                                <rect key="frame" x="30" y="229" width="260" height="110"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-wh-cVb">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
@@ -35,6 +35,13 @@
                                         <state key="normal" title="ASAlertController"/>
                                         <connections>
                                             <action selector="showASAlertController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KcH-sw-cfw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-OY-M9U">
+                                        <rect key="frame" x="0.0" y="80" width="260" height="30"/>
+                                        <state key="normal" title="ASAlertDateTimeController"/>
+                                        <connections>
+                                            <action selector="showASAlertDateTimeController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aJ0-xA-pwk"/>
                                         </connections>
                                     </button>
                                 </subviews>

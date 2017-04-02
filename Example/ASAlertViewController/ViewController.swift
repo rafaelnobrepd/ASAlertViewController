@@ -11,22 +11,7 @@ import ASAlertViewController
 
 class ViewController: UIViewController {
 
-    // MARK: - Lifecircle Class
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Actions
-
-    @IBAction private func showASAlertController() {
-        let alert = ASAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:")
-        alert.addAction(ASAlertAction(title: "Sim", type: .default) {  print("aeee") })
-        alert.addAction(ASAlertAction(title: "Não", type: .destructive))
-        alert.addAction(ASAlertAction(title: "Sim", type: .cancel))
-
-        alert.presentAlert(in: self)
-    }
 
     @IBAction private func showAlertController() {
         let alert = UIAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:", preferredStyle: .alert)
@@ -35,6 +20,24 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Não", style: .destructive, handler: nil))
 
         present(alert, animated: true, completion: nil)
+    }
+
+    @IBAction private func showASAlertController() {
+        let alert = ASAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:")
+        alert.addAction(ASAlertAction(title: "Sim", type: .default) {  print("aeee") })
+        alert.addAction(ASAlertAction(title: "Não", type: .destructive))
+        alert.addAction(ASAlertAction(title: "Sim", type: .cancel))
+
+        alert.present(in: self)
+    }
+
+    @IBAction private func showASAlertDateTimeController() {
+        let alert = ASAlertDateTimeController(title: "Selecione uma data", type: .date)
+
+        alert.addAction(ASAlertAction(title: "Sim", type: .default) {  print("aeee") })
+        alert.addAction(ASAlertAction(title: "Não", type: .destructive))
+
+        alert.present(in: self)
     }
 
 }

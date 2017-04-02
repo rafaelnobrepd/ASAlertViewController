@@ -22,17 +22,19 @@ public class ASAlertController: UIViewController {
 
     // MARK: - Variables
 
+    internal var _content: UIView? { didSet { updateContent() } }
+    internal var _handlers: [ASAlertHandler] = [] { didSet { updateHandlers() } }
+    
     fileprivate var _title: String? { didSet { updateUI() } }
     fileprivate var _message: String? { didSet { updateUI() } }
-    fileprivate var _content: UIView? { didSet { updateContent() } }
-    fileprivate var _handlers: [ASAlertHandler] = [] { didSet { updateHandlers() } }
 
     // MARK: - Lifecircle Class
 
     override public func loadView() {
         let bundle = Bundle(for: type(of: self))
+        let nibName = "ASAlertController"
 
-        guard let view = bundle.loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? UIView else {
+        guard let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView else {
             fatalError()
         }
 
@@ -41,6 +43,7 @@ public class ASAlertController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
         updateContent()
         updateHandlers()
     }
@@ -60,7 +63,7 @@ public class ASAlertController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
-    public func presentAlert(in viewController: UIViewController) {
+    public func present(in viewController: UIViewController) {
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
 
@@ -82,22 +85,18 @@ public class ASAlertController: UIViewController {
     // MARK: - Private Methods
 
     private func updateUI() {
-        if let title = title {
-            lbTitle?.text = title
-            lbTitle?.isHidden = title.isEmpty
-        }
+        lbTitle?.text = title
+        lbTitle?.isHidden = title?.isEmpty ?? true
 
-        if let message = message {
-            lbMessage?.text = message
-            lbMessage?.isHidden = message.isEmpty
-        }
+        lbMessage?.text = message
+        lbMessage?.isHidden = message?.isEmpty ?? true
 
         animation()
     }
 
     private func animation() {
         vwAlert?.alpha = 0
-        vwAlert?.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 
         UIView.animate(withDuration: 0.3) { 
             self.vwAlert?.transform = CGAffineTransform.identity
@@ -105,7 +104,7 @@ public class ASAlertController: UIViewController {
         }
     }
 
-    private func updateContent() {
+    internal func updateContent() {
         _content?.removeFromSuperview()
 
         if let content = content, let vwContent = vwContent {
@@ -117,7 +116,7 @@ public class ASAlertController: UIViewController {
         }
     }
 
-    private func updateHandlers() {
+    internal func updateHandlers() {
         let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
 
         svHandlers?.subviews.forEach { $0.removeFromSuperview() }
@@ -129,7 +128,7 @@ public class ASAlertController: UIViewController {
         }
     }
 
-    private func dismiss() {
+    internal func dismiss() {
         dismiss(animated: true, completion: nil)
     }
 
@@ -148,7 +147,9 @@ extension ASAlertController: ASAlert {
     }
 
     public var content: UIView? {
-        get { return _content }
+        get {
+            return _content
+        }
         set { _content = newValue }
     }
 
