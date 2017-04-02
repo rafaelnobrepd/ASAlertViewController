@@ -46,11 +46,26 @@ class ASHandlerButton: UIButton {
 
     private func setupAction() {
         addTarget(self, action: #selector(callHandler), for: .touchUpInside)
+        addTarget(self, action: #selector(drag), for: .touchDown)
+        addTarget(self, action: #selector(drag), for: .touchDragEnter)
+        addTarget(self, action: #selector(exitDrag), for: .touchDragExit)
     }
 
     @objc private func callHandler() {
         onAction?()
         alertHandler?.handler?()
+    }
+
+    @objc private func drag() {
+        UIView.animate(withDuration: 0.26) {
+            self.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1)
+        }
+    }
+
+    @objc private func exitDrag() {
+        UIView.animate(withDuration: 0.26) {
+            self.backgroundColor = .white
+        }
     }
 
 }
