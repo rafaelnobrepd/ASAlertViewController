@@ -16,6 +16,7 @@ public class ASAlertController: UIViewController {
     @IBOutlet weak var lbTitle: UILabel?
     @IBOutlet weak var lbMessage: UILabel?
     @IBOutlet weak var vwContent: UIView?
+    @IBOutlet weak var vwAlert: UIView?
     @IBOutlet weak var svHandlers: UIStackView?
     @IBOutlet weak var lcHeightContent: NSLayoutConstraint?
 
@@ -40,9 +41,13 @@ public class ASAlertController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
         updateContent()
         updateHandlers()
+    }
+
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
     }
 
     // MARK: - Public Methods
@@ -87,15 +92,26 @@ public class ASAlertController: UIViewController {
             lbMessage?.isHidden = message.isEmpty
         }
 
+        animation()
+    }
+
+    private func animation() {
+        vwAlert?.alpha = 0
+        vwAlert?.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+
+        UIView.animate(withDuration: 0.3) { 
+            self.vwAlert?.transform = CGAffineTransform.identity
+            self.vwAlert?.alpha = 1
+        }
     }
 
     private func updateContent() {
         _content?.removeFromSuperview()
 
-        if let content = content {
-            content.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-            vwContent?.addSubview(content)
+        if let content = content, let vwContent = vwContent {
             lcHeightContent?.constant = content.bounds.height
+            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(lcHeightContent?.constant ?? 0))
+            vwContent.addSubview(content)
         } else {
             lcHeightContent?.constant = 0
         }
