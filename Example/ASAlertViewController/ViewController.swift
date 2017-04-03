@@ -32,12 +32,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func showASAlertDateTimeController() {
-        let alert = ASAlertTimeController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:")
+        let alert = ASAlertDateController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:")
+        
         alert.onSelectDateAction = { date in
             if let date = date {
                 print(date)
             }
         }
+        
         alert.present(in: self)
     }
 

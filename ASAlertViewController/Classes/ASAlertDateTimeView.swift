@@ -41,6 +41,9 @@ class ASAlertDateTimeView: UIView {
         }
         return view
     }
+    
+    var onTodayAction: (() -> Void)?
+    var onClearAction: (() -> Void)?
 
     // MARK: - Lifecircle Class
 
@@ -96,6 +99,16 @@ class ASAlertDateTimeView: UIView {
 
     @objc private func selectDate(_ sender: UIDatePicker) {
         date = sender.date
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction private func todayAction() {
+        date = Date()
+    }
+    
+    @IBAction private func clearAction() {
+        onClearAction?()
     }
 
 }

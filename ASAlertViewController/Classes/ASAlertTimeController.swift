@@ -17,12 +17,9 @@ public class ASAlertTimeController: ASAlertDateTimeController {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectDateAction?(self.date)
         })
-        let selectTodayHandler = ASAlertAction("Agora", type: .default, closeOnAction: false, handler: {
-            self.date = Date()
-        })
         let closeHandler = ASAlertAction("Cancelar", type: .destructive)
 
-        return [selectTodayHandler, selectDateHandler, closeHandler]
+        return [closeHandler, selectDateHandler]
     }()
 
     override var _handlers: [ASAlertHandler] {

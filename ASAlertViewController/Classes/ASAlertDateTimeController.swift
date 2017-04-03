@@ -27,20 +27,22 @@ public class ASAlertDateTimeController: ASAlertController {
     public var onSelectDateAction: ((_ date: Date?)->())?
 
     private lazy var alertDateTimeView: ASAlertDateTimeView = {
-        let alertDateTime = ASAlertDateTimeView()
-        return alertDateTime.nib
+        let alertDateTime = ASAlertDateTimeView().nib
+        alertDateTime.onClearAction = {
+            self.onSelectDateAction?(nil)
+            self.dismiss()
+        }
+        
+        return alertDateTime
     }()
 
     private lazy var customHandlers: [ASAlertHandler] = {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectDateAction?(self.date)
         })
-        let selectTodayHandler = ASAlertAction("Hoje", type: .default, closeOnAction: false, handler: { 
-            self.date = Date()
-        })
         let closeHandler = ASAlertAction("Cancelar", type: .destructive)
 
-        return [selectTodayHandler, selectDateHandler, closeHandler]
+        return [closeHandler, selectDateHandler]
     }()
 
     override var _content: UIView? {
