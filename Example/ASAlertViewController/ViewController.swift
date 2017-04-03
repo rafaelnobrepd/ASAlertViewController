@@ -31,8 +31,32 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
 
-    @IBAction private func showASAlertDateTimeController() {
+    @IBAction private func showASAlertDateController() {
         let alert = ASAlertDateController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:")
+        
+        alert.onSelectDateAction = { date in
+            if let date = date {
+                print(date)
+            }
+        }
+        
+        alert.present(in: self)
+    }
+    
+    @IBAction private func showASAlertTimeController() {
+        let alert = ASAlertTimeController(title: "Selecione uma horário", message: "Selecione uma das opções abaixo:")
+        
+        alert.onSelectDateAction = { date in
+            if let date = date {
+                print(date)
+            }
+        }
+        
+        alert.present(in: self)
+    }
+    
+    @IBAction private func showASAlertDateTimeController() {
+        let alert = ASAlertDateTimeController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:", type: .dateTime)
         
         alert.onSelectDateAction = { date in
             if let date = date {

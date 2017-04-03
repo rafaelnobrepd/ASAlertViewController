@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-Gq-AVo">
-                                <rect key="frame" x="30" y="229" width="260" height="110"/>
+                                <rect key="frame" x="30" y="189" width="260" height="190"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-wh-cVb">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
@@ -37,11 +37,25 @@
                                             <action selector="showASAlertController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KcH-sw-cfw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-OY-M9U">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdu-oU-k1d">
                                         <rect key="frame" x="0.0" y="80" width="260" height="30"/>
+                                        <state key="normal" title="ASAlertDateController"/>
+                                        <connections>
+                                            <action selector="showASAlertDateController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bpM-oq-FzQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsF-Ae-d8L">
+                                        <rect key="frame" x="0.0" y="120" width="260" height="30"/>
+                                        <state key="normal" title="ASAlertTimeController"/>
+                                        <connections>
+                                            <action selector="showASAlertTimeController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g4s-Yd-cjg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-OY-M9U">
+                                        <rect key="frame" x="0.0" y="160" width="260" height="30"/>
                                         <state key="normal" title="ASAlertDateTimeController"/>
                                         <connections>
-                                            <action selector="showASAlertDateTimeController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aJ0-xA-pwk"/>
+                                            <action selector="showASAlertDateTimeController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OF1-jx-sIl"/>
                                         </connections>
                                     </button>
                                 </subviews>
