@@ -11,7 +11,7 @@ import UIKit
 
 public class ASAlertDateController: ASAlertDateTimeController {
 
-    public init(title: String? = nil, message: String? = nil, date: Date? = Date()) {
+    public init(title: String? = nil, message: String? = nil, date: Date? = nil) {
         super.init(title: title, message: message, type: .date, date: date)
     }
     

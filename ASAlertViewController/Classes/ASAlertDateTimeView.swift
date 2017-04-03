@@ -23,6 +23,8 @@ class ASAlertDateTimeView: UIView {
 
     @IBOutlet private weak var dpDateTime: UIDatePicker?
     @IBOutlet private weak var lbDateDescription: UILabel?
+    @IBOutlet private weak var btToday: UIButton?
+    @IBOutlet private weak var btClear: UIButton?
 
     // MARK: - Variables
 
@@ -59,38 +61,38 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Private Methods
 
     private func updateUI() {
-        if let date = date {
-            var format = "dd/MM/yyyy HH:mm"
-
-            switch type {
-            case .date:
-                format = "dd/MM/yyyy"
-            case .dateTime:
-                format = "dd/MM/yyyy HH:mm"
-            case .time:
-                format = "HH:mm"
-            }
-
-            let formatter = DateFormatter()
-            formatter.dateFormat = format
-            lbDateDescription?.text = formatter.string(from: date)
-        }
-
+        btClear?.isEnabled = date != nil
+        
         setupDatePicker()
     }
 
     private func setupDatePicker() {
+        var format = "dd/MM/yyyy HH:mm"
+        var label = "Hoje"
+        
         switch type {
         case .date:
             dpDateTime?.datePickerMode = .date
+            format = "dd/MM/yyyy"
         case .time:
             dpDateTime?.datePickerMode = .time
+            format = "HH:mm"
+            label = "Agora"
         case .dateTime:
             dpDateTime?.datePickerMode = .dateAndTime
+            format = "dd/MM/yyyy HH:mm"
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        
+        if let date = dpDateTime?.date {
+            lbDateDescription?.text = formatter.string(from: date)
         }
 
         dpDateTime?.minuteInterval = interval
         dpDateTime?.date = date ?? Date()
+        btToday?.setTitle(label, for: .normal)
     }
 
     private func addObservers() {

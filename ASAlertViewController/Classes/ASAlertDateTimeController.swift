@@ -62,8 +62,9 @@ public class ASAlertDateTimeController: ASAlertController {
         updateUI()
     }
 
-    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType = .dateTime, date: Date? = Date(), interval: Int = 15) {
+    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType, date: Date? = Date(), interval: Int = 15) {
         super.init(title: title, message: message, content: nil)
+        
         self.type = type
         self.date = date
         self.interval = interval

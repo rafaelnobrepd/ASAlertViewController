@@ -29,7 +29,7 @@ public class ASAlertTimeController: ASAlertDateTimeController {
 
     // MARK: - Lifecircle Class
 
-    public init(title: String? = nil, message: String? = nil, date: Date? = Date(), interval: Int = 15) {
+    public init(title: String? = nil, message: String? = nil, date: Date? = nil, interval: Int = 15) {
         super.init(title: title, message: message, type: .time, date: date)
         self.interval = interval
     }
