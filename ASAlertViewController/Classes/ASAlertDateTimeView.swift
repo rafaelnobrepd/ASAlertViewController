@@ -68,7 +68,7 @@ class ASAlertDateTimeView: UIView {
 
     private func setupDatePicker() {
         let formatter = DateFormatter()
-        formatter.timeZone = NSTimeZone.local
+        formatter.timeZone = TimeZone.current
         
         var label = "Hoje"
         
@@ -108,7 +108,8 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Actions
     
     @IBAction private func todayAction() {
-        date = Date()
+        dpDateTime?.date = Date()
+        date = dpDateTime?.date
     }
     
     @IBAction private func clearAction() {
