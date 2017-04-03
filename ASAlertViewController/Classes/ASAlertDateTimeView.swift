@@ -57,6 +57,12 @@ class ASAlertDateTimeView: UIView {
         updateUI()
         addObservers()
     }
+    
+    deinit {
+        if let dpDateTime = dpDateTime {
+            self.removeObserver(dpDateTime, forKeyPath: "frame")
+        }
+    }
 
     // MARK: - Private Methods
 

@@ -26,6 +26,14 @@ public class ASAlertController: UIViewController {
 
     // MARK: - Lifecircle Class
 
+    public init(title: String? = nil, message: String? = nil, content: UIView? = nil) {
+        _title = title
+        _message = message
+        _content = content
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
     override public func loadView() {
         self.view = alertViewController
     }
@@ -35,6 +43,7 @@ public class ASAlertController: UIViewController {
         
         updateContent()
         updateHandlers()
+        addObservers()
     }
 
     public override func viewWillAppear(_ animated: Bool) {
@@ -43,14 +52,6 @@ public class ASAlertController: UIViewController {
     }
 
     // MARK: - Public Methods
-
-    public init(title: String? = nil, message: String? = nil, content: UIView? = nil) {
-        _title = title
-        _message = message
-        _content = content
-
-        super.init(nibName: nil, bundle: nil)
-    }
 
     public func present(in viewController: UIViewController) {
         modalPresentationStyle = .overCurrentContext
@@ -73,6 +74,45 @@ public class ASAlertController: UIViewController {
 
     // MARK: - Private Methods
 
+    internal func updateContent() {
+        _content?.removeFromSuperview()
+        
+        if let content = content, let vwContent = alertViewController.vwContent {
+            alertViewController.lcHeightContent?.constant = content.bounds.size.height
+            alertViewController.lcHeightContent?.constant = content.bounds.height
+            
+            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(content.bounds.size.height))
+            
+            vwContent.addSubview(content)
+        } else {
+            alertViewController.lcHeightContent?.constant = 0
+        }
+    }
+    
+    internal func updateHandlers() {
+        let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
+        
+        alertViewController.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
+        alertViewController.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
+        
+        buttons.forEach { button in
+            alertViewController.svHandlers?.addArrangedSubview(button)
+            button.onAction = { if button.closeOnAction { self.dismiss() } }
+        }
+    }
+    
+    internal func dismiss() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    private func addObservers() {
+        
+    }
+    
+    private func updateSizeContainerContent() {
+        print(alertViewController.vwContent?.frame)
+    }
+    
     private func updateUI() {
         alertViewController.lbTitle?.text = title
         alertViewController.lbTitle?.isHidden = title?.isEmpty ?? true
@@ -91,34 +131,6 @@ public class ASAlertController: UIViewController {
             self.alertViewController.vwAlert?.transform = CGAffineTransform.identity
             self.alertViewController.vwAlert?.alpha = 1
         }
-    }
-
-    internal func updateContent() {
-        _content?.removeFromSuperview()
-
-        if let content = content, let vwContent = alertViewController.vwContent {
-            alertViewController.lcHeightContent?.constant = content.bounds.height
-            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(alertViewController.lcHeightContent?.constant ?? 0))
-            vwContent.addSubview(content)
-        } else {
-            alertViewController.lcHeightContent?.constant = 0
-        }
-    }
-
-    internal func updateHandlers() {
-        let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
-
-        alertViewController.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
-        alertViewController.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
-
-        buttons.forEach { button in
-            alertViewController.svHandlers?.addArrangedSubview(button)
-            button.onAction = { if button.closeOnAction { self.dismiss() } }
-        }
-    }
-
-    internal func dismiss() {
-        dismiss(animated: true, completion: nil)
     }
 
 }
