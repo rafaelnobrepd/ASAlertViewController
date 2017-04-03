@@ -26,7 +26,7 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Variables
 
-    var date: Date? {
+    var date: Date? = Date() {
         didSet { updateUI() }
     }
     var type: ASAlertDateTimeType = .dateTime {
@@ -56,6 +56,23 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Private Methods
 
     private func updateUI() {
+        if let date = date {
+            var format = "dd/MM/yyyy HH:mm"
+
+            switch type {
+            case .date:
+                format = "dd/MM/yyyy"
+            case .dateTime:
+                format = "dd/MM/yyyy HH:mm"
+            case .time:
+                format = "HH:mm"
+            }
+
+            let formatter = DateFormatter()
+            formatter.dateFormat = format
+            lbDateDescription?.text = formatter.string(from: date)
+        }
+
         setupDatePicker()
     }
 

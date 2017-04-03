@@ -15,27 +15,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="UWK-NL-lGM">
-                    <rect key="frame" x="10" y="-15" width="250" height="216"/>
+                    <rect key="frame" x="5" y="-15" width="260" height="216"/>
                     <date key="date" timeIntervalSinceReferenceDate="512850851.151721">
                         <!--2017-04-02 18:34:11 +0000-->
                     </date>
                 </datePicker>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horário selecionado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uI4-fh-xfp">
-                    <rect key="frame" x="10" y="196" width="250" height="15"/>
+                    <rect key="frame" x="10" y="196" width="250" height="14.5"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="uI4-fh-xfp" firstAttribute="top" secondItem="UWK-NL-lGM" secondAttribute="bottom" constant="-5" id="CwO-6O-rav"/>
-                <constraint firstItem="UWK-NL-lGM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Q0V-I8-7UY"/>
+                <constraint firstItem="UWK-NL-lGM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Q0V-I8-7UY"/>
                 <constraint firstItem="uI4-fh-xfp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VPr-NL-hmX"/>
                 <constraint firstAttribute="trailing" secondItem="uI4-fh-xfp" secondAttribute="trailing" constant="10" id="ZpP-gg-c1Q"/>
                 <constraint firstItem="UWK-NL-lGM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-15" id="cch-Qq-bCU"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uI4-fh-xfp" secondAttribute="bottom" constant="8" id="fxX-Pg-xLI"/>
-                <constraint firstAttribute="trailing" secondItem="UWK-NL-lGM" secondAttribute="trailing" constant="10" id="rBz-bf-Yzx"/>
+                <constraint firstAttribute="trailing" secondItem="UWK-NL-lGM" secondAttribute="trailing" constant="5" id="rBz-bf-Yzx"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

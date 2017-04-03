@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
+		0AFAA3671E9263BE005206D7 /* ASAlertDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */; };
+		0AFAA3691E926479005206D7 /* ASAlertTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */; };
 		0B8DBAB184BB7E8E1D9C5E3386A8DEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
 		10CCF7D2E5B1BB34518951A551BD089C /* ASAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738E91659A1DE3D908AE1B695012F6FA /* ASAlertViewController.swift */; };
 		1259F0CAD34922C055679FB36BDE0D89 /* ASAlertDateTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B2F199F8074860C5CD744F65ECC7D /* ASAlertDateTimeController.swift */; };
@@ -73,6 +75,8 @@
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		0760BC049D40EA5F75B9982C24D5033F /* ASAlertViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertViewController.xib; sourceTree = "<group>"; };
 		098260AB3D662A76CD2E33168FE0B5C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertDateController.swift; sourceTree = "<group>"; };
+		0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertTimeController.swift; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		11C2DF80B63BAECDFC81226991F4F1C7 /* ASAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-umbrella.h"; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				302135CC85DEFCF3B4E2E2BA176DEE5E /* ASHandlerButton.swift */,
 				63AFCC55CDA7733EBC9D7209A93F370F /* CustomView.swift */,
 				E1B78C14CC50E5FE78C1FB5536E219CF /* UIView+Extension.swift */,
+				0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */,
+				0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -538,6 +544,8 @@
 				4DF14B1720131DCDBC0FD66224CDA8D8 /* ASAlertAction.swift in Sources */,
 				BA8A0ED3A0F58040EE2069471C1D960E /* ASAlertController.swift in Sources */,
 				1259F0CAD34922C055679FB36BDE0D89 /* ASAlertDateTimeController.swift in Sources */,
+				0AFAA3691E926479005206D7 /* ASAlertTimeController.swift in Sources */,
+				0AFAA3671E9263BE005206D7 /* ASAlertDateController.swift in Sources */,
 				239B3D707AB330E7A13BE852637FD9A4 /* ASAlertDateTimeView.swift in Sources */,
 				14A82AD6946ED776E91FB40D29FDE26C /* ASAlertDateTimeView.xib in Sources */,
 				3572CD05924DDF0E91479FA67BCD7A94 /* ASAlertHandler.swift in Sources */,

@@ -13,9 +13,18 @@ public class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Variables
 
-    public var onSelectDateAction: ((_ date: Date?)->())?
+    public var date: Date? {
+        get { return alertDateTimeView.date }
+        set { alertDateTimeView.date = newValue }
+    }
+    public var interval: Int {
+        get { return alertDateTimeView.interval }
+        set { alertDateTimeView.interval = newValue }
+    }
 
-    private var type: ASAlertDateTimeType = .dateTime
+    public var type: ASAlertDateTimeType = .dateTime
+
+    public var onSelectDateAction: ((_ date: Date?)->())?
 
     private lazy var alertDateTimeView: ASAlertDateTimeView = {
         let alertDateTime = ASAlertDateTimeView()
@@ -24,10 +33,10 @@ public class ASAlertDateTimeController: ASAlertController {
 
     private lazy var customHandlers: [ASAlertHandler] = {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
-            self.onSelectDateAction?(self.alertDateTimeView.date)
+            self.onSelectDateAction?(self.date)
         })
         let selectTodayHandler = ASAlertAction("Hoje", type: .default, closeOnAction: false, handler: { 
-            self.alertDateTimeView.date = Date()
+            self.date = Date()
         })
         let closeHandler = ASAlertAction("Cancelar", type: .destructive)
 
@@ -51,9 +60,11 @@ public class ASAlertDateTimeController: ASAlertController {
         updateUI()
     }
 
-    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType) {
+    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType = .dateTime, date: Date? = Date(), interval: Int = 15) {
         super.init(title: title, message: message, content: nil)
         self.type = type
+        self.date = date
+        self.interval = interval
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -64,6 +75,8 @@ public class ASAlertDateTimeController: ASAlertController {
 
     private func updateUI() {
         alertDateTimeView.type = type
+        alertDateTimeView.date = date
+        alertDateTimeView.interval = interval
     }
 
 }
