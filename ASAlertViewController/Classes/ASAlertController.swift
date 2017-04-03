@@ -11,15 +11,6 @@ import UIKit
 
 public class ASAlertController: UIViewController {
 
-    // MARK: - Components
-
-    @IBOutlet weak var lbTitle: UILabel?
-    @IBOutlet weak var lbMessage: UILabel?
-    @IBOutlet weak var vwContent: UIView?
-    @IBOutlet weak var vwAlert: UIView?
-    @IBOutlet weak var svHandlers: UIStackView?
-    @IBOutlet weak var lcHeightContent: NSLayoutConstraint?
-
     // MARK: - Variables
 
     internal var _content: UIView? { didSet { updateContent() } }
@@ -28,17 +19,15 @@ public class ASAlertController: UIViewController {
     fileprivate var _title: String? { didSet { updateUI() } }
     fileprivate var _message: String? { didSet { updateUI() } }
 
+    private var alertViewController: ASAlertViewController = {
+        let alertViewController = ASAlertViewController()
+        return alertViewController.nib
+    }()
+
     // MARK: - Lifecircle Class
 
     override public func loadView() {
-        let bundle = Bundle(for: type(of: self))
-        let nibName = "ASAlertController"
-
-        guard let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView else {
-            fatalError()
-        }
-
-        self.view = view
+        self.view = alertViewController
     }
 
     override public func viewDidLoad() {
@@ -85,46 +74,46 @@ public class ASAlertController: UIViewController {
     // MARK: - Private Methods
 
     private func updateUI() {
-        lbTitle?.text = title
-        lbTitle?.isHidden = title?.isEmpty ?? true
+        alertViewController.lbTitle?.text = title
+        alertViewController.lbTitle?.isHidden = title?.isEmpty ?? true
 
-        lbMessage?.text = message
-        lbMessage?.isHidden = message?.isEmpty ?? true
+        alertViewController.lbMessage?.text = message
+        alertViewController.lbMessage?.isHidden = message?.isEmpty ?? true
 
         animation()
     }
 
     private func animation() {
-        vwAlert?.alpha = 0
-        vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        alertViewController.vwAlert?.alpha = 0
+        alertViewController.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 
         UIView.animate(withDuration: 0.3) { 
-            self.vwAlert?.transform = CGAffineTransform.identity
-            self.vwAlert?.alpha = 1
+            self.alertViewController.vwAlert?.transform = CGAffineTransform.identity
+            self.alertViewController.vwAlert?.alpha = 1
         }
     }
 
     internal func updateContent() {
         _content?.removeFromSuperview()
 
-        if let content = content, let vwContent = vwContent {
-            lcHeightContent?.constant = content.bounds.height
-            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(lcHeightContent?.constant ?? 0))
+        if let content = content, let vwContent = alertViewController.vwContent {
+            alertViewController.lcHeightContent?.constant = content.bounds.height
+            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(alertViewController.lcHeightContent?.constant ?? 0))
             vwContent.addSubview(content)
         } else {
-            lcHeightContent?.constant = 0
+            alertViewController.lcHeightContent?.constant = 0
         }
     }
 
     internal func updateHandlers() {
         let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
 
-        svHandlers?.subviews.forEach { $0.removeFromSuperview() }
-        svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
+        alertViewController.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
+        alertViewController.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
 
         buttons.forEach { button in
-            svHandlers?.addArrangedSubview(button)
-            button.onAction = { self.dismiss() }
+            alertViewController.svHandlers?.addArrangedSubview(button)
+            button.onAction = { if button.closeOnAction { self.dismiss() } }
         }
     }
 
@@ -147,9 +136,7 @@ extension ASAlertController: ASAlert {
     }
 
     public var content: UIView? {
-        get {
-            return _content
-        }
+        get { return _content }
         set { _content = newValue }
     }
 

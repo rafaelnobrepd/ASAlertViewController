@@ -26,7 +26,6 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Variables
 
-    var onSelectDateAction: ((_ date: Date?)->())?
     var date: Date? {
         didSet { updateUI() }
     }
@@ -36,11 +35,19 @@ class ASAlertDateTimeView: UIView {
     var interval: Int = 15 {
         didSet { updateUI() }
     }
+    var nib: ASAlertDateTimeView {
+        guard let view = loadNib() as? ASAlertDateTimeView else {
+            fatalError()
+        }
+        return view
+    }
 
     // MARK: - Lifecircle Class
 
     override func awakeFromNib() {
         super.awakeFromNib()
+
+        date = dpDateTime?.date
 
         updateUI()
         addObservers()
@@ -71,7 +78,7 @@ class ASAlertDateTimeView: UIView {
     }
 
     @objc private func selectDate(_ sender: UIDatePicker) {
-        dpDateTime?.date = sender.date
+        date = sender.date
     }
 
 }

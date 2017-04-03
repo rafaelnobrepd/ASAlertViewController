@@ -34,5 +34,14 @@ public protocol ASAlertHandler {
     var title: String { get set }
     var handler: (()->())? { get set }
     var type: ASAHandlerType { get set }
+    var closeOnAction: Bool { get }
+
+}
+
+extension ASAlertHandler {
+
+    public var closeOnAction: Bool {
+        get { return true }
+    }
 
 }

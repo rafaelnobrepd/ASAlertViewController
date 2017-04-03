@@ -24,19 +24,20 @@ class ViewController: UIViewController {
 
     @IBAction private func showASAlertController() {
         let alert = ASAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:")
-        alert.addAction(ASAlertAction(title: "Sim", type: .default) {  print("aeee") })
-        alert.addAction(ASAlertAction(title: "Não", type: .destructive))
-        alert.addAction(ASAlertAction(title: "Sim", type: .cancel))
+        alert.addAction(ASAlertAction("Sim", type: .default) {  print("aeee") })
+        alert.addAction(ASAlertAction("Não", type: .destructive))
+        alert.addAction(ASAlertAction("Sim", type: .cancel))
 
         alert.present(in: self)
     }
 
     @IBAction private func showASAlertDateTimeController() {
-        let alert = ASAlertDateTimeController(title: "Selecione uma data", type: .date)
-
-        alert.addAction(ASAlertAction(title: "Sim", type: .default) {  print("aeee") })
-        alert.addAction(ASAlertAction(title: "Não", type: .destructive))
-
+        let alert = ASAlertDateTimeController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:", type: .date)
+        alert.onSelectDateAction = { date in
+            if let date = date {
+                print(date)
+            }
+        }
         alert.present(in: self)
     }
 

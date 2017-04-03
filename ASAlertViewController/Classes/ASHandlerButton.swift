@@ -14,6 +14,7 @@ class ASHandlerButton: UIButton {
     // MARK: - Variables
 
     var onAction: (()->())?
+    var closeOnAction: Bool = true
 
     private var alertHandler: ASAlertHandler?
 
@@ -27,6 +28,7 @@ class ASHandlerButton: UIButton {
         super.init(frame: frame)
 
         alertHandler = handler
+        closeOnAction = handler?.closeOnAction ?? true
 
         updateUI()
         setupAction()
@@ -54,6 +56,7 @@ class ASHandlerButton: UIButton {
     @objc private func callHandler() {
         onAction?()
         alertHandler?.handler?()
+        exitDrag()
     }
 
     @objc private func drag() {

@@ -13,19 +13,41 @@ public class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Variables
 
-    var onSelectDateAction: ((_ date: Date?)->())?
+    public var onSelectDateAction: ((_ date: Date?)->())?
 
-    private var alertDateTimeView: ASAlertDateTimeView?
     private var type: ASAlertDateTimeType = .dateTime
+
+    private lazy var alertDateTimeView: ASAlertDateTimeView = {
+        let alertDateTime = ASAlertDateTimeView()
+        return alertDateTime.nib
+    }()
+
+    private lazy var customHandlers: [ASAlertHandler] = {
+        let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
+            self.onSelectDateAction?(self.alertDateTimeView.date)
+        })
+        let selectTodayHandler = ASAlertAction("Hoje", type: .default, closeOnAction: false, handler: { 
+            self.alertDateTimeView.date = Date()
+        })
+        let closeHandler = ASAlertAction("Cancelar", type: .destructive)
+
+        return [selectTodayHandler, selectDateHandler, closeHandler]
+    }()
+
+    override var _content: UIView? {
+        get { return alertDateTimeView }
+        set { super._content = alertDateTimeView }
+    }
+
+    override var _handlers: [ASAlertHandler] {
+        get { return customHandlers }
+        set { super._handlers = customHandlers }
+    }
 
     // MARK: - Lifecircle Class
 
     public override func viewDidLoad() {
-        loadAlertDateTimeView()
-        setupActions()
-
         super.viewDidLoad()
-
         updateUI()
     }
 
@@ -41,31 +63,7 @@ public class ASAlertDateTimeController: ASAlertController {
     // MARK: - Private methods
 
     private func updateUI() {
-        alertDateTimeView?.type = type
-    }
-
-    private func loadAlertDateTimeView() {
-        let bundle = Bundle(for: type(of: self))
-        let nibName = "ASAlertDateTimeView"
-
-        guard let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? ASAlertDateTimeView else {
-            fatalError()
-        }
-
-        alertDateTimeView = view
-    }
-
-    private func setupActions() {
-        onSelectDateAction = alertDateTimeView?.onSelectDateAction
-    }
-
-    // MARK: - ASAlert Protocol
-
-    override public var content: UIView? {
-        get {
-            return alertDateTimeView
-        }
-        set { _content = alertDateTimeView }
+        alertDateTimeView.type = type
     }
 
 }
