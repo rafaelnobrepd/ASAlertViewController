@@ -67,24 +67,25 @@ class ASAlertDateTimeView: UIView {
     }
 
     private func setupDatePicker() {
-        var format = "dd/MM/yyyy HH:mm"
+        let formatter = DateFormatter()
+        
         var label = "Hoje"
         
         switch type {
         case .date:
             dpDateTime?.datePickerMode = .date
-            format = "dd/MM/yyyy"
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .none
         case .time:
             dpDateTime?.datePickerMode = .time
-            format = "HH:mm"
             label = "Agora"
+            formatter.dateStyle = .none
+            formatter.timeStyle = .medium
         case .dateTime:
             dpDateTime?.datePickerMode = .dateAndTime
-            format = "dd/MM/yyyy HH:mm"
+            formatter.dateStyle = .medium
+            formatter.timeStyle = .medium
         }
-        
-        let formatter = DateFormatter()
-        formatter.dateFormat = format
         
         if let date = dpDateTime?.date {
             lbDateDescription?.text = formatter.string(from: date)
