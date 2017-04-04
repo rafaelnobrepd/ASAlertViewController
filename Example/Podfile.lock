@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ASAlertViewController: 5930f1b30e896d4b04bef1fe9e1aa9e7d3e0f7d9
+  ASAlertViewController: 2795ebcd3ce288480c268f0959d83398f677428c
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
 
 PODFILE CHECKSUM: 7f85362af29868011ae7edd12bacc3c7748f1ce7

@@ -9,49 +9,50 @@
 /* Begin PBXBuildFile section */
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		0AFAA3671E9263BE005206D7 /* ASAlertDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */; };
-		0AFAA3691E926479005206D7 /* ASAlertTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */; };
-		0AFAA36B1E93B872005206D7 /* UIDatePicker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFAA36A1E93B872005206D7 /* UIDatePicker+Extension.swift */; };
 		0B8DBAB184BB7E8E1D9C5E3386A8DEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
-		10CCF7D2E5B1BB34518951A551BD089C /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738E91659A1DE3D908AE1B695012F6FA /* ASAlertView.swift */; };
-		1259F0CAD34922C055679FB36BDE0D89 /* ASAlertDateTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216B2F199F8074860C5CD744F65ECC7D /* ASAlertDateTimeController.swift */; };
-		14A82AD6946ED776E91FB40D29FDE26C /* ASAlertDateTimeView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8A30FD217583DB34306FA5378588F1C2 /* ASAlertDateTimeView.xib */; };
+		0DF68EFABBCF84784ED5EB33DBB751E1 /* ASAlertDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735C4EAA0815407537A19DF04B5C1A6 /* ASAlertDateController.swift */; };
+		18C7C48C013F22189986D639BED46ACF /* ASAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AC59CB82AA7C45BF17015459B467D3 /* ASAlertView.xib */; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
 		1E498F7D3971E1A75FD9D55CD7E17CEE /* Pods-ASAlertViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		239B3D707AB330E7A13BE852637FD9A4 /* ASAlertDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D7062023E7381EE617E161C5649DDE /* ASAlertDateTimeView.swift */; };
-		266B1C39E58A867894F3B93455160B18 /* ASAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C2DF80B63BAECDFC81226991F4F1C7 /* ASAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2346788BA1E26FA76A8B34F2039C9677 /* ASAlertViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BAC15535D2DF969B2A5E6EC48B38089 /* ASAlertViewController.bundle */; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		322B5BACF33448F149367582006DD141 /* Pods-ASAlertViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5922E5D41AF33CC96CD625541962E1 /* Pods-ASAlertViewController_Tests-dummy.m */; };
-		3572CD05924DDF0E91479FA67BCD7A94 /* ASAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B5B477E720AD13C2BA57A8415A47D /* ASAlertHandler.swift */; };
+		32990BD91E6E8F26C0CA2C25F2AC7E66 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300AB86B50FCFC544BDDD5BE6FA9868E /* CustomView.swift */; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		3B83A2F08BC090A6FD3EBA869E1BD39D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41342C8431DAAFD900CDBA3C3B840CBB /* QuartzCore.framework */; };
+		3E4F50246D21BF760AA16228CD69B86C /* ASAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EB79E8065046F3869BDC59629A654 /* ASAlertHandler.swift */; };
+		41D150903F66D2817F2FC444780BE4D3 /* ASAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37DE44D8E46D75493539755F2051DC /* ASAlertAction.swift */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4DF14B1720131DCDBC0FD66224CDA8D8 /* ASAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3934B8753154D695F3F6F4AA0F0A448 /* ASAlertAction.swift */; };
 		502CAECB7C64867943FDDDC9C88C7E6A /* Pods-ASAlertViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86443182B4A850A3687CA7E9A01332D7 /* Pods-ASAlertViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */; };
+		5D57EE0A7F4471A5547DB5D8FA829E5F /* ASAlertDateTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DA25016AFF14AB0E9F4FB1A32AF858 /* ASAlertDateTimeController.swift */; };
+		62C7107F5306175CA1A94366732B7717 /* ASAlertDateTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA25919F55D497A4B0408B2B26922D4C /* ASAlertDateTimeView.xib */; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */; };
 		6466C0D0D7D42559F52B108DF0D1E985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
+		69DAE05A19779EC5FF5954B28F362276 /* UIDatePicker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9B4A0432E8658DB2F2D5796E281A26 /* UIDatePicker+Extension.swift */; };
+		6A79B1913455FF4AAC8514A2BFD2A8CC /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57667B55F6A6DBC966BB6536E2952A18 /* ASAlertController.swift */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
-		850FA1CB8B1A85C8BCB97B720CF3F322 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B78C14CC50E5FE78C1FB5536E219CF /* UIView+Extension.swift */; };
+		8CF9A3987B2476B81F5ACB0680405AF2 /* ASAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F15AE5FA0271ABC40D888C6B98B439F7 /* ASAlertViewController-dummy.m */; };
+		960429A84A9E7B9986FDE2222EBBC02C /* ASAlertDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8046E1249449A825A6406D5DC8D6D42A /* ASAlertDateTimeView.swift */; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A8D66840A1E01DF1909BB5C76C2DE2E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AFCC55CDA7733EBC9D7209A93F370F /* CustomView.swift */; };
 		9E9C3536CDF638C0AAC5F4DE8A9AD2BC /* Pods-ASAlertViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A19E75F8193811E51364BE93069A30A /* Pods-ASAlertViewController_Example-dummy.m */; };
-		A327B88986E2AC60B8DE0E38003106CE /* ASAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B905B535C9DA845C4854F0722A0C3F8E /* ASAlertViewController-dummy.m */; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
+		A8B9EC436CD9C4ED92D81098E28434A1 /* ASAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE6A81745F85C6A7B5DC9E093C0B685 /* ASAlert.swift */; };
+		B532BE4FCAFC62E2561E053DD5EA485E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCAFA12174243DBF0FF4405A5B0356A /* UIView+Extension.swift */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA8A0ED3A0F58040EE2069471C1D960E /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E1063B210072A481222F6F6A70524 /* ASAlertController.swift */; };
-		BB5E58A037459455CDE17AE8D8639BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
-		BF45468815A05758999118C7BE0F69F2 /* ASAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1F3F22641D53F4973D697A16EE464 /* ASAlert.swift */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C926DF5DEC91259672D3BF64B0611DAA /* ASAlertView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0760BC049D40EA5F75B9982C24D5033F /* ASAlertView.xib */; };
+		C677B9138D0DD515ED61155C501035C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D32332CA40D4F631E8DBA950B25A18FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C32099E0A716483F90035D502A494AC /* XCTest.framework */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		E5F31CB099907D2F97576921AF0FB846 /* ASHandlerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302135CC85DEFCF3B4E2E2BA176DEE5E /* ASHandlerButton.swift */; };
+		DE949462484895D9956F46511449F66C /* ASAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E07DEABCEB66178DD5ABC1558336AFC /* ASAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E100C59BD2DC0F99EBCB80DA8D84DA7D /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134C131EA1C4A0925CF027470E7AE173 /* ASAlertView.swift */; };
 		EB94DB7A4D25F67D2C604C3725C13801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
+		F79A2710B57C721F270518F493264F5C /* ASHandlerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E06D85F6F3045C72DA7F76E99AF0130 /* ASHandlerButton.swift */; };
+		FC34325B1247D01B5A9C50F95DB40213 /* ASAlertTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28272A8A91A5967FBD70AC2EA6E2F9C1 /* ASAlertTimeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 643AC88E51178E598B489AA25235F852;
+			remoteGlobalIDString = 14C2DECA3DF3120BE9CACD86D385F933;
 			remoteInfo = ASAlertViewController;
+		};
+		989B646959350EC4A95EE3D75980C218 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B03BA87FF5612796FF03AC0E0D7EC903;
+			remoteInfo = "ASAlertViewController-ASAlertViewController";
 		};
 		EB781787F0A97A118564F4E65C744553 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -72,23 +80,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
+		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		0760BC049D40EA5F75B9982C24D5033F /* ASAlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
 		098260AB3D662A76CD2E33168FE0B5C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertDateController.swift; sourceTree = "<group>"; };
-		0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertTimeController.swift; sourceTree = "<group>"; };
-		0AFAA36A1E93B872005206D7 /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		11C2DF80B63BAECDFC81226991F4F1C7 /* ASAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-umbrella.h"; sourceTree = "<group>"; };
+		134C131EA1C4A0925CF027470E7AE173 /* ASAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		216B2F199F8074860C5CD744F65ECC7D /* ASAlertDateTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeController.swift; sourceTree = "<group>"; };
+		141EB79E8065046F3869BDC59629A654 /* ASAlertHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertHandler.swift; sourceTree = "<group>"; };
+		1BAC15535D2DF969B2A5E6EC48B38089 /* ASAlertViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ASAlertViewController.bundle; path = ASAlertViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		28272A8A91A5967FBD70AC2EA6E2F9C1 /* ASAlertTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertTimeController.swift; sourceTree = "<group>"; };
 		2A19E75F8193811E51364BE93069A30A /* Pods-ASAlertViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASAlertViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		2BCAFA12174243DBF0FF4405A5B0356A /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2C37DE44D8E46D75493539755F2051DC /* ASAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertAction.swift; sourceTree = "<group>"; };
+		2E07DEABCEB66178DD5ABC1558336AFC /* ASAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-umbrella.h"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		302135CC85DEFCF3B4E2E2BA176DEE5E /* ASHandlerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASHandlerButton.swift; sourceTree = "<group>"; };
-		35D7062023E7381EE617E161C5649DDE /* ASAlertDateTimeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeView.swift; sourceTree = "<group>"; };
-		38BF2F2839F80D9D2352605B76328196 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300AB86B50FCFC544BDDD5BE6FA9868E /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3C32099E0A716483F90035D502A494AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -97,51 +104,54 @@
 		4297E293A6FF8866A629074B122E55B7 /* Pods-ASAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42FE7C66E3977EEC49AE180FC631EF2D /* Pods-ASAlertViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		4F24FB9ED9EC84A3F3B7FD759AA16D3B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F6EB19399C7E20A683E6CF2802008D0 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ASAlertViewController.framework; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		57667B55F6A6DBC966BB6536E2952A18 /* ASAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		63AFCC55CDA7733EBC9D7209A93F370F /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		5E06D85F6F3045C72DA7F76E99AF0130 /* ASHandlerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASHandlerButton.swift; sourceTree = "<group>"; };
 		661C7BE307E0EFC83063F392EA6E6FAF /* Pods-ASAlertViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		677F4678AE3E1C8C72E699ACBF291D36 /* ASAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASAlertViewController.xcconfig; sourceTree = "<group>"; };
 		6E66B4218824CF8160D93713DDBEEA82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		738E91659A1DE3D908AE1B695012F6FA /* ASAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
 		73B40363A83BE65170F953768CBBDF67 /* Pods-ASAlertViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		73E749766C8CE3D4871A46123180CC96 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Example.framework; path = "Pods-ASAlertViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0713D1AAB51C0C0716331332B2C593 /* Pods-ASAlertViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		8046E1249449A825A6406D5DC8D6D42A /* ASAlertDateTimeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeView.swift; sourceTree = "<group>"; };
+		8055F0BABC9F0D66D69DF5112DBA2D83 /* ASAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-prefix.pch"; sourceTree = "<group>"; };
+		81F4813C40264BF6C7A98E305AE473B7 /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Tests.framework; path = "Pods-ASAlertViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		82C83295165DCB36807B1B9C0B0887A5 /* Pods-ASAlertViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		86443182B4A850A3687CA7E9A01332D7 /* Pods-ASAlertViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8A0C293DF4B883A369EF92EC7E956EB3 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A30FD217583DB34306FA5378588F1C2 /* ASAlertDateTimeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertDateTimeView.xib; sourceTree = "<group>"; };
 		8C72B7C1C4020F3F1A905C432AED2E54 /* Pods-ASAlertViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9898C4B69996AD07BF5454AE0EDD8082 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A5922E5D41AF33CC96CD625541962E1 /* Pods-ASAlertViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASAlertViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D03CE03D9060A29FE5AB3E38A2076FF /* Pods-ASAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A72441CA8AE25ADC3DBEC3AA8DBC55BB /* Pods-ASAlertViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		A7E767946E30F84CA4CD79B23AF800EE /* ASAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-prefix.pch"; sourceTree = "<group>"; };
-		B7343A13C69BCA1D5FA487C8A9D792AE /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
-		B905B535C9DA845C4854F0722A0C3F8E /* ASAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		AFE6A81745F85C6A7B5DC9E093C0B685 /* ASAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlert.swift; sourceTree = "<group>"; };
+		B735C4EAA0815407537A19DF04B5C1A6 /* ASAlertDateController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateController.swift; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		C24E1063B210072A481222F6F6A70524 /* ASAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
+		BA25919F55D497A4B0408B2B26922D4C /* ASAlertDateTimeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertDateTimeView.xib; sourceTree = "<group>"; };
+		C1AC59CB82AA7C45BF17015459B467D3 /* ASAlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
 		C34E9A6AE03EFADE6956ABD6DFB46BEC /* Pods-ASAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9B4A0432E8658DB2F2D5796E281A26 /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
 		CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		CCADC3AAE7C3459B9ABB800C951D9A4C /* ResourceBundle-ASAlertViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ASAlertViewController-Info.plist"; sourceTree = "<group>"; };
+		D06E6FF4E29675457E2A8D15E5E948A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D247CFDA98DB873761136831501EDE0D /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DA06618C22821EDD7F5DE7289FC6522C /* Pods-ASAlertViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DADAF30F2D84FDAAD2ADD2D50C1F40DF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		DB5E3674A90A4E33E88CE7C4A2EC6983 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1B78C14CC50E5FE78C1FB5536E219CF /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E3934B8753154D695F3F6F4AA0F0A448 /* ASAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertAction.swift; sourceTree = "<group>"; };
-		E8C1F3F22641D53F4973D697A16EE464 /* ASAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlert.swift; sourceTree = "<group>"; };
-		EA6B5B477E720AD13C2BA57A8415A47D /* ASAlertHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertHandler.swift; sourceTree = "<group>"; };
-		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		ED4AC802D9037CFA79D1C07ECCEE9C57 /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1233829F182BED98FFE77309C290BFF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		F15AE5FA0271ABC40D888C6B98B439F7 /* ASAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		F7DA25016AFF14AB0E9F4FB1A32AF858 /* ASAlertDateTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeController.swift; sourceTree = "<group>"; };
+		FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASAlertViewController.xcconfig; sourceTree = "<group>"; };
 		FED66E87D46407298D68A278D2E5FD0D /* Pods-ASAlertViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +167,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3357817D7805A42C87EAB9BD1A8782CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C677B9138D0DD515ED61155C501035C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6225A6A5F402A1C0182D90A47750A887 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,11 +183,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E239EA4CAD31D3DF927979BA7328613 /* Frameworks */ = {
+		8A133C3F236428EB00A941A6FE2637E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5E58A037459455CDE17AE8D8639BEA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +201,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09ABBA96E6E7A0304F84CB830FC2D5A0 /* ASAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39E9CEF74728A5FF52D160C23AFD44C0 /* Assets */,
+			);
+			name = ASAlertViewController;
+			path = ASAlertViewController;
+			sourceTree = "<group>";
+		};
+		149F8AC4EC33E0F93DAC8680B94E70D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BAC15535D2DF969B2A5E6EC48B38089 /* ASAlertViewController.bundle */,
+				4F6EB19399C7E20A683E6CF2802008D0 /* ASAlertViewController.framework */,
+				4F24FB9ED9EC84A3F3B7FD759AA16D3B /* FBSnapshotTestCase.framework */,
+				73E749766C8CE3D4871A46123180CC96 /* Pods_ASAlertViewController_Example.framework */,
+				81F4813C40264BF6C7A98E305AE473B7 /* Pods_ASAlertViewController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +244,20 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
+		17653F3F50DA15F1C2C45316EFC00611 /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				AFE6A81745F85C6A7B5DC9E093C0B685 /* ASAlert.swift */,
+				2C37DE44D8E46D75493539755F2051DC /* ASAlertAction.swift */,
+				57667B55F6A6DBC966BB6536E2952A18 /* ASAlertController.swift */,
+				141EB79E8065046F3869BDC59629A654 /* ASAlertHandler.swift */,
+				134C131EA1C4A0925CF027470E7AE173 /* ASAlertView.swift */,
+				5E06D85F6F3045C72DA7F76E99AF0130 /* ASHandlerButton.swift */,
+			);
+			name = AlertController;
+			path = AlertController;
+			sourceTree = "<group>";
+		};
 		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,29 +265,35 @@
 				1549F91FCD089822594C1F5DB8AB9E8F /* Support Files */,
 				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		2F9481B9AE47449331C493DF545DF384 /* Classes */ = {
+		322ED6CFA9F3BD4E14F149ABD8F503A8 /* AlertDate */ = {
 			isa = PBXGroup;
 			children = (
-				E8C1F3F22641D53F4973D697A16EE464 /* ASAlert.swift */,
-				E3934B8753154D695F3F6F4AA0F0A448 /* ASAlertAction.swift */,
-				C24E1063B210072A481222F6F6A70524 /* ASAlertController.swift */,
-				216B2F199F8074860C5CD744F65ECC7D /* ASAlertDateTimeController.swift */,
-				8A30FD217583DB34306FA5378588F1C2 /* ASAlertDateTimeView.xib */,
-				EA6B5B477E720AD13C2BA57A8415A47D /* ASAlertHandler.swift */,
-				738E91659A1DE3D908AE1B695012F6FA /* ASAlertView.swift */,
-				0760BC049D40EA5F75B9982C24D5033F /* ASAlertView.xib */,
-				302135CC85DEFCF3B4E2E2BA176DEE5E /* ASHandlerButton.swift */,
-				63AFCC55CDA7733EBC9D7209A93F370F /* CustomView.swift */,
-				E1B78C14CC50E5FE78C1FB5536E219CF /* UIView+Extension.swift */,
-				35D7062023E7381EE617E161C5649DDE /* ASAlertDateTimeView.swift */,
-				0AFAA3661E9263BE005206D7 /* ASAlertDateController.swift */,
-				0AFAA3681E926479005206D7 /* ASAlertTimeController.swift */,
-				0AFAA36A1E93B872005206D7 /* UIDatePicker+Extension.swift */,
+				B735C4EAA0815407537A19DF04B5C1A6 /* ASAlertDateController.swift */,
 			);
-			path = Classes;
+			name = AlertDate;
+			path = AlertDate;
+			sourceTree = "<group>";
+		};
+		381BD6574A4334CBFEEA930A47E347A5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA85018D5E1F63FC605059931FBBCD0 /* ASAlertViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		39E9CEF74728A5FF52D160C23AFD44C0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BA25919F55D497A4B0408B2B26922D4C /* ASAlertDateTimeView.xib */,
+				C1AC59CB82AA7C45BF17015459B467D3 /* ASAlertView.xib */,
+			);
+			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		3B39FA9E1CC8F4E9EB7342387CDD7C7C /* Pods-ASAlertViewController_Tests */ = {
@@ -256,14 +314,37 @@
 			path = "Target Support Files/Pods-ASAlertViewController_Tests";
 			sourceTree = "<group>";
 		};
+		4F0C022B3F89CD0325C031250403A4B9 /* ASAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BCEAB5D40B496F810B528114B8901A6 /* Classes */,
+			);
+			name = ASAlertViewController;
+			path = ASAlertViewController;
+			sourceTree = "<group>";
+		};
+		6BCEAB5D40B496F810B528114B8901A6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				17653F3F50DA15F1C2C45316EFC00611 /* AlertController */,
+				322ED6CFA9F3BD4E14F149ABD8F503A8 /* AlertDate */,
+				F064FF59B95DB9116DC6FA8F23B6B602 /* AlertDateTime */,
+				C0DC87DD127E1312EC378EFEE09BBFDC /* AlertTime */,
+				D0FE42F929BE9F9189E3B95113926012 /* Extensions */,
+				EB31DE37E2121583FC39172478C98077 /* Utils */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8F31AE1A876A427691E11BB818CB88E5 /* Development Pods */,
+				381BD6574A4334CBFEEA930A47E347A5 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
-				D206AF37052A80A7C8EF5DF3A2CF6EB7 /* Products */,
+				149F8AC4EC33E0F93DAC8680B94E70D5 /* Products */,
 				8274B53028602C11396DE98359B2148D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -277,12 +358,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8F31AE1A876A427691E11BB818CB88E5 /* Development Pods */ = {
+		8EA85018D5E1F63FC605059931FBBCD0 /* ASAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
-				93A5A53BAEBF1F915DA262F155EE70A2 /* ASAlertViewController */,
+				4F0C022B3F89CD0325C031250403A4B9 /* ASAlertViewController */,
+				DFE224AF3649B9868AA8AF9AD25D54C9 /* Resources */,
+				C55140206E24593DE51C287F83E9275D /* Support Files */,
 			);
-			name = "Development Pods";
+			name = ASAlertViewController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		92AC66773F4F20949830776030981101 /* Pods-ASAlertViewController_Example */ = {
@@ -303,16 +387,6 @@
 			path = "Target Support Files/Pods-ASAlertViewController_Example";
 			sourceTree = "<group>";
 		};
-		93A5A53BAEBF1F915DA262F155EE70A2 /* ASAlertViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C89D3A3A8C71BD2E645350737C81E2C6 /* ASAlertViewController */,
-				C51928340091DE7D618F6A0B6BCAE8B7 /* Support Files */,
-			);
-			name = ASAlertViewController;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,37 +395,65 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		C51928340091DE7D618F6A0B6BCAE8B7 /* Support Files */ = {
+		C0DC87DD127E1312EC378EFEE09BBFDC /* AlertTime */ = {
 			isa = PBXGroup;
 			children = (
-				B7343A13C69BCA1D5FA487C8A9D792AE /* ASAlertViewController.modulemap */,
-				677F4678AE3E1C8C72E699ACBF291D36 /* ASAlertViewController.xcconfig */,
-				B905B535C9DA845C4854F0722A0C3F8E /* ASAlertViewController-dummy.m */,
-				A7E767946E30F84CA4CD79B23AF800EE /* ASAlertViewController-prefix.pch */,
-				11C2DF80B63BAECDFC81226991F4F1C7 /* ASAlertViewController-umbrella.h */,
-				F1233829F182BED98FFE77309C290BFF /* Info.plist */,
+				28272A8A91A5967FBD70AC2EA6E2F9C1 /* ASAlertTimeController.swift */,
+			);
+			name = AlertTime;
+			path = AlertTime;
+			sourceTree = "<group>";
+		};
+		C55140206E24593DE51C287F83E9275D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D247CFDA98DB873761136831501EDE0D /* ASAlertViewController.modulemap */,
+				FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */,
+				F15AE5FA0271ABC40D888C6B98B439F7 /* ASAlertViewController-dummy.m */,
+				8055F0BABC9F0D66D69DF5112DBA2D83 /* ASAlertViewController-prefix.pch */,
+				2E07DEABCEB66178DD5ABC1558336AFC /* ASAlertViewController-umbrella.h */,
+				D06E6FF4E29675457E2A8D15E5E948A4 /* Info.plist */,
+				CCADC3AAE7C3459B9ABB800C951D9A4C /* ResourceBundle-ASAlertViewController-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ASAlertViewController";
 			sourceTree = "<group>";
 		};
-		C89D3A3A8C71BD2E645350737C81E2C6 /* ASAlertViewController */ = {
+		D0FE42F929BE9F9189E3B95113926012 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2F9481B9AE47449331C493DF545DF384 /* Classes */,
+				CA9B4A0432E8658DB2F2D5796E281A26 /* UIDatePicker+Extension.swift */,
+				2BCAFA12174243DBF0FF4405A5B0356A /* UIView+Extension.swift */,
 			);
-			path = ASAlertViewController;
+			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		D206AF37052A80A7C8EF5DF3A2CF6EB7 /* Products */ = {
+		DFE224AF3649B9868AA8AF9AD25D54C9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				38BF2F2839F80D9D2352605B76328196 /* ASAlertViewController.framework */,
-				8A0C293DF4B883A369EF92EC7E956EB3 /* FBSnapshotTestCase.framework */,
-				DB5E3674A90A4E33E88CE7C4A2EC6983 /* Pods_ASAlertViewController_Example.framework */,
-				ED4AC802D9037CFA79D1C07ECCEE9C57 /* Pods_ASAlertViewController_Tests.framework */,
+				09ABBA96E6E7A0304F84CB830FC2D5A0 /* ASAlertViewController */,
 			);
-			name = Products;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EB31DE37E2121583FC39172478C98077 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				300AB86B50FCFC544BDDD5BE6FA9868E /* CustomView.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F064FF59B95DB9116DC6FA8F23B6B602 /* AlertDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA25016AFF14AB0E9F4FB1A32AF858 /* ASAlertDateTimeController.swift */,
+				8046E1249449A825A6406D5DC8D6D42A /* ASAlertDateTimeView.swift */,
+			);
+			name = AlertDateTime;
+			path = AlertDateTime;
 			sourceTree = "<group>";
 		};
 		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
@@ -428,17 +530,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7123085A918DD038867260EB686CAA3 /* Headers */ = {
+		B9D4007C5620736264F9DB864F6D72C3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				266B1C39E58A867894F3B93455160B18 /* ASAlertViewController-umbrella.h in Headers */,
+				DE949462484895D9956F46511449F66C /* ASAlertViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		14C2DECA3DF3120BE9CACD86D385F933 /* ASAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF1F7F6C61AA175F383B18C7E39D87B /* Build configuration list for PBXNativeTarget "ASAlertViewController" */;
+			buildPhases = (
+				AAB86103409407DC572F2ED1CAA91EE8 /* Sources */,
+				3357817D7805A42C87EAB9BD1A8782CE /* Frameworks */,
+				FFDC301C9C948DC6224322B6A65919E1 /* Resources */,
+				B9D4007C5620736264F9DB864F6D72C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717EEB81E7919957B09D81418800BCDB /* PBXTargetDependency */,
+			);
+			name = ASAlertViewController;
+			productName = ASAlertViewController;
+			productReference = 4F6EB19399C7E20A683E6CF2802008D0 /* ASAlertViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
@@ -453,7 +574,7 @@
 			);
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
-			productReference = 8A0C293DF4B883A369EF92EC7E956EB3 /* FBSnapshotTestCase.framework */;
+			productReference = 4F24FB9ED9EC84A3F3B7FD759AA16D3B /* FBSnapshotTestCase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		568EF4D8DB323A10954A391D0CABA64D /* Pods-ASAlertViewController_Example */ = {
@@ -471,24 +592,7 @@
 			);
 			name = "Pods-ASAlertViewController_Example";
 			productName = "Pods-ASAlertViewController_Example";
-			productReference = DB5E3674A90A4E33E88CE7C4A2EC6983 /* Pods_ASAlertViewController_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		643AC88E51178E598B489AA25235F852 /* ASAlertViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A6BF37753D70AEDB0C8892BF475BF0E6 /* Build configuration list for PBXNativeTarget "ASAlertViewController" */;
-			buildPhases = (
-				59BF3581A21D6DEDD4E6F84927CC50C3 /* Sources */,
-				6E239EA4CAD31D3DF927979BA7328613 /* Frameworks */,
-				D7123085A918DD038867260EB686CAA3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ASAlertViewController;
-			productName = ASAlertViewController;
-			productReference = 38BF2F2839F80D9D2352605B76328196 /* ASAlertViewController.framework */;
+			productReference = 73E749766C8CE3D4871A46123180CC96 /* Pods_ASAlertViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		76A121294BA12A063362950A62890736 /* Pods-ASAlertViewController_Tests */ = {
@@ -506,8 +610,25 @@
 			);
 			name = "Pods-ASAlertViewController_Tests";
 			productName = "Pods-ASAlertViewController_Tests";
-			productReference = ED4AC802D9037CFA79D1C07ECCEE9C57 /* Pods_ASAlertViewController_Tests.framework */;
+			productReference = 81F4813C40264BF6C7A98E305AE473B7 /* Pods_ASAlertViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		B03BA87FF5612796FF03AC0E0D7EC903 /* ASAlertViewController-ASAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E77C141F0CCDFE1BEF9966E97964AAB0 /* Build configuration list for PBXNativeTarget "ASAlertViewController-ASAlertViewController" */;
+			buildPhases = (
+				A2336F82D87EB23FA27902D1891C7955 /* Sources */,
+				8A133C3F236428EB00A941A6FE2637E0 /* Frameworks */,
+				3FCE0C3E0C5D1A0DA0EABC067F86A213 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASAlertViewController-ASAlertViewController";
+			productName = "ASAlertViewController-ASAlertViewController";
+			productReference = 1BAC15535D2DF969B2A5E6EC48B38089 /* ASAlertViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -526,11 +647,12 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D206AF37052A80A7C8EF5DF3A2CF6EB7 /* Products */;
+			productRefGroup = 149F8AC4EC33E0F93DAC8680B94E70D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				643AC88E51178E598B489AA25235F852 /* ASAlertViewController */,
+				14C2DECA3DF3120BE9CACD86D385F933 /* ASAlertViewController */,
+				B03BA87FF5612796FF03AC0E0D7EC903 /* ASAlertViewController-ASAlertViewController */,
 				34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */,
 				568EF4D8DB323A10954A391D0CABA64D /* Pods-ASAlertViewController_Example */,
 				76A121294BA12A063362950A62890736 /* Pods-ASAlertViewController_Tests */,
@@ -538,27 +660,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3FCE0C3E0C5D1A0DA0EABC067F86A213 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C7107F5306175CA1A94366732B7717 /* ASAlertDateTimeView.xib in Resources */,
+				18C7C48C013F22189986D639BED46ACF /* ASAlertView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDC301C9C948DC6224322B6A65919E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2346788BA1E26FA76A8B34F2039C9677 /* ASAlertViewController.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		59BF3581A21D6DEDD4E6F84927CC50C3 /* Sources */ = {
+		A2336F82D87EB23FA27902D1891C7955 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF45468815A05758999118C7BE0F69F2 /* ASAlert.swift in Sources */,
-				4DF14B1720131DCDBC0FD66224CDA8D8 /* ASAlertAction.swift in Sources */,
-				BA8A0ED3A0F58040EE2069471C1D960E /* ASAlertController.swift in Sources */,
-				1259F0CAD34922C055679FB36BDE0D89 /* ASAlertDateTimeController.swift in Sources */,
-				0AFAA3691E926479005206D7 /* ASAlertTimeController.swift in Sources */,
-				0AFAA3671E9263BE005206D7 /* ASAlertDateController.swift in Sources */,
-				239B3D707AB330E7A13BE852637FD9A4 /* ASAlertDateTimeView.swift in Sources */,
-				14A82AD6946ED776E91FB40D29FDE26C /* ASAlertDateTimeView.xib in Sources */,
-				3572CD05924DDF0E91479FA67BCD7A94 /* ASAlertHandler.swift in Sources */,
-				0AFAA36B1E93B872005206D7 /* UIDatePicker+Extension.swift in Sources */,
-				A327B88986E2AC60B8DE0E38003106CE /* ASAlertViewController-dummy.m in Sources */,
-				10CCF7D2E5B1BB34518951A551BD089C /* ASAlertView.swift in Sources */,
-				C926DF5DEC91259672D3BF64B0611DAA /* ASAlertView.xib in Sources */,
-				E5F31CB099907D2F97576921AF0FB846 /* ASHandlerButton.swift in Sources */,
-				9A8D66840A1E01DF1909BB5C76C2DE2E /* CustomView.swift in Sources */,
-				850FA1CB8B1A85C8BCB97B720CF3F322 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +693,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				322B5BACF33448F149367582006DD141 /* Pods-ASAlertViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB86103409407DC572F2ED1CAA91EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8B9EC436CD9C4ED92D81098E28434A1 /* ASAlert.swift in Sources */,
+				41D150903F66D2817F2FC444780BE4D3 /* ASAlertAction.swift in Sources */,
+				6A79B1913455FF4AAC8514A2BFD2A8CC /* ASAlertController.swift in Sources */,
+				0DF68EFABBCF84784ED5EB33DBB751E1 /* ASAlertDateController.swift in Sources */,
+				5D57EE0A7F4471A5547DB5D8FA829E5F /* ASAlertDateTimeController.swift in Sources */,
+				960429A84A9E7B9986FDE2222EBBC02C /* ASAlertDateTimeView.swift in Sources */,
+				3E4F50246D21BF760AA16228CD69B86C /* ASAlertHandler.swift in Sources */,
+				FC34325B1247D01B5A9C50F95DB40213 /* ASAlertTimeController.swift in Sources */,
+				E100C59BD2DC0F99EBCB80DA8D84DA7D /* ASAlertView.swift in Sources */,
+				8CF9A3987B2476B81F5ACB0680405AF2 /* ASAlertViewController-dummy.m in Sources */,
+				F79A2710B57C721F270518F493264F5C /* ASHandlerButton.swift in Sources */,
+				32990BD91E6E8F26C0CA2C25F2AC7E66 /* CustomView.swift in Sources */,
+				69DAE05A19779EC5FF5954B28F362276 /* UIDatePicker+Extension.swift in Sources */,
+				B532BE4FCAFC62E2561E053DD5EA485E /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +744,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		717EEB81E7919957B09D81418800BCDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ASAlertViewController-ASAlertViewController";
+			target = B03BA87FF5612796FF03AC0E0D7EC903 /* ASAlertViewController-ASAlertViewController */;
+			targetProxy = 989B646959350EC4A95EE3D75980C218 /* PBXContainerItemProxy */;
+		};
 		8CB1C8984FCCE8175BD24BA63494B168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
@@ -606,7 +759,7 @@
 		DC7C30F9FCDF1EA8D2BF3FA01362E6E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ASAlertViewController;
-			target = 643AC88E51178E598B489AA25235F852 /* ASAlertViewController */;
+			target = 14C2DECA3DF3120BE9CACD86D385F933 /* ASAlertViewController */;
 			targetProxy = 212FDE46AF130BC3A3CCB4032782783E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -683,6 +836,56 @@
 			};
 			name = Release;
 		};
+		420C6AE1BC3796D6F2EC0FDFEDACC996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASAlertViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/ResourceBundle-ASAlertViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ASAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4B21265C7C52EEFF5C494C5E9F8AE81A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ASAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -727,42 +930,9 @@
 			};
 			name = Debug;
 		};
-		72252A748463B621C680C5E2B8F55A32 /* Debug */ = {
+		5CE7C2ABF42FF77E39F2776D7A0C543F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 677F4678AE3E1C8C72E699ACBF291D36 /* ASAlertViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ASAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7BC17FC7D959D4578040C36CDF31CD8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 677F4678AE3E1C8C72E699ACBF291D36 /* ASAlertViewController.xcconfig */;
+			baseConfigurationReference = FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -933,6 +1103,23 @@
 			};
 			name = Debug;
 		};
+		EBC7BBF99B2E6B9D8E967089D93DFC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE26668DDFEAF848CF37689330C5360B /* ASAlertViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ASAlertViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/ResourceBundle-ASAlertViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = ASAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		EE9BCCB4DCFEAD2DEC88F7508A06B877 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4297E293A6FF8866A629074B122E55B7 /* Pods-ASAlertViewController_Example.release.xcconfig */;
@@ -989,11 +1176,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6BF37753D70AEDB0C8892BF475BF0E6 /* Build configuration list for PBXNativeTarget "ASAlertViewController" */ = {
+		3EF1F7F6C61AA175F383B18C7E39D87B /* Build configuration list for PBXNativeTarget "ASAlertViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				72252A748463B621C680C5E2B8F55A32 /* Debug */,
-				7BC17FC7D959D4578040C36CDF31CD8F /* Release */,
+				4B21265C7C52EEFF5C494C5E9F8AE81A /* Debug */,
+				5CE7C2ABF42FF77E39F2776D7A0C543F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1003,6 +1190,15 @@
 			buildConfigurations = (
 				1B86DF5834C3DE488D035BD8B38173C0 /* Debug */,
 				1C885B817092C6254944E97E2B8056A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E77C141F0CCDFE1BEF9966E97964AAB0 /* Build configuration list for PBXNativeTarget "ASAlertViewController-ASAlertViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC7BBF99B2E6B9D8E967089D93DFC10 /* Debug */,
+				420C6AE1BC3796D6F2EC0FDFEDACC996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

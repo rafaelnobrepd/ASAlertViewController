@@ -34,13 +34,6 @@ class ASAlertView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        addObserver()
-    }
-
-    // MARK: - Private Methods
-
-    private func addObserver() {
-        
     }
 
 }

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     // MARK: - Actions
 
-    @IBAction private func showAlertController() {
+    @IBAction fileprivate func showAlertController() {
         let alert = UIAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Sim", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Sim", style: .cancel, handler: nil))
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    @IBAction private func showASAlertController() {
+    @IBAction fileprivate func showASAlertController() {
         let alert = ASAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:")
         alert.addAction(ASAlertAction("Sim", type: .default) {  print("aeee") })
         alert.addAction(ASAlertAction("Não", type: .destructive))
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
 
-    @IBAction private func showASAlertDateController() {
+    @IBAction fileprivate func showASAlertDateController() {
         let alert = ASAlertDateController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:")
         
         alert.onSelectDateAction = { date in
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
     
-    @IBAction private func showASAlertTimeController() {
+    @IBAction fileprivate func showASAlertTimeController() {
         let alert = ASAlertTimeController(title: "Selecione uma horário", message: "Selecione uma das opções abaixo:")
         
         alert.onSelectDateAction = { date in
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
     
-    @IBAction private func showASAlertDateTimeController() {
+    @IBAction fileprivate func showASAlertDateTimeController() {
         let alert = ASAlertDateTimeController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:", type: .dateTime)
         
         alert.onSelectDateAction = { date in
