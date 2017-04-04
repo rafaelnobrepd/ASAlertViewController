@@ -23,9 +23,7 @@ class ASAlertView: UIView {
     // MARK: - Variables
     
     var nib: ASAlertView {
-        guard let view = loadNib() as? ASAlertView else {
-            fatalError()
-        }
+        guard let view = loadNib() as? ASAlertView else { fatalError() }
         return view
     }
 

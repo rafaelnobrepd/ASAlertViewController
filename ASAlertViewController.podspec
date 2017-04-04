@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.source_files = 'ASAlertViewController/Classes/**/*'
 
   s.resource_bundles = {
-    'ASAlertViewController' => ['ASAlertViewController/Assets/**/*']
+    # 'ASAlertViewController' => ['ASAlertViewController/Assets/**/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
