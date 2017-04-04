@@ -106,9 +106,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
-		02E52E5DBEBD55176D5ACEC04420D447 /* ASAlertViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ASAlertViewController.bundle; path = ASAlertViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		066B24190ADF0335484704A684092834 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ASAlertViewController.framework; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
+		02E52E5DBEBD55176D5ACEC04420D447 /* ASAlertViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASAlertViewController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		066B24190ADF0335484704A684092834 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098260AB3D662A76CD2E33168FE0B5C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F05E09B17E81E9D4DA5151255DFC808 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F4869E7348CEC831E1925A7487E855 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		31024F0A32968DF35F584570D76CD511 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		4297E293A6FF8866A629074B122E55B7 /* Pods-ASAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42FE7C66E3977EEC49AE180FC631EF2D /* Pods-ASAlertViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		435083FF10179FA97E59DE84FEA03882 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		435083FF10179FA97E59DE84FEA03882 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D93F95A7C5C31B626D567102EAB22C /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		4B23449BB04067C794ED348E370D59E7 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		53013A704B219637A448983DB5D9CA50 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
@@ -146,11 +146,11 @@
 		82C83295165DCB36807B1B9C0B0887A5 /* Pods-ASAlertViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		86443182B4A850A3687CA7E9A01332D7 /* Pods-ASAlertViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8C72B7C1C4020F3F1A905C432AED2E54 /* Pods-ASAlertViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		982EADDE0B007FDE7A2C019CB7036872 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		9898C4B69996AD07BF5454AE0EDD8082 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99767BFDF427F38753F573E7C8B98DC5 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Example.framework; path = "Pods-ASAlertViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A58CF5CC4C892A77F2431E03A181588 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		99767BFDF427F38753F573E7C8B98DC5 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A58CF5CC4C892A77F2431E03A181588 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
 		9A5922E5D41AF33CC96CD625541962E1 /* Pods-ASAlertViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASAlertViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D03CE03D9060A29FE5AB3E38A2076FF /* Pods-ASAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,24 +170,24 @@
 		C34E9A6AE03EFADE6956ABD6DFB46BEC /* Pods-ASAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C751CE47E512CCEA072055E8F576767E /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		CA9B4A0432E8658DB2F2D5796E281A26 /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
-		CB6BA44A1176042739962CBC795C6BE0 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		CB6BA44A1176042739962CBC795C6BE0 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CCADC3AAE7C3459B9ABB800C951D9A4C /* ResourceBundle-ASAlertViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ASAlertViewController-Info.plist"; sourceTree = "<group>"; };
 		D03E371E49817F81346B566C06DE9A1F /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		D06E6FF4E29675457E2A8D15E5E948A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D247CFDA98DB873761136831501EDE0D /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
+		D247CFDA98DB873761136831501EDE0D /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
 		D537D04BBF3B8F025BA65101EF5B9F13 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		D7946FDECFF8E8402E2A64587FA60B2C /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		DA06618C22821EDD7F5DE7289FC6522C /* Pods-ASAlertViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E0DA1A03186AEC88808069759DA0E72C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		E602EB99E10E3845CA690EB63EB2E375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E67C6CD1292380140070A10B90F777D2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E8A0E93E26DFF3EA5FA06D2850BC27DF /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Tests.framework; path = "Pods-ASAlertViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8A0E93E26DFF3EA5FA06D2850BC27DF /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D273ADDF22A8339EFB427B3A60F95 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		EB60797D725943F1462A151E8D9BA76F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		F15AE5FA0271ABC40D888C6B98B439F7 /* ASAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASAlertViewController-dummy.m"; sourceTree = "<group>"; };
-		F224E80A9D7A0ADB486D5FC3A25984CC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F224E80A9D7A0ADB486D5FC3A25984CC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F7AFAF70E450994700CC436CF4C313 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 		F72C6CFBF14637BF19B1BB9A13720FFC /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		F7DA25016AFF14AB0E9F4FB1A32AF858 /* ASAlertDateTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeController.swift; sourceTree = "<group>"; };
@@ -257,7 +257,6 @@
 			children = (
 				39E9CEF74728A5FF52D160C23AFD44C0 /* Assets */,
 			);
-			name = ASAlertViewController;
 			path = ASAlertViewController;
 			sourceTree = "<group>";
 		};
@@ -271,7 +270,6 @@
 				134C131EA1C4A0925CF027470E7AE173 /* ASAlertView.swift */,
 				5E06D85F6F3045C72DA7F76E99AF0130 /* ASHandlerButton.swift */,
 			);
-			name = AlertController;
 			path = AlertController;
 			sourceTree = "<group>";
 		};
@@ -288,7 +286,6 @@
 			children = (
 				B735C4EAA0815407537A19DF04B5C1A6 /* ASAlertDateController.swift */,
 			);
-			name = AlertDate;
 			path = AlertDate;
 			sourceTree = "<group>";
 		};
@@ -306,7 +303,6 @@
 				BA25919F55D497A4B0408B2B26922D4C /* ASAlertDateTimeView.xib */,
 				C1AC59CB82AA7C45BF17015459B467D3 /* ASAlertView.xib */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -333,7 +329,6 @@
 			children = (
 				6BCEAB5D40B496F810B528114B8901A6 /* Classes */,
 			);
-			name = ASAlertViewController;
 			path = ASAlertViewController;
 			sourceTree = "<group>";
 		};
@@ -361,7 +356,6 @@
 				D0FE42F929BE9F9189E3B95113926012 /* Extensions */,
 				EB31DE37E2121583FC39172478C98077 /* Utils */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -378,7 +372,6 @@
 				1B0E4D5771BA5E70932B8FDD1216DF0D /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				89AA31DEBFAB0C84ECC92341A9C4F3B3 /* Support Files */,
 			);
-			name = TPKeyboardAvoiding;
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
@@ -460,7 +453,6 @@
 			children = (
 				28272A8A91A5967FBD70AC2EA6E2F9C1 /* ASAlertTimeController.swift */,
 			);
-			name = AlertTime;
 			path = AlertTime;
 			sourceTree = "<group>";
 		};
@@ -494,7 +486,6 @@
 				CA9B4A0432E8658DB2F2D5796E281A26 /* UIDatePicker+Extension.swift */,
 				2BCAFA12174243DBF0FF4405A5B0356A /* UIView+Extension.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -505,7 +496,6 @@
 				578188B36661BA95095FC036826B4E12 /* Support Files */,
 				2F5A965D7FB8C4F56197A5D72912EBE8 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -543,7 +533,6 @@
 			children = (
 				300AB86B50FCFC544BDDD5BE6FA9868E /* CustomView.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -553,7 +542,6 @@
 				F7DA25016AFF14AB0E9F4FB1A32AF858 /* ASAlertDateTimeController.swift */,
 				8046E1249449A825A6406D5DC8D6D42A /* ASAlertDateTimeView.swift */,
 			);
-			name = AlertDateTime;
 			path = AlertDateTime;
 			sourceTree = "<group>";
 		};
@@ -754,6 +742,20 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					34CD2E3428AB802BACA62286FF5074B1 = {
+						LastSwiftMigration = 0820;
+					};
+					488DF07B741EF48B7CE71455F8CD10B0 = {
+						LastSwiftMigration = 0820;
+					};
+					76A121294BA12A063362950A62890736 = {
+						LastSwiftMigration = 0820;
+					};
+					A99033159A4C8C707F49FA074424B09B = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -936,6 +938,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -971,6 +974,7 @@
 				PRODUCT_NAME = Pods_ASAlertViewController_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1038,6 +1042,7 @@
 				PRODUCT_NAME = Pods_ASAlertViewController_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1201,6 +1206,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

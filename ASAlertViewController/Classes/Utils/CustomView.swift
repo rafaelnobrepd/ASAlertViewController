@@ -27,7 +27,7 @@ class CustomView: UIView {
 
     // MARK: - Private Methods
 
-    private func updateUI() {
+    fileprivate func updateUI() {
         layer.cornerRadius = cornerRadius
         layer.masksToBounds = cornerRadius > 0
         layer.borderWidth = borderWidth

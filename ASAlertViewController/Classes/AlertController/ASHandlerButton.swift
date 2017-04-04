@@ -16,7 +16,7 @@ class ASHandlerButton: UIButton {
     var onAction: (()->())?
     var closeOnAction: Bool = true
 
-    private var alertHandler: ASAlertHandler?
+    fileprivate var alertHandler: ASAlertHandler?
 
     // MARK: - Lifecircle Class
 
@@ -36,7 +36,7 @@ class ASHandlerButton: UIButton {
 
     // MARK: - Private Methods
 
-    private func updateUI() {
+    fileprivate func updateUI() {
         setTitle(alertHandler?.title, for: .normal)
         setTitleColor(alertHandler?.type.fontStyle.color, for: .normal)
         titleLabel?.font = alertHandler?.type.fontStyle.font
@@ -46,26 +46,26 @@ class ASHandlerButton: UIButton {
         heightAnchor.constraint(equalToConstant: 45).isActive = true
     }
 
-    private func setupAction() {
+    fileprivate func setupAction() {
         addTarget(self, action: #selector(callHandler), for: .touchUpInside)
         addTarget(self, action: #selector(drag), for: .touchDown)
         addTarget(self, action: #selector(drag), for: .touchDragEnter)
         addTarget(self, action: #selector(exitDrag), for: .touchDragExit)
     }
 
-    @objc private func callHandler() {
+    @objc fileprivate func callHandler() {
         onAction?()
         alertHandler?.handler?()
         exitDrag()
     }
 
-    @objc private func drag() {
+    @objc fileprivate func drag() {
         UIView.animate(withDuration: 0.26) {
             self.backgroundColor = UIColor(red: 234/255, green: 234/255, blue: 234/255, alpha: 1)
         }
     }
 
-    @objc private func exitDrag() {
+    @objc fileprivate func exitDrag() {
         UIView.animate(withDuration: 0.26) {
             self.backgroundColor = .white
         }

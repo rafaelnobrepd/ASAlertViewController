@@ -9,23 +9,7 @@
 import Foundation
 import UIKit
 
-public class ASAlertTimeController: ASAlertDateTimeController {
-
-    // MARK: - Variables
-
-    private lazy var customHandlers: [ASAlertHandler] = {
-        let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
-            self.onSelectDateAction?(self.date)
-        })
-        let closeHandler = ASAlertAction("Cancelar", type: .destructive)
-
-        return [closeHandler, selectDateHandler]
-    }()
-
-    override var _handlers: [ASAlertHandler] {
-        get { return customHandlers }
-        set { _handlers = customHandlers }
-    }
+open class ASAlertTimeController: ASAlertDateTimeController {
 
     // MARK: - Lifecircle Class
 

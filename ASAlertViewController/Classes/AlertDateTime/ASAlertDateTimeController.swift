@@ -9,24 +9,24 @@
 import Foundation
 import UIKit
 
-public class ASAlertDateTimeController: ASAlertController {
+open class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Variables
 
-    public var date: Date? {
+    open var date: Date? {
         get { return alertDateTimeView.date }
         set { alertDateTimeView.date = newValue }
     }
-    public var interval: Int {
+    open var interval: Int {
         get { return alertDateTimeView.interval }
         set { alertDateTimeView.interval = newValue }
     }
 
-    public var type: ASAlertDateTimeType = .dateTime
+    open var type: ASAlertDateTimeType = .dateTime
 
-    public var onSelectDateAction: ((_ date: Date?)->())?
+    open var onSelectDateAction: ((_ date: Date?)->())?
 
-    private lazy var alertDateTimeView: ASAlertDateTimeView = {
+    fileprivate lazy var alertDateTimeView: ASAlertDateTimeView = {
         let alertDateTime = ASAlertDateTimeView().nib
         alertDateTime.onClearAction = {
             self.onSelectDateAction?(nil)
@@ -36,7 +36,7 @@ public class ASAlertDateTimeController: ASAlertController {
         return alertDateTime
     }()
 
-    private lazy var customHandlers: [ASAlertHandler] = {
+    fileprivate lazy var customHandlers: [ASAlertHandler] = {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectDateAction?(self.date)
         })
@@ -57,7 +57,7 @@ public class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Lifecircle Class
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
@@ -76,7 +76,7 @@ public class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Private methods
 
-    private func updateUI() {
+    fileprivate func updateUI() {
         alertDateTimeView.type = type
         alertDateTimeView.date = date
         alertDateTimeView.interval = interval

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class ASAlertController: UIViewController {
+open class ASAlertController: UIViewController {
 
     // MARK: - Variables
 
@@ -19,7 +19,7 @@ public class ASAlertController: UIViewController {
     fileprivate var _title: String? { didSet { updateUI() } }
     fileprivate var _message: String? { didSet { updateUI() } }
 
-    private var alertView: ASAlertView = {
+    fileprivate var alertView: ASAlertView = {
         let view = ASAlertView()
         return view.nib
     }()
@@ -34,11 +34,11 @@ public class ASAlertController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    override public func loadView() {
+    override open func loadView() {
         self.view = alertView
     }
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         updateContent()
@@ -46,14 +46,14 @@ public class ASAlertController: UIViewController {
         addObservers()
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUI()
     }
 
     // MARK: - Public Methods
 
-    public func present(in viewController: UIViewController) {
+    open func present(in viewController: UIViewController) {
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
 
@@ -64,11 +64,11 @@ public class ASAlertController: UIViewController {
        super.init(coder: aDecoder)
     }
 
-    public func addAction<T: ASAlertHandler>(_ action: T) {
+    open func addAction<T: ASAlertHandler>(_ action: T) {
         _handlers.append(action)
     }
 
-    public func addActions<T: ASAlertHandler>(_ actions: [T]) {
+    open func addActions<T: ASAlertHandler>(_ actions: [T]) {
         _handlers = actions
     }
 
@@ -106,15 +106,15 @@ public class ASAlertController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    private func addObservers() {
+    fileprivate func addObservers() {
         
     }
     
-    private func updateSizeContainerContent() {
+    fileprivate func updateSizeContainerContent() {
         print(alertView.vwContent?.frame)
     }
     
-    private func updateUI() {
+    fileprivate func updateUI() {
         alertView.lbTitle?.text = title
         alertView.lbTitle?.isHidden = title?.isEmpty ?? true
 
@@ -124,7 +124,7 @@ public class ASAlertController: UIViewController {
         animation()
     }
 
-    private func animation() {
+    fileprivate func animation() {
         alertView.vwAlert?.alpha = 0
         alertView.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 

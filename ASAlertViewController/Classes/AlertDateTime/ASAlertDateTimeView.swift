@@ -21,11 +21,11 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Components
 
-    @IBOutlet private weak var dpDateTime: UIDatePicker?
-    @IBOutlet private weak var lbDateDescription: UILabel?
-    @IBOutlet private weak var btToday: UIButton?
-    @IBOutlet private weak var btClear: UIButton?
-    @IBOutlet private weak var vwCustomContent: UIView!
+    @IBOutlet fileprivate weak var dpDateTime: UIDatePicker?
+    @IBOutlet fileprivate weak var lbDateDescription: UILabel?
+    @IBOutlet fileprivate weak var btToday: UIButton?
+    @IBOutlet fileprivate weak var btClear: UIButton?
+    @IBOutlet fileprivate weak var vwCustomContent: UIView!
 
     // MARK: - Variables
 
@@ -61,13 +61,13 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Private Methods
 
-    private func updateUI() {
+    fileprivate func updateUI() {
         btClear?.isEnabled = date != nil
         
         setupDatePicker()
     }
 
-    private func setupDatePicker() {
+    fileprivate func setupDatePicker() {
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone.current
         
@@ -98,22 +98,22 @@ class ASAlertDateTimeView: UIView {
         btToday?.setTitle(label, for: .normal)
     }
 
-    private func addObservers() {
+    fileprivate func addObservers() {
         dpDateTime?.addTarget(self, action: #selector(selectDate(_:)), for: .valueChanged)
     }
 
-    @objc private func selectDate(_ sender: UIDatePicker) {
+    @objc fileprivate func selectDate(_ sender: UIDatePicker) {
         date = sender.date
     }
     
     // MARK: - Actions
     
-    @IBAction private func todayAction() {
+    @IBAction fileprivate func todayAction() {
         dpDateTime?.setDate(Date(), animated: true)
         date = dpDateTime?.clampedDate
     }
     
-    @IBAction private func clearAction() {
+    @IBAction fileprivate func clearAction() {
         onClearAction?()
     }
 
