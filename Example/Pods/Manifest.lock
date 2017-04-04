@@ -1,23 +1,27 @@
 PODS:
-  - ASAlertViewController (0.1.0)
+  - ASAlertViewController (0.1.0):
+    - TPKeyboardAvoiding
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - TPKeyboardAvoiding (1.3.1)
 
 DEPENDENCIES:
   - ASAlertViewController (from `../`)
   - FBSnapshotTestCase
+  - TPKeyboardAvoiding
 
 EXTERNAL SOURCES:
   ASAlertViewController:
     :path: ../
 
 SPEC CHECKSUMS:
-  ASAlertViewController: 2795ebcd3ce288480c268f0959d83398f677428c
+  ASAlertViewController: 94da65d71cbfae70ec1dfc67a806423bd5e7668b
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 
-PODFILE CHECKSUM: 7f85362af29868011ae7edd12bacc3c7748f1ce7
+PODFILE CHECKSUM: d0e4d939d1be3f17f3fa8147de74fb369b48aecb
 
 COCOAPODS: 1.1.1

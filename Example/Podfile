@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'ASAlertViewController_Example' do
   pod 'ASAlertViewController', :path => '../'
+  pod 'TPKeyboardAvoiding'
 
   target 'ASAlertViewController_Tests' do
     inherit! :search_paths
