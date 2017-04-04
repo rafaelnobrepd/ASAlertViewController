@@ -1,5 +1,5 @@
 //
-//  ASAlertViewController.swift
+//  ASAlertView.swift
 //  Pods
 //
 //  Created by Adriano Souza Costa on 4/3/17.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ASAlertViewController: UIView {
+class ASAlertView: UIView {
 
     // MARK: - Componets
 
@@ -22,11 +22,25 @@ class ASAlertViewController: UIView {
 
     // MARK: - Variables
     
-    var nib: ASAlertViewController {
-        guard let view = loadNib() as? ASAlertViewController else {
+    var nib: ASAlertView {
+        guard let view = loadNib() as? ASAlertView else {
             fatalError()
         }
         return view
     }
-    
+
+
+    // MARK: - Lifecircle Class
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        addObserver()
+    }
+
+    // MARK: - Private Methods
+
+    private func addObserver() {
+        
+    }
+
 }

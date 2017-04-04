@@ -25,6 +25,7 @@ class ASAlertDateTimeView: UIView {
     @IBOutlet private weak var lbDateDescription: UILabel?
     @IBOutlet private weak var btToday: UIButton?
     @IBOutlet private weak var btClear: UIButton?
+    @IBOutlet private weak var vwCustomContent: UIView!
 
     // MARK: - Variables
 
@@ -57,12 +58,6 @@ class ASAlertDateTimeView: UIView {
         updateUI()
         addObservers()
     }
-    
-    deinit {
-        if let dpDateTime = dpDateTime {
-            self.removeObserver(dpDateTime, forKeyPath: "frame")
-        }
-    }
 
     // MARK: - Private Methods
 
@@ -94,7 +89,7 @@ class ASAlertDateTimeView: UIView {
             formatter.timeStyle = .short
         }
         
-        if let date = dpDateTime?.date {
+        if let date = dpDateTime?.clampedDate {
             lbDateDescription?.text = formatter.string(from: date)
         }
 
@@ -114,8 +109,8 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Actions
     
     @IBAction private func todayAction() {
-        dpDateTime?.date = Date()
-        date = dpDateTime?.date
+        dpDateTime?.setDate(Date(), animated: true)
+        date = dpDateTime?.clampedDate
     }
     
     @IBAction private func clearAction() {

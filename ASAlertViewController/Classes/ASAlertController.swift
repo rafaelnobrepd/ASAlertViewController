@@ -19,9 +19,9 @@ public class ASAlertController: UIViewController {
     fileprivate var _title: String? { didSet { updateUI() } }
     fileprivate var _message: String? { didSet { updateUI() } }
 
-    private var alertViewController: ASAlertViewController = {
-        let alertViewController = ASAlertViewController()
-        return alertViewController.nib
+    private var alertView: ASAlertView = {
+        let view = ASAlertView()
+        return view.nib
     }()
 
     // MARK: - Lifecircle Class
@@ -35,7 +35,7 @@ public class ASAlertController: UIViewController {
     }
     
     override public func loadView() {
-        self.view = alertViewController
+        self.view = alertView
     }
 
     override public func viewDidLoad() {
@@ -75,28 +75,29 @@ public class ASAlertController: UIViewController {
     // MARK: - Private Methods
 
     internal func updateContent() {
-        _content?.removeFromSuperview()
-        
-        if let content = content, let vwContent = alertViewController.vwContent {
-            alertViewController.lcHeightContent?.constant = content.bounds.size.height
-            alertViewController.lcHeightContent?.constant = content.bounds.height
-            
-            content.frame = CGRect(x: 0, y: 0, width: Int(vwContent.bounds.size.width), height: Int(content.bounds.size.height))
-            
+//        _content?.removeFromSuperview()
+
+        if let content = content, let vwContent = alertView.vwContent {
+            let width = Int(vwContent.bounds.size.width)
+            let height = Int(content.bounds.size.height)
+
+            content.frame = CGRect(x: 0, y: 0, width: width, height: height)
             vwContent.addSubview(content)
+
+            alertView.lcHeightContent?.constant = content.bounds.height
         } else {
-            alertViewController.lcHeightContent?.constant = 0
+            alertView.lcHeightContent?.constant = 0
         }
     }
     
     internal func updateHandlers() {
         let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
         
-        alertViewController.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
-        alertViewController.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
+        alertView.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
+        alertView.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
         
         buttons.forEach { button in
-            alertViewController.svHandlers?.addArrangedSubview(button)
+            alertView.svHandlers?.addArrangedSubview(button)
             button.onAction = { if button.closeOnAction { self.dismiss() } }
         }
     }
@@ -110,26 +111,26 @@ public class ASAlertController: UIViewController {
     }
     
     private func updateSizeContainerContent() {
-        print(alertViewController.vwContent?.frame)
+        print(alertView.vwContent?.frame)
     }
     
     private func updateUI() {
-        alertViewController.lbTitle?.text = title
-        alertViewController.lbTitle?.isHidden = title?.isEmpty ?? true
+        alertView.lbTitle?.text = title
+        alertView.lbTitle?.isHidden = title?.isEmpty ?? true
 
-        alertViewController.lbMessage?.text = message
-        alertViewController.lbMessage?.isHidden = message?.isEmpty ?? true
+        alertView.lbMessage?.text = message
+        alertView.lbMessage?.isHidden = message?.isEmpty ?? true
 
         animation()
     }
 
     private func animation() {
-        alertViewController.vwAlert?.alpha = 0
-        alertViewController.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        alertView.vwAlert?.alpha = 0
+        alertView.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 
         UIView.animate(withDuration: 0.3) { 
-            self.alertViewController.vwAlert?.transform = CGAffineTransform.identity
-            self.alertViewController.vwAlert?.alpha = 1
+            self.alertView.vwAlert?.transform = CGAffineTransform.identity
+            self.alertView.vwAlert?.alpha = 1
         }
     }
 
