@@ -24,7 +24,7 @@ open class ASAlertDateTimeController: ASAlertController {
 
     open var type: ASAlertDateTimeType = .dateTime
 
-    open var onSelectDateAction: ((_ date: Date?)->())?
+    open var onSelectDateAction: ((_ date: Date?) -> Void)?
 
     fileprivate lazy var alertDateTimeView: ASAlertDateTimeView = {
         let alertDateTime = ASAlertDateTimeView().nib
