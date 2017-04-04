@@ -40,7 +40,7 @@ open class ASAlertDateTimeController: ASAlertController {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectDateAction?(self.date)
         })
-        let closeHandler = ASAlertAction("Cancelar", type: .destructive)
+        let closeHandler = ASAlertAction("Cancelar", type: .cancel)
 
         return [closeHandler, selectDateHandler]
     }()
