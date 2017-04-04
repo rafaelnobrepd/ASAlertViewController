@@ -43,7 +43,6 @@ open class ASAlertController: UIViewController {
         
         updateContent()
         updateHandlers()
-        addObservers()
     }
 
     open override func viewWillAppear(_ animated: Bool) {
@@ -75,7 +74,7 @@ open class ASAlertController: UIViewController {
     // MARK: - Private Methods
 
     internal func updateContent() {
-//        _content?.removeFromSuperview()
+        _content?.removeFromSuperview()
 
         if let content = content, let vwContent = alertView.vwContent {
             let width = Int(vwContent.bounds.size.width)
@@ -104,14 +103,6 @@ open class ASAlertController: UIViewController {
     
     internal func dismiss() {
         dismiss(animated: true, completion: nil)
-    }
-    
-    fileprivate func addObservers() {
-        
-    }
-    
-    fileprivate func updateSizeContainerContent() {
-        print(alertView.vwContent?.frame)
     }
     
     fileprivate func updateUI() {

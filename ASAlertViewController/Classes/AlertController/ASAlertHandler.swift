@@ -22,7 +22,7 @@ public enum ASAHandlerType {
         case .default:
             return (font: UIFont.systemFont(ofSize: sizeFont), color: defaultColor)
         case .destructive:
-            return (font: UIFont.systemFont(ofSize: sizeFont), color: .red)
+            return (font: UIFont.systemFont(ofSize: sizeFont), color: destructColor)
         case .cancel:
             return (font: UIFont.boldSystemFont(ofSize: sizeFont), defaultColor)
         }
