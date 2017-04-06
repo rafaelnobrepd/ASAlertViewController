@@ -67,6 +67,7 @@ class ASAlertDateTimeView: UIView {
 
     fileprivate func updateUI() {
         btClear?.isEnabled = date != nil
+        btToday?.isEnabled = date == dpDateTime?.clampedDate
         
         setupDate()
         setupDatePicker()
