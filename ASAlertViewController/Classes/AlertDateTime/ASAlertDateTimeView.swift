@@ -30,8 +30,7 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Variables
 
     var date: Date? {
-        get { return dpDateTime?.clampedDate }
-        set { updateUI() }
+        didSet { updateUI() }
     }
     var maxDate: Date? = nil {
         didSet { updateUI() }
@@ -59,7 +58,7 @@ class ASAlertDateTimeView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
+        
         updateUI()
         addObservers()
     }
@@ -69,9 +68,14 @@ class ASAlertDateTimeView: UIView {
     fileprivate func updateUI() {
         btClear?.isEnabled = date != nil
         
+        setupDate()
         setupDatePicker()
     }
 
+    fileprivate func setupDate() {
+        if date == nil { date = dpDateTime?.clampedDate }
+    }
+    
     fileprivate func setupDatePicker() {
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone.current

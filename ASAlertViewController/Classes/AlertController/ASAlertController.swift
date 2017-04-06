@@ -15,11 +15,21 @@ open class ASAlertController: UIViewController {
 
     public var onDismiss: (() -> Void)?
     
-    internal var _content: UIView? { didSet { updateContent() } }
-    internal var _handlers: [ASAlertHandler] = [] { didSet { updateHandlers() } }
+    internal var _content: UIView? {
+        didSet { updateContent() }
+    }
     
-    fileprivate var _title: String? { didSet { updateUI() } }
-    fileprivate var _message: String? { didSet { updateUI() } }
+    internal var _handlers: [ASAlertHandler] = [] {
+        didSet { updateHandlers() }
+    }
+    
+    fileprivate var _title: String? {
+        didSet { updateUI() }
+    }
+    
+    fileprivate var _message: String? {
+        didSet { updateUI() }
+    }
 
     fileprivate var alertView: ASAlertView = {
         let view = ASAlertView()
