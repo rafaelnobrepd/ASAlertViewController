@@ -32,6 +32,12 @@ class ASAlertDateTimeView: UIView {
     var date: Date? = Date() {
         didSet { updateUI() }
     }
+    var maxDate: Date? = nil {
+        didSet { updateUI() }
+    }
+    var minDate: Date? = nil {
+        didSet { updateUI() }
+    }
     var type: ASAlertDateTimeType = .dateTime {
         didSet { updateUI() }
     }
@@ -95,6 +101,9 @@ class ASAlertDateTimeView: UIView {
 
         dpDateTime?.minuteInterval = interval
         dpDateTime?.date = date ?? Date()
+        dpDateTime?.maximumDate = maxDate
+        dpDateTime?.minimumDate = minDate
+        
         btToday?.setTitle(label, for: .normal)
     }
 

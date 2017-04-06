@@ -22,6 +22,16 @@ open class ASAlertDateTimeController: ASAlertController {
         set { alertDateTimeView.interval = newValue }
     }
 
+    open var maxDate: Date? {
+        get { return alertDateTimeView.maxDate }
+        set { alertDateTimeView.maxDate = newValue }
+    }
+    
+    open var minDate: Date? {
+        get { return alertDateTimeView.minDate }
+        set { alertDateTimeView.minDate = newValue }
+    }
+    
     open var type: ASAlertDateTimeType = .dateTime
 
     open var onSelectDateAction: ((_ date: Date?) -> Void)?
@@ -79,6 +89,8 @@ open class ASAlertDateTimeController: ASAlertController {
     fileprivate func updateUI() {
         alertDateTimeView.type = type
         alertDateTimeView.date = date
+        alertDateTimeView.maxDate = maxDate
+        alertDateTimeView.minDate = minDate
         alertDateTimeView.interval = interval
     }
 
