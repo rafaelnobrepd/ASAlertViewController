@@ -13,6 +13,8 @@ open class ASAlertController: UIViewController {
 
     // MARK: - Variables
 
+    public var onDismiss: (() -> Void)?
+    
     internal var _content: UIView? { didSet { updateContent() } }
     internal var _handlers: [ASAlertHandler] = [] { didSet { updateHandlers() } }
     
@@ -102,7 +104,7 @@ open class ASAlertController: UIViewController {
     }
     
     internal func dismiss() {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: onDismiss)
     }
     
     fileprivate func updateUI() {
