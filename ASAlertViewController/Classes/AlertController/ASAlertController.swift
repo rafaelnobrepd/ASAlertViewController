@@ -52,11 +52,11 @@ open class ASAlertController: UIViewController {
 
     // MARK: - Public Methods
 
-    open func present(in viewController: UIViewController) {
+    open func present(in viewController: UIViewController, completion: (() -> Void)? = nil) {
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
 
-        viewController.present(self, animated: true, completion: nil)
+        viewController.present(self, animated: true, completion: completion)
     }
     
     required public init?(coder aDecoder: NSCoder) {
