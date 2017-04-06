@@ -29,8 +29,9 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Variables
 
-    var date: Date? = Date() {
-        didSet { updateUI() }
+    var date: Date? {
+        get { return dpDateTime?.clampedDate }
+        set { updateUI() }
     }
     var type: ASAlertDateTimeType = .dateTime {
         didSet { updateUI() }
@@ -52,8 +53,6 @@ class ASAlertDateTimeView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        date = dpDateTime?.date
 
         updateUI()
         addObservers()
