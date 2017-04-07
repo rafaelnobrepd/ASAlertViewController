@@ -10,11 +10,9 @@ import Foundation
 import UIKit
 
 public enum ASAlertDateTimeType {
-
     case date
     case time
     case dateTime
-
 }
 
 class ASAlertDateTimeView: UIView {
@@ -22,37 +20,35 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Components
 
     @IBOutlet fileprivate weak var dpDateTime: UIDatePicker?
-    @IBOutlet fileprivate weak var lbDateDescription: UILabel?
-    @IBOutlet fileprivate weak var btToday: UIButton?
-    @IBOutlet fileprivate weak var btClear: UIButton?
-    @IBOutlet fileprivate weak var vwCustomContent: UIView!
 
     // MARK: - Variables
 
     var date: Date? {
         didSet { updateUI() }
     }
+    
     var maxDate: Date? = nil {
         didSet { updateUI() }
     }
+    
     var minDate: Date? = nil {
         didSet { updateUI() }
     }
+    
     var type: ASAlertDateTimeType = .dateTime {
         didSet { updateUI() }
     }
+    
     var interval: Int = 15 {
         didSet { updateUI() }
     }
+    
     var nib: ASAlertDateTimeView {
         guard let view = loadNib() as? ASAlertDateTimeView else {
             fatalError()
         }
         return view
     }
-    
-    var onTodayAction: (() -> Void)?
-    var onClearAction: (() -> Void)?
 
     // MARK: - Lifecircle Class
 
@@ -66,9 +62,6 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Private Methods
 
     fileprivate func updateUI() {
-        btClear?.isEnabled = date != nil
-        btToday?.isEnabled = date == dpDateTime?.clampedDate
-        
         setupDate()
         setupDatePicker()
     }
@@ -79,7 +72,7 @@ class ASAlertDateTimeView: UIView {
     
     fileprivate func setupDatePicker() {
         let formatter = DateFormatter()
-        formatter.timeZone = TimeZone.current
+        formatter.timeZone = .current
         
         var label = "Hoje"
         
@@ -98,17 +91,11 @@ class ASAlertDateTimeView: UIView {
             formatter.dateStyle = .medium
             formatter.timeStyle = .short
         }
-        
-        if let date = dpDateTime?.clampedDate {
-            lbDateDescription?.text = formatter.string(from: date)
-        }
 
-        dpDateTime?.minuteInterval = interval
         dpDateTime?.date = date ?? Date()
+        dpDateTime?.minuteInterval = interval
         dpDateTime?.maximumDate = maxDate
         dpDateTime?.minimumDate = minDate
-        
-        btToday?.setTitle(label, for: .normal)
     }
 
     fileprivate func addObservers() {
@@ -117,17 +104,6 @@ class ASAlertDateTimeView: UIView {
 
     @objc fileprivate func selectDate(_ sender: UIDatePicker) {
         date = sender.date
-    }
-    
-    // MARK: - Actions
-    
-    @IBAction fileprivate func todayAction() {
-        dpDateTime?.setDate(Date(), animated: true)
-        date = dpDateTime?.clampedDate
-    }
-    
-    @IBAction fileprivate func clearAction() {
-        onClearAction?()
     }
 
 }

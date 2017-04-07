@@ -19,8 +19,7 @@
     "ios": "9.0"
   },
   "source_files": "ASAlertViewController/Classes/**/*",
-  "resource_bundles": {
-  },
+  "resources": "ASAlertViewController/Assets/**/*",
   "dependencies": {
     "TPKeyboardAvoiding": [
 

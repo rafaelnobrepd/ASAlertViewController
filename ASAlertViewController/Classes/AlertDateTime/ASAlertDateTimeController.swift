@@ -13,46 +13,42 @@ open class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Variables
 
-    open var date: Date? {
+    public var date: Date? {
         get { return alertDateTimeView.date }
         set { alertDateTimeView.date = newValue }
     }
-    open var interval: Int {
+    
+    public var interval: Int {
         get { return alertDateTimeView.interval }
         set { alertDateTimeView.interval = newValue }
     }
 
-    open var maxDate: Date? {
+    public var maxDate: Date? {
         get { return alertDateTimeView.maxDate }
         set { alertDateTimeView.maxDate = newValue }
     }
     
-    open var minDate: Date? {
+    public var minDate: Date? {
         get { return alertDateTimeView.minDate }
         set { alertDateTimeView.minDate = newValue }
     }
     
-    open var type: ASAlertDateTimeType = .dateTime
-
-    open var onSelectDateAction: ((_ date: Date?) -> Void)?
+    public var type: ASAlertDateTimeType = .dateTime
+    public var onSelectDateAction: ((_ date: Date?) -> Void)?
 
     fileprivate lazy var alertDateTimeView: ASAlertDateTimeView = {
-        let alertDateTime = ASAlertDateTimeView().nib
-        alertDateTime.onClearAction = {
-            self.onSelectDateAction?(nil)
-            self.dismiss()
-        }
-        
-        return alertDateTime
+        return ASAlertDateTimeView().nib
     }()
 
     fileprivate lazy var customHandlers: [ASAlertHandler] = {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectDateAction?(self.date)
         })
-        let closeHandler = ASAlertAction("Cancelar", type: .cancel)
+        let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
+            self.onSelectDateAction?(nil)
+        })
 
-        return [closeHandler, selectDateHandler]
+        return [clearHandler, selectDateHandler]
     }()
 
     override var _content: UIView? {

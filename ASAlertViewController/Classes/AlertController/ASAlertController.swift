@@ -15,6 +15,18 @@ open class ASAlertController: UIViewController {
 
     public var onDismiss: (() -> Void)?
     
+    public var closeOnTapInOverlay: Bool = true {
+        didSet { updateUI() }
+    }
+    
+    public var showCloseButton: Bool = true {
+        didSet { updateUI() }
+    }
+    
+    public var primaryColor: UIColor = UIColor(red: 3/255, green: 66/255, blue: 114/255, alpha: 1) {
+        didSet { updateUI() }
+    }
+    
     internal var _content: UIView? {
         didSet { updateContent() }
     }
@@ -32,8 +44,7 @@ open class ASAlertController: UIViewController {
     }
 
     fileprivate var alertView: ASAlertView = {
-        let view = ASAlertView()
-        return view.nib
+        return ASAlertView().nib
     }()
 
     // MARK: - Lifecircle Class
@@ -53,6 +64,8 @@ open class ASAlertController: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         
+        setupCloseAction()
+        
         updateContent()
         updateHandlers()
     }
@@ -64,11 +77,11 @@ open class ASAlertController: UIViewController {
 
     // MARK: - Public Methods
 
-    open func present(in viewController: UIViewController, completion: (() -> Void)? = nil) {
+    open func present(in viewController: UIViewController, presentCompleted: (() -> Void)? = nil) {
         modalPresentationStyle = .overCurrentContext
         modalTransitionStyle = .crossDissolve
 
-        viewController.present(self, animated: true, completion: completion)
+        viewController.present(self, animated: true, completion: presentCompleted)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -118,12 +131,17 @@ open class ASAlertController: UIViewController {
     }
     
     fileprivate func updateUI() {
+        alertView.primaryColor = primaryColor
+        
         alertView.lbTitle?.text = title
         alertView.lbTitle?.isHidden = title?.isEmpty ?? true
 
         alertView.lbMessage?.text = message
         alertView.lbMessage?.isHidden = message?.isEmpty ?? true
-
+        
+        alertView.closeOnTapInOverlay = closeOnTapInOverlay
+        alertView.showCloseButton = showCloseButton
+        
         animation()
     }
 
@@ -135,6 +153,10 @@ open class ASAlertController: UIViewController {
             self.alertView.vwAlert?.transform = CGAffineTransform.identity
             self.alertView.vwAlert?.alpha = 1
         }
+    }
+    
+    private func setupCloseAction() {
+        alertView.closeAction = { self.dismiss() }
     }
 
 }

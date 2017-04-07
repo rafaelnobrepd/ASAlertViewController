@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ASAlertViewController: 0b9bf2d5022dc5607ea97a919a90f6e6dc58e73e
+  ASAlertViewController: 1725cf64cec560bbff7fcb8f5324a20cd5cd6b8c
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 

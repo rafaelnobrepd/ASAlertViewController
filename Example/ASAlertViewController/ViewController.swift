@@ -24,9 +24,8 @@ class ViewController: UIViewController {
 
     @IBAction fileprivate func showASAlertController() {
         let alert = ASAlertController(title: "Deseja sair da aplicação?", message: "Selecione uma das opções abaixo:")
-        alert.addAction(ASAlertAction("Sim", type: .default) {  print("aeee") })
-        alert.addAction(ASAlertAction("Não", type: .destructive))
-        alert.addAction(ASAlertAction("Sim", type: .cancel))
+        alert.addAction(ASAlertAction("Limpar", type: .destructive))
+        alert.addAction(ASAlertAction("Selecionar", type: .default) {  print("aeee") })
 
         alert.present(in: self)
     }
