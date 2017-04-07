@@ -149,7 +149,7 @@ open class ASAlertController: UIViewController {
         alertView.vwAlert?.alpha = 0
         alertView.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
 
-        UIView.animate(withDuration: 0.3) { 
+        UIView.animate(withDuration: 0.2) {
             self.alertView.vwAlert?.transform = CGAffineTransform.identity
             self.alertView.vwAlert?.alpha = 1
         }
