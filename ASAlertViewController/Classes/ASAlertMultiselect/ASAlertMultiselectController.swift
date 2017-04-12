@@ -21,7 +21,7 @@ open class ASAlertMultiselectController: ASAlertController {
         let selectValueHandler = ASAlertAction("Selecionar", type: .default, handler: {
 
         })
-        let clearHandler = ASAlertAction("Limpar", type: .cancel, handler: {
+        let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
 
         })
 
