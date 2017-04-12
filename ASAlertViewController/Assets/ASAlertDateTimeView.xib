@@ -14,48 +14,26 @@
             <rect key="frame" x="0.0" y="0.0" width="260" height="201"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLs-yx-YL9">
-                    <rect key="frame" x="0.0" y="-15" width="260" height="216"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k8f-EZ-i5I">
-                            <rect key="frame" x="10" y="0.0" width="240" height="216"/>
-                            <subviews>
-                                <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="UWK-NL-lGM">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="216"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="216" id="UXm-ky-jab"/>
-                                    </constraints>
-                                    <date key="date" timeIntervalSinceReferenceDate="512850851.151721">
-                                        <!--2017-04-02 18:34:11 +0000-->
-                                    </date>
-                                </datePicker>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="UWK-NL-lGM" firstAttribute="leading" secondItem="k8f-EZ-i5I" secondAttribute="leading" id="4Sl-G2-ZpI"/>
-                                <constraint firstAttribute="bottom" secondItem="UWK-NL-lGM" secondAttribute="bottom" id="LBi-zk-wEm"/>
-                                <constraint firstItem="UWK-NL-lGM" firstAttribute="top" secondItem="k8f-EZ-i5I" secondAttribute="top" id="Zn2-BQ-BXp"/>
-                                <constraint firstAttribute="trailing" secondItem="UWK-NL-lGM" secondAttribute="trailing" id="gpK-Y0-L2d"/>
-                            </constraints>
-                        </stackView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="UWK-NL-lGM">
+                    <rect key="frame" x="10" y="-15" width="240" height="231"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="k8f-EZ-i5I" secondAttribute="bottom" id="2zO-0a-BQ0"/>
-                        <constraint firstAttribute="trailing" secondItem="k8f-EZ-i5I" secondAttribute="trailing" constant="10" id="4TF-43-39C"/>
-                        <constraint firstItem="k8f-EZ-i5I" firstAttribute="leading" secondItem="GLs-yx-YL9" secondAttribute="leading" constant="10" id="EHk-Ad-DGx"/>
-                        <constraint firstItem="k8f-EZ-i5I" firstAttribute="top" secondItem="GLs-yx-YL9" secondAttribute="top" id="ann-yP-Kkd"/>
+                        <constraint firstAttribute="height" constant="231" id="kZD-Is-vhh"/>
                     </constraints>
-                </view>
+                    <date key="date" timeIntervalSinceReferenceDate="512850851.151721">
+                        <!--2017-04-02 18:34:11 +0000-->
+                    </date>
+                </datePicker>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="GLs-yx-YL9" secondAttribute="trailing" id="0xK-M0-jz5"/>
-                <constraint firstItem="GLs-yx-YL9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Ko-SF-HTN"/>
-                <constraint firstItem="GLs-yx-YL9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-15" id="BdO-y7-tS9"/>
+                <constraint firstItem="UWK-NL-lGM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-15" id="C8T-3N-BlM"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UWK-NL-lGM" secondAttribute="bottom" constant="-15" id="KeX-ZO-BYv"/>
+                <constraint firstAttribute="trailing" secondItem="UWK-NL-lGM" secondAttribute="trailing" constant="10" id="mYu-94-fmk"/>
+                <constraint firstItem="UWK-NL-lGM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="qnd-tg-FSm"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="dpCalendar" destination="UWK-NL-lGM" id="iSf-W6-68y"/>
+                <outlet property="dpCalendar" destination="UWK-NL-lGM" id="2Mw-5r-KYU"/>
             </connections>
             <point key="canvasLocation" x="-32" y="-177.5"/>
         </view>

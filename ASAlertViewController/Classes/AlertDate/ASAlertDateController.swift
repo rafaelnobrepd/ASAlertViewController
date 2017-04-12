@@ -11,6 +11,8 @@ import UIKit
 
 open class ASAlertDateController: ASAlertDateTimeController {
 
+    // MARK: - Lifecircle Class
+
     public init(title: String? = nil, message: String? = nil, date: Date? = nil) {
         super.init(title: title, message: message, type: .date, date: date)
     }

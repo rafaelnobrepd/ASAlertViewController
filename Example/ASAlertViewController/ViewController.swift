@@ -66,5 +66,10 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
 
+    @IBAction fileprivate func showASAlertMultselectController() {
+        let alert = ASAlertMultiselectController(title: "Selecione uma opção", message: "Selecione uma das opções abaixo:")
+        alert.present(in: self)
+    }
+
 }
 
