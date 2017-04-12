@@ -42,7 +42,9 @@ class ASAlertDateTimeView: UIView {
     var interval: Int = 15 {
         didSet { updateUI() }
     }
-    
+
+    var onValueChange: ((_ date: Date?) -> Void)?
+
     var nib: ASAlertDateTimeView {
         guard let view = loadNib() as? ASAlertDateTimeView else {
             fatalError()
@@ -104,6 +106,7 @@ class ASAlertDateTimeView: UIView {
 
     @objc fileprivate func selectDate(_ sender: UIDatePicker) {
         date = sender.date
+        onValueChange?(date)
     }
 
 }

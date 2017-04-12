@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     @IBAction fileprivate func showASAlertDateController() {
         let alert = ASAlertDateController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:")
         
-        alert.onSelectDateAction = { date in
+        alert.onSelectedDateAction = { date in
             if let date = date {
                 print(date)
             }
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     @IBAction fileprivate func showASAlertTimeController() {
         let alert = ASAlertTimeController(title: "Selecione uma horário", message: "Selecione uma das opções abaixo:")
         
-        alert.onSelectDateAction = { date in
+        alert.onSelectedDateAction = { date in
             if let date = date {
                 print(date)
             }
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     @IBAction fileprivate func showASAlertDateTimeController() {
         let alert = ASAlertDateTimeController(title: "Selecione uma data", message: "Selecione uma das opções abaixo:", type: .dateTime)
         
-        alert.onSelectDateAction = { date in
+        alert.onSelectedDateAction = { date in
             if let date = date {
                 print(date)
             }

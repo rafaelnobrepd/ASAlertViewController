@@ -34,7 +34,8 @@ open class ASAlertDateTimeController: ASAlertController {
     }
     
     public var type: ASAlertDateTimeType = .dateTime
-    public var onSelectDateAction: ((_ date: Date?) -> Void)?
+    public var onSelectedDateAction: ((_ date: Date?) -> Void)?
+    public var onValueChange: ((_ date: Date?) -> Void)?
 
     fileprivate lazy var alertDateTimeView: ASAlertDateTimeView = {
         return ASAlertDateTimeView().nib
@@ -42,10 +43,10 @@ open class ASAlertDateTimeController: ASAlertController {
 
     fileprivate lazy var customHandlers: [ASAlertHandler] = {
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
-            self.onSelectDateAction?(self.date)
+            self.onSelectedDateAction?(self.date)
         })
         let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
-            self.onSelectDateAction?(nil)
+            self.onSelectedDateAction?(nil)
         })
 
         return [clearHandler, selectDateHandler]
@@ -65,14 +66,17 @@ open class ASAlertDateTimeController: ASAlertController {
 
     open override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        setupUI()
+        setupHandlers()
     }
 
-    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType, date: Date? = nil, interval: Int = 15) {
+    public init(title: String? = nil, message: String? = nil, type: ASAlertDateTimeType, date: Date? = nil, minDate: Date? = nil, maxDate: Date? = nil, interval: Int = 15) {
         super.init(title: title, message: message, content: nil)
         
         self.type = type
         self.date = date
+        self.minDate = minDate
+        self.maxDate = maxDate
         self.interval = interval
     }
     
@@ -82,12 +86,16 @@ open class ASAlertDateTimeController: ASAlertController {
 
     // MARK: - Private methods
 
-    fileprivate func updateUI() {
+    private func setupUI() {
         alertDateTimeView.type = type
         alertDateTimeView.date = date
         alertDateTimeView.maxDate = maxDate
         alertDateTimeView.minDate = minDate
         alertDateTimeView.interval = interval
+    }
+
+    private func setupHandlers() {
+        alertDateTimeView.onValueChange = onValueChange
     }
 
 }
