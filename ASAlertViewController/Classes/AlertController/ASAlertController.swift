@@ -13,39 +13,20 @@ open class ASAlertController: UIViewController {
 
     // MARK: - Variables
 
+    public var onPresented: (() -> Void)?
     public var onDismiss: (() -> Void)?
     
-    public var closeOnTapInOverlay: Bool = true {
-        didSet { updateUI() }
-    }
-    
-    public var showCloseButton: Bool = true {
-        didSet { updateUI() }
-    }
-    
-    public var primaryColor: UIColor = UIColor(red: 3/255, green: 66/255, blue: 114/255, alpha: 1) {
-        didSet { updateUI() }
-    }
-    
-    internal var _content: UIView? {
-        didSet { updateContent() }
-    }
-    
-    internal var _handlers: [ASAlertHandler] = [] {
-        didSet { updateHandlers() }
-    }
-    
-    fileprivate var _title: String? {
-        didSet { updateUI() }
-    }
-    
-    fileprivate var _message: String? {
-        didSet { updateUI() }
-    }
+    internal var _content: UIView?
+    internal var _handlers: [ASAlertHandler] = []
+
+    fileprivate var _title: String?
+    fileprivate var _message: String?
 
     fileprivate var alertView: ASAlertView = {
         return ASAlertView().nib
     }()
+
+    private var config: ASAlertConfig = ASAlertConfig.shared
 
     // MARK: - Lifecircle Class
 
@@ -58,21 +39,20 @@ open class ASAlertController: UIViewController {
     }
     
     override open func loadView() {
-        self.view = alertView
+        view = alertView
     }
 
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setupContent()
+        setupHandlers()
         setupCloseAction()
-        
-        updateContent()
-        updateHandlers()
     }
 
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        updateUI()
+        setupUI()
     }
 
     // MARK: - Public Methods
@@ -98,7 +78,45 @@ open class ASAlertController: UIViewController {
 
     // MARK: - Private Methods
 
-    internal func updateContent() {
+    private func setupUI() {
+        alertView.config = config
+
+        alertView.lbTitle?.text = title
+        alertView.lbTitle?.isHidden = title?.isEmpty ?? true
+
+        alertView.lbMessage?.text = message
+        alertView.lbMessage?.isHidden = message?.isEmpty ?? true
+
+        alertView.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+
+        UIView.animate(withDuration: 0.26, delay: 0, options: [.curveEaseInOut], animations: {
+            self.alertView.vwAlert?.transform = .identity
+            self.alertView.vwAlert?.alpha = 1
+        }) { (finish) in
+            if finish { self.onPresented?() }
+        }
+    }
+
+    private func setupHandlers() {
+        let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
+
+        alertView.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
+        alertView.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
+
+        buttons.forEach { button in
+            alertView.svHandlers?.addArrangedSubview(button)
+
+            button.onAction = {
+                if button.closeOnAction { self.dismiss() }
+            }
+        }
+    }
+
+    private func dismiss() {
+        dismiss(animated: true, completion: onDismiss)
+    }
+
+    private func setupContent() {
         _content?.removeFromSuperview()
 
         if let content = content, let vwContent = alertView.vwContent {
@@ -114,49 +132,10 @@ open class ASAlertController: UIViewController {
         }
     }
     
-    internal func updateHandlers() {
-        let buttons = _handlers.map { ASHandlerButton(frame: .zero, handler: $0) }
-        
-        alertView.svHandlers?.subviews.forEach { $0.removeFromSuperview() }
-        alertView.svHandlers?.axis = buttons.count > 2 ? .vertical : .horizontal
-        
-        buttons.forEach { button in
-            alertView.svHandlers?.addArrangedSubview(button)
-            button.onAction = { if button.closeOnAction { self.dismiss() } }
-        }
-    }
-    
-    internal func dismiss() {
-        dismiss(animated: true, completion: onDismiss)
-    }
-    
-    fileprivate func updateUI() {
-        alertView.primaryColor = primaryColor
-        
-        alertView.lbTitle?.text = title
-        alertView.lbTitle?.isHidden = title?.isEmpty ?? true
-
-        alertView.lbMessage?.text = message
-        alertView.lbMessage?.isHidden = message?.isEmpty ?? true
-        
-        alertView.closeOnTapInOverlay = closeOnTapInOverlay
-        alertView.showCloseButton = showCloseButton
-        
-        animation()
-    }
-
-    fileprivate func animation() {
-        alertView.vwAlert?.alpha = 0
-        alertView.vwAlert?.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-
-        UIView.animate(withDuration: 0.2) {
-            self.alertView.vwAlert?.transform = CGAffineTransform.identity
-            self.alertView.vwAlert?.alpha = 1
-        }
-    }
-    
     private func setupCloseAction() {
-        alertView.closeAction = { self.dismiss() }
+        alertView.closeAction = {
+            self.dismiss()
+        }
     }
 
 }

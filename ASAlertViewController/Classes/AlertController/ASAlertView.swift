@@ -19,24 +19,15 @@ class ASAlertView: UIView {
     @IBOutlet weak var vwAlert: UIView?
     @IBOutlet weak var vwOverlay: UIView?
     @IBOutlet weak var svHandlers: UIStackView?
-    @IBOutlet weak var lcHeightContent: NSLayoutConstraint?
     @IBOutlet weak var btnClose: UIButton?
+
+    @IBOutlet weak var lcHeightContent: NSLayoutConstraint?
+    @IBOutlet weak var lcRightMargin: NSLayoutConstraint?
 
     // MARK: - Variables
     
+    var config: ASAlertConfig = ASAlertConfig.shared
     var closeAction: (() -> Void)?
-    
-    var primaryColor: UIColor = UIColor(red: 3/255, green: 66/255, blue: 114/255, alpha: 1) {
-        didSet { updateUI() }
-    }
-    
-    var closeOnTapInOverlay: Bool = true {
-        didSet { setupRecognizer() }
-    }
-    
-    var showCloseButton: Bool = true {
-        didSet { updateUI() }
-    }
     
     var nib: ASAlertView {
         guard let view = loadNib() as? ASAlertView else { fatalError() }
@@ -47,9 +38,8 @@ class ASAlertView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        setupUI()
         setupRecognizer()
-        updateUI()
     }
     
     // MARK: - Private Methods
@@ -57,12 +47,16 @@ class ASAlertView: UIView {
     private func setupRecognizer() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
         vwOverlay?.addGestureRecognizer(tapRecognizer)
-        vwOverlay?.isUserInteractionEnabled = closeOnTapInOverlay
+        vwOverlay?.isUserInteractionEnabled = config.closeOnTapInOverlay
     }
     
-    private func updateUI() {
-        lbTitle?.textColor = primaryColor
-        btnClose?.isHidden = !showCloseButton
+    private func setupUI() {
+        lbTitle?.textColor = config.primaryColor
+        lbMessage?.textColor = config.secondColor
+        btnClose?.isHidden = !config.closeButton
+        lcRightMargin?.constant = config.closeButton ? 35 : 15
+        vwAlert?.layer.cornerRadius = config.cornerRadius
+        vwAlert?.alpha = 0
     }
     
     // MARK: - Actions

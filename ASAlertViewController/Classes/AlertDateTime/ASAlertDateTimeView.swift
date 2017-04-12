@@ -19,7 +19,7 @@ class ASAlertDateTimeView: UIView {
 
     // MARK: - Components
 
-    @IBOutlet fileprivate weak var dpDateTime: UIDatePicker?
+    @IBOutlet fileprivate weak var dpCalendar: UIDatePicker?
 
     // MARK: - Variables
 
@@ -67,7 +67,7 @@ class ASAlertDateTimeView: UIView {
     }
 
     fileprivate func setupDate() {
-        if date == nil { date = dpDateTime?.clampedDate }
+        if date == nil { date = dpCalendar?.clampedDate }
     }
     
     fileprivate func setupDatePicker() {
@@ -78,28 +78,28 @@ class ASAlertDateTimeView: UIView {
         
         switch type {
         case .date:
-            dpDateTime?.datePickerMode = .date
+            dpCalendar?.datePickerMode = .date
             formatter.dateStyle = .long
             formatter.timeStyle = .none
         case .time:
-            dpDateTime?.datePickerMode = .time
+            dpCalendar?.datePickerMode = .time
             label = "Agora"
             formatter.dateStyle = .none
             formatter.timeStyle = .short
         case .dateTime:
-            dpDateTime?.datePickerMode = .dateAndTime
+            dpCalendar?.datePickerMode = .dateAndTime
             formatter.dateStyle = .medium
             formatter.timeStyle = .short
         }
 
-        dpDateTime?.date = date ?? Date()
-        dpDateTime?.minuteInterval = interval
-        dpDateTime?.maximumDate = maxDate
-        dpDateTime?.minimumDate = minDate
+        dpCalendar?.date = date ?? Date()
+        dpCalendar?.minuteInterval = interval
+        dpCalendar?.maximumDate = maxDate
+        dpCalendar?.minimumDate = minDate
     }
 
     fileprivate func addObservers() {
-        dpDateTime?.addTarget(self, action: #selector(selectDate(_:)), for: .valueChanged)
+        dpCalendar?.addTarget(self, action: #selector(selectDate(_:)), for: .valueChanged)
     }
 
     @objc fileprivate func selectDate(_ sender: UIDatePicker) {
