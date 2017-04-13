@@ -9,6 +9,35 @@
 import UIKit
 import ASAlertViewController
 
+class Option: ASAlertMultiselectOption {
+
+    var title: String {
+        get { return "teste sldfkjsldkfj sldkfjs ldkfjsdlfs dlfkj" }
+        set {}
+    }
+
+    var detail: String {
+        get { return "teste" }
+        set {}
+    }
+
+    var image: UIImage? {
+        get { return nil }
+        set {}
+    }
+
+    var selected: Bool {
+        get { return false }
+        set {}
+    }
+
+    var onAction: (() -> Void)? {
+        get { return nil }
+        set {}
+    }
+
+}
+
 class ViewController: UIViewController {
 
     // MARK: - Actions
@@ -67,7 +96,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction fileprivate func showASAlertMultselectController() {
+        let options = [Option(), Option(), Option(), Option(), Option(), Option(), Option(), Option()]
+
         let alert = ASAlertMultiselectController(title: "Selecione uma opção", message: "Selecione uma das opções abaixo:")
+        alert.addOptions(options)
         alert.present(in: self)
     }
 

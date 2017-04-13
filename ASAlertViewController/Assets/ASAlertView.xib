@@ -34,7 +34,6 @@
                                             <rect key="frame" x="15" y="15" width="220" height="39.5"/>
                                             <subviews>
                                                 <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7c-2r-W9J">
-                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="8YD-l7-a7G"/>
@@ -47,15 +46,15 @@
                                                     </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-uJ-ZFQ">
-                                                    <rect key="frame" x="25" y="0.0" width="195" height="39.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="220" height="39.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8O-Jv-5qD">
-                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="220" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8W-xe-8X8">
-                                                            <rect key="frame" x="0.0" y="23.5" width="195" height="16"/>
+                                                            <rect key="frame" x="0.0" y="23.5" width="220" height="16"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -174,7 +173,7 @@
                 <outlet property="svHandlers" destination="ReT-33-oPT" id="tH5-VT-jGA"/>
                 <outlet property="vwAlert" destination="dJs-P3-LfR" id="2Pc-V5-DyM"/>
                 <outlet property="vwContent" destination="nQ4-Sx-xom" id="Shh-FW-b5w"/>
-                <outlet property="vwOverlay" destination="BmM-Vf-k1J" id="Qjh-4i-Ufd"/>
+                <outlet property="vwOverlay" destination="pz2-ZB-cwG" id="WpW-DC-hKr"/>
             </connections>
             <point key="canvasLocation" x="32.5" y="46.5"/>
         </view>

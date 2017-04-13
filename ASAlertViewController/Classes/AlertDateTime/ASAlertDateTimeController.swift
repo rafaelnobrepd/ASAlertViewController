@@ -49,17 +49,17 @@ open class ASAlertDateTimeController: ASAlertController {
             self.onSelectedDateAction?(nil)
         })
 
-        return [clearHandler, selectDateHandler]
+        return [selectDateHandler, clearHandler]
     }()
 
     override var _content: UIView? {
         get { return alertDateTimeView }
-        set { super._content = alertDateTimeView }
+        set { _content = alertDateTimeView }
     }
 
     override var _handlers: [ASAlertHandler] {
         get { return customHandlers }
-        set { super._handlers = customHandlers }
+        set { _handlers = customHandlers }
     }
 
     // MARK: - Lifecircle Class

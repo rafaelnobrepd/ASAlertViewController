@@ -13,7 +13,7 @@ class ASAlertMultiselectCell: UITableViewCell {
 
     // MARK: - Public methods
 
-    func setup<T: ASAlertMultiselectOption>(from model: T) {
+    func setup(from model: ASAlertMultiselectOption) {
         textLabel?.text = model.title
         detailTextLabel?.text = model.detail
         imageView?.image = model.image

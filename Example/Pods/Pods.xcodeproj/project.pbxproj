@@ -34,7 +34,7 @@
 		565255138F9D701BE7F0C4A7ACBDDE94 /* ASAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681F06AD88940FA94D93F320F919065 /* ASAlertViewController-dummy.m */; };
 		58875FE03E0E3CCAD5F6A1B43FAA28E5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FC3ECA69B6D27C910DB33BDE5C0B2 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5F1CF3CB8EE6BA9E864DDCE6EEDB0A15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
-		62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultselectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultselectView.xib */; };
+		62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultiselectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60797D725943F1462A151E8D9BA76F /* UIKit.framework */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 982EADDE0B007FDE7A2C019CB7036872 /* UIImage+Compare.m */; };
 		70B7C8720C76646A57AA1F386552048B /* ASHandlerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5918CB5CA8E0E2032E76D521AB495 /* ASHandlerButton.swift */; };
@@ -143,7 +143,7 @@
 		65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		661C7BE307E0EFC83063F392EA6E6FAF /* Pods-ASAlertViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		6B6C18A9548E716FF58FAC946AFEF454 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultselectView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertMultselectView.xib; sourceTree = "<group>"; };
+		6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertMultiselectView.xib; sourceTree = "<group>"; };
 		6F884526239B867FF70690AD6ACE090D /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		704DE1812439B985C30D16BBE780F286 /* ASAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
 		73B40363A83BE65170F953768CBBDF67 /* Pods-ASAlertViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -348,7 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				2E57B344BC71C64F3876D67C0C5CB2CF /* ASAlertDateTimeView.xib */,
-				6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultselectView.xib */,
+				6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */,
 				0A8ED6DC1E9E39AA0047273B /* ASAlertMultiselectCell.xib */,
 				A58C663BFA7DE943079AB4D58EDC0C3A /* ASAlertView.xib */,
 				E8200E9A72295738DA3097B7777255E7 /* Media.xcassets */,
@@ -765,7 +765,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A72BF58A18CE17E2C62597DF38A92254 /* ASAlertDateTimeView.xib in Resources */,
-				62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultselectView.xib in Resources */,
+				62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultiselectView.xib in Resources */,
 				FE8C4B5FDCC9F05A702AD6B9790522A6 /* ASAlertView.xib in Resources */,
 				F005FD2CF7A7B4917EA68968193AF2CF /* Media.xcassets in Resources */,
 				0A8ED6DD1E9E39AA0047273B /* ASAlertMultiselectCell.xib in Resources */,

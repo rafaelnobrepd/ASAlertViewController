@@ -13,29 +13,30 @@ open class ASAlertMultiselectController: ASAlertController {
 
     // MARK: - Variables
 
-    fileprivate lazy var alertMultselectView: ASAlertMultselectView = {
-        return ASAlertMultselectView().nib
+    fileprivate lazy var alertMultiselectView: ASAlertMultiselectView = {
+        return ASAlertMultiselectView().nib
     }()
 
     fileprivate lazy var customHandlers: [ASAlertHandler] = {
         let selectValueHandler = ASAlertAction("Selecionar", type: .default, handler: {
 
         })
-        let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
+
+        let cancelHandler = ASAlertAction("Cancelar", type: .cancel, handler: {
 
         })
 
-        return [clearHandler, selectValueHandler]
+        return [selectValueHandler, cancelHandler]
     }()
 
     override var _content: UIView? {
-        get { return alertMultselectView }
-        set { super._content = alertMultselectView }
+        get { return alertMultiselectView }
+        set { _content = alertMultiselectView }
     }
 
     override var _handlers: [ASAlertHandler] {
         get { return customHandlers }
-        set { super._handlers = customHandlers }
+        set { _handlers = customHandlers }
     }
 
     // MARK: - Lifecircle Class
@@ -44,12 +45,23 @@ open class ASAlertMultiselectController: ASAlertController {
         super.viewDidLoad()
     }
 
-    public init(title: String? = nil, message: String? = nil) {
+    public init(title: String? = nil, message: String? = nil, options: [ASAlertMultiselectOption] = []) {
         super.init(title: title, message: message, content: nil)
+        addOptions(options)
     }
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+    // MARK: - Public Methods
+
+    public func addOption(_ option: ASAlertMultiselectOption) {
+        alertMultiselectView.options.append(option)
+    }
+
+    public func addOptions(_ options: [ASAlertMultiselectOption]) {
+        alertMultiselectView.options += options
     }
     
 }
