@@ -42,11 +42,11 @@ open class ASAlertDateTimeController: ASAlertController {
     }()
 
     fileprivate lazy var customHandlers: [ASAlertHandler] = {
-        let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
-            self.onSelectedDateAction?(self.date)
-        })
         let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
             self.onSelectedDateAction?(nil)
+        })
+        let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
+            self.onSelectedDateAction?(self.date)
         })
 
         return [selectDateHandler, clearHandler]

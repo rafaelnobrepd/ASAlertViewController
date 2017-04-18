@@ -7,93 +7,93 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00ED586A318AE0ED0E9DCE2224673961 /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B423B3D69D308D5F200226CEE5D923EB /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		022EED91EA8C161B9E6E690EC1FB5038 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5560ED6239A3EA3E98CF0D528C1D8043 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02F6748B5F28FD80EBFF1B939CD863DE /* TPKeyboardAvoiding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F05E09B17E81E9D4DA5151255DFC808 /* TPKeyboardAvoiding.framework */; };
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B23449BB04067C794ED348E370D59E7 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D7946FDECFF8E8402E2A64587FA60B2C /* UIApplication+StrictKeyWindow.m */; };
-		0A8ED6DB1E9E37860047273B /* ASAlertMultiselectOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ED6DA1E9E37860047273B /* ASAlertMultiselectOption.swift */; };
-		0A8ED6DD1E9E39AA0047273B /* ASAlertMultiselectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED6DC1E9E39AA0047273B /* ASAlertMultiselectCell.xib */; };
-		0A8ED6DF1E9E3AAF0047273B /* ASAlertMultiselectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8ED6DE1E9E3AAF0047273B /* ASAlertMultiselectCell.swift */; };
+		097CDD6E468CF387FC1445C0A8F5F4AA /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B423B3D69D308D5F200226CEE5D923EB /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B8DBAB184BB7E8E1D9C5E3386A8DEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
-		0C292BEF532E12427D2EB5D36745583D /* ASAlertTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0B4570E9607218F503F67B8139AEA8 /* ASAlertTimeController.swift */; };
 		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C18A9548E716FF58FAC946AFEF454 /* SwiftSupport.swift */; };
-		20EB4F557F3C2009E8E0B9C75BC2439D /* ASAlertDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47480CB8D56B214AF2C5B630FD9EB0A5 /* ASAlertDateTimeView.swift */; };
+		1C24DEE7569DFA0EFC4D9E34FF495B8F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C6CFBF14637BF19B1BB9A13720FFC /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1F589ED75A9BFC5521BD6EE557A96FC4 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE446978B0B2F8E86E983AA9159DA244 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FDC0E59C86D13096829CAAB997F11CF /* ASAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F65BA575E9E8C9DBCA15A79D5361D69 /* ASAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23EAA8510354E1F0BD881970D19090C8 /* TPKeyboardAvoiding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F05E09B17E81E9D4DA5151255DFC808 /* TPKeyboardAvoiding.framework */; };
 		2704CB0794446F82A939967AA0EB54BF /* Pods-ASAlertViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A19E75F8193811E51364BE93069A30A /* Pods-ASAlertViewController_Example-dummy.m */; };
+		2AE3406D6F2D135F5488BEB2E2384C0F /* ASAlertMultiselectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA93E157375BC1C3B88BC7B5DA13541 /* ASAlertMultiselectCell.swift */; };
+		2C97C62661171CD117F20F06E4B5E9F7 /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98FEA5E17677B593B65EC449D5D6ACA /* ASAlertView.swift */; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D020B7205FB358E90F30F8BA875C900 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		316C95016AACFF2E10890E8E6945E5EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
+		30007DB31FBE3A67DBF773B42F3B624F /* ASHandlerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683C641842B0951DE1B753055A3266D6 /* ASHandlerButton.swift */; };
+		307C0B9F4EC14F74B8C7F9F63D9F3F05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
 		322B5BACF33448F149367582006DD141 /* Pods-ASAlertViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5922E5D41AF33CC96CD625541962E1 /* Pods-ASAlertViewController_Tests-dummy.m */; };
 		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F884526239B867FF70690AD6ACE090D /* UIImage+Diff.m */; };
+		3607B60CB9812904005F8899B61E2291 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5560ED6239A3EA3E98CF0D528C1D8043 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B02214591F167DB6206F7F7E461D5A4 /* UIDatePicker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B775A69DA302A1D536BE9041CBC6F0 /* UIDatePicker+Extension.swift */; };
+		3B3067D85CD30809A768C6A4AE9C2433 /* ASAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234D25C97BB1E89F7FADBEC6B046CB1 /* ASAlert.swift */; };
 		3B83A2F08BC090A6FD3EBA869E1BD39D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E602EB99E10E3845CA690EB63EB2E375 /* QuartzCore.framework */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 61061CFBE9F6BD8A2BEFF3C496E0FC3D /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		444BA74589F177C6141524503D75995B /* ASAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8634E09AC78F9FC95ADA95C126665F40 /* ASAlertAction.swift */; };
-		47D7DFE2E4FB2381D488A424F3616FA7 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DA1A03186AEC88808069759DA0E72C /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4D3FF2945ED0DC97EDCAED618F9A16B3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F72C6CFBF14637BF19B1BB9A13720FFC /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DB3ADCEC02FFA0CE002469440D53E2D /* ASAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81599347020472C5CBD441ECDE3E5ED3 /* ASAlertAction.swift */; };
 		502CAECB7C64867943FDDDC9C88C7E6A /* Pods-ASAlertViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86443182B4A850A3687CA7E9A01332D7 /* Pods-ASAlertViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E32EE7C28113757151B71CCF26C7F /* FBSnapshotTestCase-dummy.m */; };
-		565255138F9D701BE7F0C4A7ACBDDE94 /* ASAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681F06AD88940FA94D93F320F919065 /* ASAlertViewController-dummy.m */; };
-		58875FE03E0E3CCAD5F6A1B43FAA28E5 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FC3ECA69B6D27C910DB33BDE5C0B2 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		531A818D7E4E529208499031D2CD1495 /* ASAlertDateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA5907A7A40BE2836880E88730C5477 /* ASAlertDateTimeView.swift */; };
+		597D7B10479CD2919DD58620F69A7613 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9291103789CA2A42CB90E9FBBBEFC8 /* CustomView.swift */; };
+		5CCAA3752B7A05FCB8FA2E1B464BC8AE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D870AC557629240A13331DAD4F61916 /* Media.xcassets */; };
 		5F1CF3CB8EE6BA9E864DDCE6EEDB0A15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
-		62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultiselectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60797D725943F1462A151E8D9BA76F /* UIKit.framework */; };
+		690286E4E29E52A46D93E93716ED8B0D /* ASAlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71285617DB5063CB24AF541B79F84A7 /* ASAlertConfig.swift */; };
 		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 982EADDE0B007FDE7A2C019CB7036872 /* UIImage+Compare.m */; };
-		70B7C8720C76646A57AA1F386552048B /* ASHandlerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E5918CB5CA8E0E2032E76D521AB495 /* ASHandlerButton.swift */; };
+		72BBBF8AD6D1DE38495D98038AD80B51 /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF759688A2D6C56B61C834005B941102 /* TPKeyboardAvoiding-dummy.m */; };
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D03E371E49817F81346B566C06DE9A1F /* UIImage+Snapshot.m */; };
-		796E310CBEEEF50DBE0862BB6BD03FEA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C3C8C6C65C24D8051BBAA86B6DABB /* UIView+Extension.swift */; };
-		7B01A7C06894F65DCBDC2C1EFF5D9B03 /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FE446978B0B2F8E86E983AA9159DA244 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BA57480CD34A36C30AB152688169E1A /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704DE1812439B985C30D16BBE780F286 /* ASAlertController.swift */; };
-		7C05ABCDD427B595ADE0E8E43F0FE485 /* UIDatePicker+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7062113339F054FEEF2522361673A8D /* UIDatePicker+Extension.swift */; };
-		7C26DDCEBAC199BE5D6444996F9A811A /* ASAlertMultiselectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BF2984E5ABE83276348BA4CFC00E16 /* ASAlertMultiselectView.swift */; };
-		7C888A2562ECD21DB0AF38AD5F400550 /* ASAlertDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A788837E89657B3FB33B6C06D52C36 /* ASAlertDateController.swift */; };
-		81F25FF101BD4CCDC0A7385F1DE78253 /* ASAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F65BA575E9E8C9DBCA15A79D5361D69 /* ASAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CF8438DD5569D9D1298E72AA38D0DBD /* ASAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4E13B30AC7D9D7B3DA8A13B4CE9E53 /* ASAlertHandler.swift */; };
+		7FB8335C47581E21118BF66DCB24A550 /* ASAlertDateTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D251C1CDD347C1553F9F887D59C6EA1 /* ASAlertDateTimeController.swift */; };
+		83A6FF9DD96D269A800E0A984A3C35E9 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DA1A03186AEC88808069759DA0E72C /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E67C6CD1292380140070A10B90F777D2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9940C5AA39AFD04BA3C015C0FDEF3692 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
-		99B32328E43406FC7698622B9311CD73 /* ASAlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51E78EEB76A1B04CA99149792EF821A /* ASAlertConfig.swift */; };
-		A31179F40EFF6F5F0365FE94FE530AFD /* ASAlertMultiselectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BF4E72B4D29220AA1A84B985013D86 /* ASAlertMultiselectController.swift */; };
+		976BDDA36077D259C73E62A5311BEC70 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 53013A704B219637A448983DB5D9CA50 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		997675996F72E2168060D724DDEEDDCA /* ASAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1997B4ADD56F3796E6ABFC6B18B0FB9D /* ASAlertView.xib */; };
+		A37099347FEBCE2DFCB12C2E0AAEF26C /* ASAlertTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B777ED77AFF518BE254DB1EFC50AF1 /* ASAlertTimeController.swift */; };
+		A48EDAB5581A84080357D56E36B2B9E8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4FC3ECA69B6D27C910DB33BDE5C0B2 /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = B726892EF7B9B9DF59267A1234EE078D /* FBSnapshotTestController.m */; };
-		A6A54E1A1B61DF677E0E73563EF3C459 /* ASAlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18915FECE8DA0EAB67A27816A6714BF /* ASAlertHandler.swift */; };
-		A72BF58A18CE17E2C62597DF38A92254 /* ASAlertDateTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E57B344BC71C64F3876D67C0C5CB2CF /* ASAlertDateTimeView.xib */; };
-		A9D14B3B1D4241A2BB5A2A34880F3720 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 53013A704B219637A448983DB5D9CA50 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B19BBBB2476B5DB6DFC2FE6DF5D1C513 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D93F95A7C5C31B626D567102EAB22C /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A837B21D8893736DC4FDF35F4BFB3889 /* ASAlertMultiselectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A20BFEF130783440D2F4BE93257752 /* ASAlertMultiselectView.swift */; };
+		B694417EABB82E4B8D00F6D61D66A33F /* ASAlertMultiselectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D5467AF0677BEA225EC1D57747F2A1D /* ASAlertMultiselectView.xib */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B042D4BDCAA94B829613C4A170357F /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B84700842BF9AAC57C830E2FC47DC6FD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E4D5771BA5E70932B8FDD1216DF0D /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B8BFCD1C32A6E91CDFDBBFEE5965E324 /* ASAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B019CAF682251F0585DD0BC50419E39 /* ASAlert.swift */; };
-		BC4ED85A816293067F9AD7D8D87D4F7E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E4A83B3D17E72C7C70267053FF52C5 /* CustomView.swift */; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B51522674D00B20B3F5B1FB8728FA32C /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 31024F0A32968DF35F584570D76CD511 /* FBSnapshotTestCase.m */; };
 		BF7513F64FCD4F8265D0D76A9AC9A770 /* Pods-ASAlertViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = C751CE47E512CCEA072055E8F576767E /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C63AB0B8426E1B611AFCC7C5588253BA /* ASAlertDateTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2B8174A82097F4FD30D67EFBF6B6F6 /* ASAlertDateTimeController.swift */; };
+		BFDE91F6B736B308856F52C20E334217 /* ASAlertMultiselectOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BADC7A2CF9675A8BE56B358B7214E /* ASAlertMultiselectOption.swift */; };
+		C75F34BCD4AD8F46561E8CFB2B70172D /* ASAlertDateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C806A1FFE023B3A62271F412BDF7210A /* ASAlertDateController.swift */; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = BE802DCFE1B53BD0FC159D719AC4F1DB /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		D2169A3E9F1CC963149E0F450D790B0B /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF759688A2D6C56B61C834005B941102 /* TPKeyboardAvoiding-dummy.m */; };
+		D2B9BB59E99703D6AA6D72E67D642711 /* ASAlertMultiselectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C1D1B581877FDE0967F76800A8B08 /* ASAlertMultiselectController.swift */; };
 		D32332CA40D4F631E8DBA950B25A18FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561229FE6A18EA4045360925775FA3F /* XCTest.framework */; };
-		D5BCB7DF434EF378DE7354DA30A0C53C /* ASAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072AEBE03F2B20A835A25CB29AD1522 /* ASAlertView.swift */; };
+		D47A94E46189E07BACB4F6DC11B942FF /* ASAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4681F06AD88940FA94D93F320F919065 /* ASAlertViewController-dummy.m */; };
 		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = D537D04BBF3B8F025BA65101EF5B9F13 /* FBSnapshotTestCasePlatform.m */; };
+		E3EED660BDFCD6A7BA9AF9A4F16CC5FE /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 45D93F95A7C5C31B626D567102EAB22C /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EABD5C56AED96BBF908447D1D42AA368 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000547628014C4F300F8AED8E302C3E9 /* UIView+Extension.swift */; };
 		EB94DB7A4D25F67D2C604C3725C13801 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
-		F005FD2CF7A7B4917EA68968193AF2CF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8200E9A72295738DA3097B7777255E7 /* Media.xcassets */; };
-		FE8C4B5FDCC9F05A702AD6B9790522A6 /* ASAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A58C663BFA7DE943079AB4D58EDC0C3A /* ASAlertView.xib */; };
+		EDD1CFF300856BD1290EC4CCB7CAA981 /* ASAlertDateTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9E318D4359451E227E4F55C195D188 /* ASAlertDateTimeView.xib */; };
+		F1EC4DD493087B754AD0B4B30F5DD61C /* ASAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F4DC7F0F08AAFAF4EBBD93EE84FA2E /* ASAlertController.swift */; };
+		F45A72F1878214459529C81078FEEBFD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E4D5771BA5E70932B8FDD1216DF0D /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5090D5C38DDAD4FFD860ED711EA045E /* ASAlertMultiselectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B8554C8C8DAAF4D4E44D451DB2CA9 /* ASAlertMultiselectCell.xib */; };
+		FB37E9A3A6BA0B7AAAC9DCABE84199DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3718B4C81579EEB1930B7C3FDB03B956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA908233FC5A63ABDC1B12555549787;
+			remoteInfo = TPKeyboardAvoiding;
+		};
 		4AE90948E320452732FAE7CB8BEB5CFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 920983D137A464807379E08F6674B36E;
+			remoteGlobalIDString = 43704361B37A5AD4285C8F5FC19095F1;
 			remoteInfo = ASAlertViewController;
 		};
 		69A79E7AE984EBB6E4E8DAF4BE59B60B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2DF022904AE6BA0659C69C6508F45214;
-			remoteInfo = TPKeyboardAvoiding;
-		};
-		DC82E4161B5BFD88E787277837C4630C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2DF022904AE6BA0659C69C6508F45214;
+			remoteGlobalIDString = 7AA908233FC5A63ABDC1B12555549787;
 			remoteInfo = TPKeyboardAvoiding;
 		};
 		EB781787F0A97A118564F4E65C744553 /* PBXContainerItemProxy */ = {
@@ -106,99 +106,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
-		06E5918CB5CA8E0E2032E76D521AB495 /* ASHandlerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASHandlerButton.swift; sourceTree = "<group>"; };
-		06E5DB6FC6EA4E0B207B7E90B6EC6C45 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0735021620FD115DA901265FE7B78907 /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		000547628014C4F300F8AED8E302C3E9 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		025E60FC11D5569C14BB4E1E5D28F14C /* Pods-ASAlertViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Example.modulemap"; sourceTree = "<group>"; };
+		06E5DB6FC6EA4E0B207B7E90B6EC6C45 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0735021620FD115DA901265FE7B78907 /* Pods_ASAlertViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Tests.framework; path = "Pods-ASAlertViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		098260AB3D662A76CD2E33168FE0B5C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A8ED6DA1E9E37860047273B /* ASAlertMultiselectOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectOption.swift; sourceTree = "<group>"; };
-		0A8ED6DC1E9E39AA0047273B /* ASAlertMultiselectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASAlertMultiselectCell.xib; sourceTree = "<group>"; };
-		0A8ED6DE1E9E3AAF0047273B /* ASAlertMultiselectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectCell.swift; sourceTree = "<group>"; };
-		0AD97611E00DDFE0111CB11AF07FF035 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASAlertViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD97611E00DDFE0111CB11AF07FF035 /* Pods_ASAlertViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ASAlertViewController_Example.framework; path = "Pods-ASAlertViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F05E09B17E81E9D4DA5151255DFC808 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1075C4CB7E32AE1C1E4CA558A99EC0E4 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1075C4CB7E32AE1C1E4CA558A99EC0E4 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12F4869E7348CEC831E1925A7487E855 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189E32EE7C28113757151B71CCF26C7F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		1997B4ADD56F3796E6ABFC6B18B0FB9D /* ASAlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
 		1B0E4D5771BA5E70932B8FDD1216DF0D /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
-		22A788837E89657B3FB33B6C06D52C36 /* ASAlertDateController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateController.swift; sourceTree = "<group>"; };
+		1D870AC557629240A13331DAD4F61916 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		246C1D1B581877FDE0967F76800A8B08 /* ASAlertMultiselectController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectController.swift; sourceTree = "<group>"; };
 		2A19E75F8193811E51364BE93069A30A /* Pods-ASAlertViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASAlertViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		2B0B4570E9607218F503F67B8139AEA8 /* ASAlertTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertTimeController.swift; sourceTree = "<group>"; };
-		2E57B344BC71C64F3876D67C0C5CB2CF /* ASAlertDateTimeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertDateTimeView.xib; sourceTree = "<group>"; };
+		2D251C1CDD347C1553F9F887D59C6EA1 /* ASAlertDateTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeController.swift; sourceTree = "<group>"; };
+		2E9E318D4359451E227E4F55C195D188 /* ASAlertDateTimeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertDateTimeView.xib; sourceTree = "<group>"; };
 		31024F0A32968DF35F584570D76CD511 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		33BF4E72B4D29220AA1A84B985013D86 /* ASAlertMultiselectController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectController.swift; sourceTree = "<group>"; };
-		36E4A83B3D17E72C7C70267053FF52C5 /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		3A896CDB6C1051053A44D2744349C6A6 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B777ED77AFF518BE254DB1EFC50AF1 /* ASAlertTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertTimeController.swift; sourceTree = "<group>"; };
+		35B775A69DA302A1D536BE9041CBC6F0 /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
+		3A896CDB6C1051053A44D2744349C6A6 /* ASAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ASAlertViewController.framework; path = ASAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4166A5580ABA6C6C4832B087B7D726C0 /* ASAlertViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ASAlertViewController.xcconfig; sourceTree = "<group>"; };
 		4297E293A6FF8866A629074B122E55B7 /* Pods-ASAlertViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		42FE7C66E3977EEC49AE180FC631EF2D /* Pods-ASAlertViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		45D93F95A7C5C31B626D567102EAB22C /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		4681F06AD88940FA94D93F320F919065 /* ASAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ASAlertViewController-dummy.m"; sourceTree = "<group>"; };
-		47480CB8D56B214AF2C5B630FD9EB0A5 /* ASAlertDateTimeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeView.swift; sourceTree = "<group>"; };
+		4AA93E157375BC1C3B88BC7B5DA13541 /* ASAlertMultiselectCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectCell.swift; sourceTree = "<group>"; };
 		4B23449BB04067C794ED348E370D59E7 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		4C9291103789CA2A42CB90E9FBBBEFC8 /* CustomView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		53013A704B219637A448983DB5D9CA50 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		5560ED6239A3EA3E98CF0D528C1D8043 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		574BADC7A2CF9675A8BE56B358B7214E /* ASAlertMultiselectOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectOption.swift; sourceTree = "<group>"; };
+		5D5467AF0677BEA225EC1D57747F2A1D /* ASAlertMultiselectView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertMultiselectView.xib; sourceTree = "<group>"; };
 		5F65BA575E9E8C9DBCA15A79D5361D69 /* ASAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-umbrella.h"; sourceTree = "<group>"; };
 		61061CFBE9F6BD8A2BEFF3C496E0FC3D /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		63E4E1D106E3C24C3392B2A275EDB683 /* ASAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ASAlertViewController-prefix.pch"; sourceTree = "<group>"; };
 		65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
 		661C7BE307E0EFC83063F392EA6E6FAF /* Pods-ASAlertViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		683C641842B0951DE1B753055A3266D6 /* ASHandlerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASHandlerButton.swift; sourceTree = "<group>"; };
+		6B1B8554C8C8DAAF4D4E44D451DB2CA9 /* ASAlertMultiselectCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertMultiselectCell.xib; sourceTree = "<group>"; };
 		6B6C18A9548E716FF58FAC946AFEF454 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertMultiselectView.xib; sourceTree = "<group>"; };
 		6F884526239B867FF70690AD6ACE090D /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		704DE1812439B985C30D16BBE780F286 /* ASAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
 		73B40363A83BE65170F953768CBBDF67 /* Pods-ASAlertViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ASAlertViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7561229FE6A18EA4045360925775FA3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7CA5907A7A40BE2836880E88730C5477 /* ASAlertDateTimeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeView.swift; sourceTree = "<group>"; };
 		7D020B7205FB358E90F30F8BA875C900 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		7E0713D1AAB51C0C0716331332B2C593 /* Pods-ASAlertViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		80BF2984E5ABE83276348BA4CFC00E16 /* ASAlertMultiselectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectView.swift; sourceTree = "<group>"; };
+		81599347020472C5CBD441ECDE3E5ED3 /* ASAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertAction.swift; sourceTree = "<group>"; };
 		82C83295165DCB36807B1B9C0B0887A5 /* Pods-ASAlertViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8634E09AC78F9FC95ADA95C126665F40 /* ASAlertAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertAction.swift; sourceTree = "<group>"; };
 		86443182B4A850A3687CA7E9A01332D7 /* Pods-ASAlertViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8C72B7C1C4020F3F1A905C432AED2E54 /* Pods-ASAlertViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		91DD2420C07D7D68AA78C2F30F61461E /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		91DD2420C07D7D68AA78C2F30F61461E /* ASAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ASAlertViewController.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		982EADDE0B007FDE7A2C019CB7036872 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		9898C4B69996AD07BF5454AE0EDD8082 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		996C3C8C6C65C24D8051BBAA86B6DABB /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		9A58CF5CC4C892A77F2431E03A181588 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		9A58CF5CC4C892A77F2431E03A181588 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
 		9A5922E5D41AF33CC96CD625541962E1 /* Pods-ASAlertViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ASAlertViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		9B019CAF682251F0585DD0BC50419E39 /* ASAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlert.swift; sourceTree = "<group>"; };
 		9CA81D4F07C409FA06F6AD3605288C56 /* Pods-ASAlertViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ASAlertViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D03CE03D9060A29FE5AB3E38A2076FF /* Pods-ASAlertViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A58C663BFA7DE943079AB4D58EDC0C3A /* ASAlertView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ASAlertView.xib; sourceTree = "<group>"; };
+		A2F4DC7F0F08AAFAF4EBBD93EE84FA2E /* ASAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertController.swift; sourceTree = "<group>"; };
 		A72441CA8AE25ADC3DBEC3AA8DBC55BB /* Pods-ASAlertViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ASAlertViewController_Tests-resources.sh"; sourceTree = "<group>"; };
 		A8B042D4BDCAA94B829613C4A170357F /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		AE4FE6FD030C4B9B7D82F24E4A5813D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4FC3ECA69B6D27C910DB33BDE5C0B2 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		B17BE6694C45CE1BEA1364A49EC15EFF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		B1A20BFEF130783440D2F4BE93257752 /* ASAlertMultiselectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertMultiselectView.swift; sourceTree = "<group>"; };
 		B423B3D69D308D5F200226CEE5D923EB /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		B51522674D00B20B3F5B1FB8728FA32C /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		B71285617DB5063CB24AF541B79F84A7 /* ASAlertConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertConfig.swift; sourceTree = "<group>"; };
 		B726892EF7B9B9DF59267A1234EE078D /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		BE802DCFE1B53BD0FC159D719AC4F1DB /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		C34E9A6AE03EFADE6956ABD6DFB46BEC /* Pods-ASAlertViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C51E78EEB76A1B04CA99149792EF821A /* ASAlertConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertConfig.swift; sourceTree = "<group>"; };
-		C7062113339F054FEEF2522361673A8D /* UIDatePicker+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Extension.swift"; sourceTree = "<group>"; };
 		C751CE47E512CCEA072055E8F576767E /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		CB6BA44A1176042739962CBC795C6BE0 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		CC2B8174A82097F4FD30D67EFBF6B6F6 /* ASAlertDateTimeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateTimeController.swift; sourceTree = "<group>"; };
+		C806A1FFE023B3A62271F412BDF7210A /* ASAlertDateController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertDateController.swift; sourceTree = "<group>"; };
+		C98FEA5E17677B593B65EC449D5D6ACA /* ASAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
+		CB6BA44A1176042739962CBC795C6BE0 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D03E371E49817F81346B566C06DE9A1F /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		D18915FECE8DA0EAB67A27816A6714BF /* ASAlertHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertHandler.swift; sourceTree = "<group>"; };
 		D537D04BBF3B8F025BA65101EF5B9F13 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		D7946FDECFF8E8402E2A64587FA60B2C /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		DA06618C22821EDD7F5DE7289FC6522C /* Pods-ASAlertViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ASAlertViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E072AEBE03F2B20A835A25CB29AD1522 /* ASAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertView.swift; sourceTree = "<group>"; };
 		E0DA1A03186AEC88808069759DA0E72C /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		E234D25C97BB1E89F7FADBEC6B046CB1 /* ASAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlert.swift; sourceTree = "<group>"; };
 		E602EB99E10E3845CA690EB63EB2E375 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E67C6CD1292380140070A10B90F777D2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E8200E9A72295738DA3097B7777255E7 /* Media.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		E95D273ADDF22A8339EFB427B3A60F95 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		EB60797D725943F1462A151E8D9BA76F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EB95B9A2F204271668507AAE65BC7205 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		ECE31333093831307B88C5076F1B3BF4 /* Pods-ASAlertViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ASAlertViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		F4F7AFAF70E450994700CC436CF4C313 /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
 		F53350EDCEA4EF2A309CF6FFD1E72792 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72C6CFBF14637BF19B1BB9A13720FFC /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
 		FE446978B0B2F8E86E983AA9159DA244 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		FE4E13B30AC7D9D7B3DA8A13B4CE9E53 /* ASAlertHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ASAlertHandler.swift; sourceTree = "<group>"; };
 		FED66E87D46407298D68A278D2E5FD0D /* Pods-ASAlertViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ASAlertViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF759688A2D6C56B61C834005B941102 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,20 +215,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20B45AAADECE2F0D3F0E8CA631A14701 /* Frameworks */ = {
+		352C5CDC5901CD5CA17861358C1C5BC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				316C95016AACFF2E10890E8E6945E5EC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		857F22C32E4DACDE14AAAE6EEF6FEEEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9940C5AA39AFD04BA3C015C0FDEF3692 /* Foundation.framework in Frameworks */,
-				02F6748B5F28FD80EBFF1B939CD863DE /* TPKeyboardAvoiding.framework in Frameworks */,
+				307C0B9F4EC14F74B8C7F9F63D9F3F05 /* Foundation.framework in Frameworks */,
+				23EAA8510354E1F0BD881970D19090C8 /* TPKeyboardAvoiding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1CF3CB8EE6BA9E864DDCE6EEDB0A15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2F495D17E7D2F6F80FB31315938344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB37E9A3A6BA0B7AAAC9DCABE84199DE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,43 +251,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1615EE79E3EBFA387DA4F52A63A2F33C /* AlertDateTime */ = {
-			isa = PBXGroup;
-			children = (
-				CC2B8174A82097F4FD30D67EFBF6B6F6 /* ASAlertDateTimeController.swift */,
-				47480CB8D56B214AF2C5B630FD9EB0A5 /* ASAlertDateTimeView.swift */,
-			);
-			path = AlertDateTime;
-			sourceTree = "<group>";
-		};
-		25BBA9F2BD51C322CBE6BDE7C7DE64EE /* ASAlertMultiselect */ = {
-			isa = PBXGroup;
-			children = (
-				33BF4E72B4D29220AA1A84B985013D86 /* ASAlertMultiselectController.swift */,
-				80BF2984E5ABE83276348BA4CFC00E16 /* ASAlertMultiselectView.swift */,
-				0A8ED6DA1E9E37860047273B /* ASAlertMultiselectOption.swift */,
-				0A8ED6DE1E9E3AAF0047273B /* ASAlertMultiselectCell.swift */,
-			);
-			path = ASAlertMultiselect;
-			sourceTree = "<group>";
-		};
-		2698377A96B537CEB4103DE816BE0230 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				36E4A83B3D17E72C7C70267053FF52C5 /* CustomView.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		2C4358DC9ED83F0E74E73EF822141A76 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C7062113339F054FEEF2522361673A8D /* UIDatePicker+Extension.swift */,
-				996C3C8C6C65C24D8051BBAA86B6DABB /* UIView+Extension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		2F5A965D7FB8C4F56197A5D72912EBE8 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,12 +285,13 @@
 			path = "Target Support Files/Pods-ASAlertViewController_Tests";
 			sourceTree = "<group>";
 		};
-		473622E34CAF0BBBE777F07AC9F05190 /* ASAlertViewController */ = {
+		5023A8F3EE10999EDEB52E46D03CDF68 /* AlertDate */ = {
 			isa = PBXGroup;
 			children = (
-				6D3DCCD95A6F10697E0752F366768748 /* Assets */,
+				C806A1FFE023B3A62271F412BDF7210A /* ASAlertDateController.swift */,
 			);
-			path = ASAlertViewController;
+			name = AlertDate;
+			path = AlertDate;
 			sourceTree = "<group>";
 		};
 		578188B36661BA95095FC036826B4E12 /* Support Files */ = {
@@ -344,16 +308,19 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		6D3DCCD95A6F10697E0752F366768748 /* Assets */ = {
+		6FFD48ECCDED479C79CC2C3D999E0368 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2E57B344BC71C64F3876D67C0C5CB2CF /* ASAlertDateTimeView.xib */,
-				6F32D44829BC2E4F75F936D6B8951395 /* ASAlertMultiselectView.xib */,
-				0A8ED6DC1E9E39AA0047273B /* ASAlertMultiselectCell.xib */,
-				A58C663BFA7DE943079AB4D58EDC0C3A /* ASAlertView.xib */,
-				E8200E9A72295738DA3097B7777255E7 /* Media.xcassets */,
+				FBA5547E89EB3EC5B17CB0100138A300 /* AlertController */,
+				5023A8F3EE10999EDEB52E46D03CDF68 /* AlertDate */,
+				EC09DB315B28134ADDF44E9FED3815CA /* AlertDateTime */,
+				ABF20E0C8A856A580278560105EFA407 /* AlertTime */,
+				EFDE1C60A90089C4C7AF06147FF64F3E /* ASAlertMultiselect */,
+				B79092E2289CF55165493F25239E3CF9 /* Extensions */,
+				A75D2535D938AD09C08D97C2AF1FF73C /* Utils */,
 			);
-			path = Assets;
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		70AABDE5A1FAD85C504272EB9FBC4394 /* TPKeyboardAvoiding */ = {
@@ -369,6 +336,7 @@
 				1B0E4D5771BA5E70932B8FDD1216DF0D /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				89AA31DEBFAB0C84ECC92341A9C4F3B3 /* Support Files */,
 			);
+			name = TPKeyboardAvoiding;
 			path = TPKeyboardAvoiding;
 			sourceTree = "<group>";
 		};
@@ -437,26 +405,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DE739EB3A9C3A7155D90946843BE0E2 /* AlertController */ = {
+		A75D2535D938AD09C08D97C2AF1FF73C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9B019CAF682251F0585DD0BC50419E39 /* ASAlert.swift */,
-				8634E09AC78F9FC95ADA95C126665F40 /* ASAlertAction.swift */,
-				C51E78EEB76A1B04CA99149792EF821A /* ASAlertConfig.swift */,
-				704DE1812439B985C30D16BBE780F286 /* ASAlertController.swift */,
-				D18915FECE8DA0EAB67A27816A6714BF /* ASAlertHandler.swift */,
-				E072AEBE03F2B20A835A25CB29AD1522 /* ASAlertView.swift */,
-				06E5918CB5CA8E0E2032E76D521AB495 /* ASHandlerButton.swift */,
+				4C9291103789CA2A42CB90E9FBBBEFC8 /* CustomView.swift */,
 			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		A40488FD3331F41ECFF62FBB81AF03B6 /* AlertTime */ = {
-			isa = PBXGroup;
-			children = (
-				2B0B4570E9607218F503F67B8139AEA8 /* ASAlertTimeController.swift */,
-			);
-			path = AlertTime;
+			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A8C95D46CA279E3C6DABC1F7B69759F5 /* Support Files */ = {
@@ -482,18 +437,51 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ABF20E0C8A856A580278560105EFA407 /* AlertTime */ = {
+			isa = PBXGroup;
+			children = (
+				32B777ED77AFF518BE254DB1EFC50AF1 /* ASAlertTimeController.swift */,
+			);
+			name = AlertTime;
+			path = AlertTime;
+			sourceTree = "<group>";
+		};
+		B17B3868CF08D4456CF4EF88C97DD36D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2E9E318D4359451E227E4F55C195D188 /* ASAlertDateTimeView.xib */,
+				6B1B8554C8C8DAAF4D4E44D451DB2CA9 /* ASAlertMultiselectCell.xib */,
+				5D5467AF0677BEA225EC1D57747F2A1D /* ASAlertMultiselectView.xib */,
+				1997B4ADD56F3796E6ABFC6B18B0FB9D /* ASAlertView.xib */,
+				1D870AC557629240A13331DAD4F61916 /* Media.xcassets */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B79092E2289CF55165493F25239E3CF9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35B775A69DA302A1D536BE9041CBC6F0 /* UIDatePicker+Extension.swift */,
+				000547628014C4F300F8AED8E302C3E9 /* UIView+Extension.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B80A6D015ED808D20463A445FECE0FC3 /* ASAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F69825CBA61B491C1A988579813FD74F /* Classes */,
+				6FFD48ECCDED479C79CC2C3D999E0368 /* Classes */,
 			);
+			name = ASAlertViewController;
 			path = ASAlertViewController;
 			sourceTree = "<group>";
 		};
 		C52D82785FCD828D56236A3BEF871163 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				473622E34CAF0BBBE777F07AC9F05190 /* ASAlertViewController */,
+				E3FC785291AF355D8F0FFB0F5E4C9F13 /* ASAlertViewController */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -525,7 +513,17 @@
 				578188B36661BA95095FC036826B4E12 /* Support Files */,
 				2F5A965D7FB8C4F56197A5D72912EBE8 /* SwiftSupport */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		E3FC785291AF355D8F0FFB0F5E4C9F13 /* ASAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B17B3868CF08D4456CF4EF88C97DD36D /* Assets */,
+			);
+			name = ASAlertViewController;
+			path = ASAlertViewController;
 			sourceTree = "<group>";
 		};
 		EA19C3B9FD84F52E35325845F8F8A8C4 /* Core */ = {
@@ -549,12 +547,26 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		EAB83A8A2BCD18A9F56A6D184D3347DE /* AlertDate */ = {
+		EC09DB315B28134ADDF44E9FED3815CA /* AlertDateTime */ = {
 			isa = PBXGroup;
 			children = (
-				22A788837E89657B3FB33B6C06D52C36 /* ASAlertDateController.swift */,
+				2D251C1CDD347C1553F9F887D59C6EA1 /* ASAlertDateTimeController.swift */,
+				7CA5907A7A40BE2836880E88730C5477 /* ASAlertDateTimeView.swift */,
 			);
-			path = AlertDate;
+			name = AlertDateTime;
+			path = AlertDateTime;
+			sourceTree = "<group>";
+		};
+		EFDE1C60A90089C4C7AF06147FF64F3E /* ASAlertMultiselect */ = {
+			isa = PBXGroup;
+			children = (
+				4AA93E157375BC1C3B88BC7B5DA13541 /* ASAlertMultiselectCell.swift */,
+				246C1D1B581877FDE0967F76800A8B08 /* ASAlertMultiselectController.swift */,
+				574BADC7A2CF9675A8BE56B358B7214E /* ASAlertMultiselectOption.swift */,
+				B1A20BFEF130783440D2F4BE93257752 /* ASAlertMultiselectView.swift */,
+			);
+			name = ASAlertMultiselect;
+			path = ASAlertMultiselect;
 			sourceTree = "<group>";
 		};
 		F54E180B509ED47D1A0E49886CDFF7C6 /* iOS */ = {
@@ -568,18 +580,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F69825CBA61B491C1A988579813FD74F /* Classes */ = {
+		FBA5547E89EB3EC5B17CB0100138A300 /* AlertController */ = {
 			isa = PBXGroup;
 			children = (
-				9DE739EB3A9C3A7155D90946843BE0E2 /* AlertController */,
-				EAB83A8A2BCD18A9F56A6D184D3347DE /* AlertDate */,
-				1615EE79E3EBFA387DA4F52A63A2F33C /* AlertDateTime */,
-				A40488FD3331F41ECFF62FBB81AF03B6 /* AlertTime */,
-				25BBA9F2BD51C322CBE6BDE7C7DE64EE /* ASAlertMultiselect */,
-				2C4358DC9ED83F0E74E73EF822141A76 /* Extensions */,
-				2698377A96B537CEB4103DE816BE0230 /* Utils */,
+				E234D25C97BB1E89F7FADBEC6B046CB1 /* ASAlert.swift */,
+				81599347020472C5CBD441ECDE3E5ED3 /* ASAlertAction.swift */,
+				B71285617DB5063CB24AF541B79F84A7 /* ASAlertConfig.swift */,
+				A2F4DC7F0F08AAFAF4EBBD93EE84FA2E /* ASAlertController.swift */,
+				FE4E13B30AC7D9D7B3DA8A13B4CE9E53 /* ASAlertHandler.swift */,
+				C98FEA5E17677B593B65EC449D5D6ACA /* ASAlertView.swift */,
+				683C641842B0951DE1B753055A3266D6 /* ASHandlerButton.swift */,
 			);
-			path = Classes;
+			name = AlertController;
+			path = AlertController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,14 +603,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				502CAECB7C64867943FDDDC9C88C7E6A /* Pods-ASAlertViewController_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D08226C9DD7A47920F2E48B094E3482 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81F25FF101BD4CCDC0A7385F1DE78253 /* ASAlertViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,38 +629,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7223D8970C24D7D361ABD91FD70F8BE /* Headers */ = {
+		A3B46EC4A2855D1CAE4A8747720F36BE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				022EED91EA8C161B9E6E690EC1FB5038 /* TPKeyboardAvoiding-umbrella.h in Headers */,
-				A9D14B3B1D4241A2BB5A2A34880F3720 /* TPKeyboardAvoidingCollectionView.h in Headers */,
-				00ED586A318AE0ED0E9DCE2224673961 /* TPKeyboardAvoidingScrollView.h in Headers */,
-				7B01A7C06894F65DCBDC2C1EFF5D9B03 /* TPKeyboardAvoidingTableView.h in Headers */,
-				B19BBBB2476B5DB6DFC2FE6DF5D1C513 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+				3607B60CB9812904005F8899B61E2291 /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				976BDDA36077D259C73E62A5311BEC70 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				097CDD6E468CF387FC1445C0A8F5F4AA /* TPKeyboardAvoidingScrollView.h in Headers */,
+				1F589ED75A9BFC5521BD6EE557A96FC4 /* TPKeyboardAvoidingTableView.h in Headers */,
+				E3EED660BDFCD6A7BA9AF9A4F16CC5FE /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81EA8B7B3AA32BFA94E3AA72A2F5332 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FDC0E59C86D13096829CAAB997F11CF /* ASAlertViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2DF022904AE6BA0659C69C6508F45214 /* TPKeyboardAvoiding */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B55A8045E87D6D2EEC6937C18CD3EE3F /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
-			buildPhases = (
-				6C7E9A877B75AF0C15ED9D4EB4BAF27B /* Sources */,
-				20B45AAADECE2F0D3F0E8CA631A14701 /* Frameworks */,
-				C7223D8970C24D7D361ABD91FD70F8BE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TPKeyboardAvoiding;
-			productName = TPKeyboardAvoiding;
-			productReference = 1075C4CB7E32AE1C1E4CA558A99EC0E4 /* TPKeyboardAvoiding.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
@@ -671,6 +667,25 @@
 			name = FBSnapshotTestCase;
 			productName = FBSnapshotTestCase;
 			productReference = 06E5DB6FC6EA4E0B207B7E90B6EC6C45 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43704361B37A5AD4285C8F5FC19095F1 /* ASAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F403B1375AC492D6E49437BC5046FB /* Build configuration list for PBXNativeTarget "ASAlertViewController" */;
+			buildPhases = (
+				3C5B840AB3C42B39DAA4276270531159 /* Sources */,
+				352C5CDC5901CD5CA17861358C1C5BC6 /* Frameworks */,
+				075D406B68B14A933B68E58447CB6757 /* Resources */,
+				B81EA8B7B3AA32BFA94E3AA72A2F5332 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92BC55A4EC8459C5346CFD398301FA18 /* PBXTargetDependency */,
+			);
+			name = ASAlertViewController;
+			productName = ASAlertViewController;
+			productReference = 3A896CDB6C1051053A44D2744349C6A6 /* ASAlertViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		76A121294BA12A063362950A62890736 /* Pods-ASAlertViewController_Tests */ = {
@@ -691,23 +706,21 @@
 			productReference = 0735021620FD115DA901265FE7B78907 /* Pods_ASAlertViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		920983D137A464807379E08F6674B36E /* ASAlertViewController */ = {
+		7AA908233FC5A63ABDC1B12555549787 /* TPKeyboardAvoiding */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90300F7FD73A5F6EFD1C6E117B075F21 /* Build configuration list for PBXNativeTarget "ASAlertViewController" */;
+			buildConfigurationList = F7081FC29C5E5D789E6F11082EA0474E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
 			buildPhases = (
-				72BF037C2D2739C35442212976F26087 /* Sources */,
-				857F22C32E4DACDE14AAAE6EEF6FEEEB /* Frameworks */,
-				2846A06CC7D7A80E39051937225760D6 /* Resources */,
-				1D08226C9DD7A47920F2E48B094E3482 /* Headers */,
+				B48B2250DE7ADB8EDBA0BED119C2184F /* Sources */,
+				CD2F495D17E7D2F6F80FB31315938344 /* Frameworks */,
+				A3B46EC4A2855D1CAE4A8747720F36BE /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0ED47AC5DE4966B3DBB06F074E6F6625 /* PBXTargetDependency */,
 			);
-			name = ASAlertViewController;
-			productName = ASAlertViewController;
-			productReference = 3A896CDB6C1051053A44D2744349C6A6 /* ASAlertViewController.framework */;
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = 1075C4CB7E32AE1C1E4CA558A99EC0E4 /* TPKeyboardAvoiding.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A99033159A4C8C707F49FA074424B09B /* Pods-ASAlertViewController_Example */ = {
@@ -750,25 +763,25 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				920983D137A464807379E08F6674B36E /* ASAlertViewController */,
+				43704361B37A5AD4285C8F5FC19095F1 /* ASAlertViewController */,
 				34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */,
 				A99033159A4C8C707F49FA074424B09B /* Pods-ASAlertViewController_Example */,
 				76A121294BA12A063362950A62890736 /* Pods-ASAlertViewController_Tests */,
-				2DF022904AE6BA0659C69C6508F45214 /* TPKeyboardAvoiding */,
+				7AA908233FC5A63ABDC1B12555549787 /* TPKeyboardAvoiding */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2846A06CC7D7A80E39051937225760D6 /* Resources */ = {
+		075D406B68B14A933B68E58447CB6757 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72BF58A18CE17E2C62597DF38A92254 /* ASAlertDateTimeView.xib in Resources */,
-				62051D75A393496D1C1E958C07F1FF4A /* ASAlertMultiselectView.xib in Resources */,
-				FE8C4B5FDCC9F05A702AD6B9790522A6 /* ASAlertView.xib in Resources */,
-				F005FD2CF7A7B4917EA68968193AF2CF /* Media.xcassets in Resources */,
-				0A8ED6DD1E9E39AA0047273B /* ASAlertMultiselectCell.xib in Resources */,
+				EDD1CFF300856BD1290EC4CCB7CAA981 /* ASAlertDateTimeView.xib in Resources */,
+				F5090D5C38DDAD4FFD860ED711EA045E /* ASAlertMultiselectCell.xib in Resources */,
+				B694417EABB82E4B8D00F6D61D66A33F /* ASAlertMultiselectView.xib in Resources */,
+				997675996F72E2168060D724DDEEDDCA /* ASAlertView.xib in Resources */,
+				5CCAA3752B7A05FCB8FA2E1B464BC8AE /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,41 +796,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C7E9A877B75AF0C15ED9D4EB4BAF27B /* Sources */ = {
+		3C5B840AB3C42B39DAA4276270531159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2169A3E9F1CC963149E0F450D790B0B /* TPKeyboardAvoiding-dummy.m in Sources */,
-				47D7DFE2E4FB2381D488A424F3616FA7 /* TPKeyboardAvoidingCollectionView.m in Sources */,
-				4D3FF2945ED0DC97EDCAED618F9A16B3 /* TPKeyboardAvoidingScrollView.m in Sources */,
-				58875FE03E0E3CCAD5F6A1B43FAA28E5 /* TPKeyboardAvoidingTableView.m in Sources */,
-				B84700842BF9AAC57C830E2FC47DC6FD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		72BF037C2D2739C35442212976F26087 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B8BFCD1C32A6E91CDFDBBFEE5965E324 /* ASAlert.swift in Sources */,
-				444BA74589F177C6141524503D75995B /* ASAlertAction.swift in Sources */,
-				99B32328E43406FC7698622B9311CD73 /* ASAlertConfig.swift in Sources */,
-				7BA57480CD34A36C30AB152688169E1A /* ASAlertController.swift in Sources */,
-				7C888A2562ECD21DB0AF38AD5F400550 /* ASAlertDateController.swift in Sources */,
-				0A8ED6DF1E9E3AAF0047273B /* ASAlertMultiselectCell.swift in Sources */,
-				C63AB0B8426E1B611AFCC7C5588253BA /* ASAlertDateTimeController.swift in Sources */,
-				20EB4F557F3C2009E8E0B9C75BC2439D /* ASAlertDateTimeView.swift in Sources */,
-				A6A54E1A1B61DF677E0E73563EF3C459 /* ASAlertHandler.swift in Sources */,
-				A31179F40EFF6F5F0365FE94FE530AFD /* ASAlertMultiselectController.swift in Sources */,
-				7C26DDCEBAC199BE5D6444996F9A811A /* ASAlertMultiselectView.swift in Sources */,
-				0C292BEF532E12427D2EB5D36745583D /* ASAlertTimeController.swift in Sources */,
-				D5BCB7DF434EF378DE7354DA30A0C53C /* ASAlertView.swift in Sources */,
-				565255138F9D701BE7F0C4A7ACBDDE94 /* ASAlertViewController-dummy.m in Sources */,
-				70B7C8720C76646A57AA1F386552048B /* ASHandlerButton.swift in Sources */,
-				BC4ED85A816293067F9AD7D8D87D4F7E /* CustomView.swift in Sources */,
-				0A8ED6DB1E9E37860047273B /* ASAlertMultiselectOption.swift in Sources */,
-				7C05ABCDD427B595ADE0E8E43F0FE485 /* UIDatePicker+Extension.swift in Sources */,
-				796E310CBEEEF50DBE0862BB6BD03FEA /* UIView+Extension.swift in Sources */,
+				3B3067D85CD30809A768C6A4AE9C2433 /* ASAlert.swift in Sources */,
+				4DB3ADCEC02FFA0CE002469440D53E2D /* ASAlertAction.swift in Sources */,
+				690286E4E29E52A46D93E93716ED8B0D /* ASAlertConfig.swift in Sources */,
+				F1EC4DD493087B754AD0B4B30F5DD61C /* ASAlertController.swift in Sources */,
+				C75F34BCD4AD8F46561E8CFB2B70172D /* ASAlertDateController.swift in Sources */,
+				7FB8335C47581E21118BF66DCB24A550 /* ASAlertDateTimeController.swift in Sources */,
+				531A818D7E4E529208499031D2CD1495 /* ASAlertDateTimeView.swift in Sources */,
+				7CF8438DD5569D9D1298E72AA38D0DBD /* ASAlertHandler.swift in Sources */,
+				2AE3406D6F2D135F5488BEB2E2384C0F /* ASAlertMultiselectCell.swift in Sources */,
+				D2B9BB59E99703D6AA6D72E67D642711 /* ASAlertMultiselectController.swift in Sources */,
+				BFDE91F6B736B308856F52C20E334217 /* ASAlertMultiselectOption.swift in Sources */,
+				A837B21D8893736DC4FDF35F4BFB3889 /* ASAlertMultiselectView.swift in Sources */,
+				A37099347FEBCE2DFCB12C2E0AAEF26C /* ASAlertTimeController.swift in Sources */,
+				2C97C62661171CD117F20F06E4B5E9F7 /* ASAlertView.swift in Sources */,
+				D47A94E46189E07BACB4F6DC11B942FF /* ASAlertViewController-dummy.m in Sources */,
+				30007DB31FBE3A67DBF773B42F3B624F /* ASHandlerButton.swift in Sources */,
+				597D7B10479CD2919DD58620F69A7613 /* CustomView.swift in Sources */,
+				3B02214591F167DB6206F7F7E461D5A4 /* UIDatePicker+Extension.swift in Sources */,
+				EABD5C56AED96BBF908447D1D42AA368 /* UIView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -826,6 +827,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				322B5BACF33448F149367582006DD141 /* Pods-ASAlertViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B48B2250DE7ADB8EDBA0BED119C2184F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72BBBF8AD6D1DE38495D98038AD80B51 /* TPKeyboardAvoiding-dummy.m in Sources */,
+				83A6FF9DD96D269A800E0A984A3C35E9 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				1C24DEE7569DFA0EFC4D9E34FF495B8F /* TPKeyboardAvoidingScrollView.m in Sources */,
+				A48EDAB5581A84080357D56E36B2B9E8 /* TPKeyboardAvoidingTableView.m in Sources */,
+				F45A72F1878214459529C81078FEEBFD /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,16 +861,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0ED47AC5DE4966B3DBB06F074E6F6625 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPKeyboardAvoiding;
-			target = 2DF022904AE6BA0659C69C6508F45214 /* TPKeyboardAvoiding */;
-			targetProxy = DC82E4161B5BFD88E787277837C4630C /* PBXContainerItemProxy */;
-		};
 		21EC098F49A73F84DB0191A185EFFD98 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPKeyboardAvoiding;
-			target = 2DF022904AE6BA0659C69C6508F45214 /* TPKeyboardAvoiding */;
+			target = 7AA908233FC5A63ABDC1B12555549787 /* TPKeyboardAvoiding */;
 			targetProxy = 69A79E7AE984EBB6E4E8DAF4BE59B60B /* PBXContainerItemProxy */;
 		};
 		8CB1C8984FCCE8175BD24BA63494B168 /* PBXTargetDependency */ = {
@@ -866,15 +873,53 @@
 			target = 34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */;
 			targetProxy = EB781787F0A97A118564F4E65C744553 /* PBXContainerItemProxy */;
 		};
+		92BC55A4EC8459C5346CFD398301FA18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = 7AA908233FC5A63ABDC1B12555549787 /* TPKeyboardAvoiding */;
+			targetProxy = 3718B4C81579EEB1930B7C3FDB03B956 /* PBXContainerItemProxy */;
+		};
 		D88D5EEBA93489A13716B191270D6026 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ASAlertViewController;
-			target = 920983D137A464807379E08F6674B36E /* ASAlertViewController */;
+			target = 43704361B37A5AD4285C8F5FC19095F1 /* ASAlertViewController */;
 			targetProxy = 4AE90948E320452732FAE7CB8BEB5CFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0B6A04E3901612747EAF5E9EC0A1A3C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1B86DF5834C3DE488D035BD8B38173C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FED66E87D46407298D68A278D2E5FD0D /* Pods-ASAlertViewController_Tests.debug.xcconfig */;
@@ -911,38 +956,6 @@
 			};
 			name = Debug;
 		};
-		1C0493725AAD1BC762010FB8C8174C9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1C885B817092C6254944E97E2B8056A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D03CE03D9060A29FE5AB3E38A2076FF /* Pods-ASAlertViewController_Tests.release.xcconfig */;
@@ -972,6 +985,38 @@
 				PRODUCT_NAME = Pods_ASAlertViewController_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2EAAB9B2CAD3CBC7EE8A1B184CF5F163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4166A5580ABA6C6C4832B087B7D726C0 /* ASAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ASAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1057,103 +1102,6 @@
 			};
 			name = Debug;
 		};
-		5F9FB7589CC7762EC8624297E1246374 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4166A5580ABA6C6C4832B087B7D726C0 /* ASAlertViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ASAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7AB82216F9646E3036E7B914D89810DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		88E7A8256F4FE3ECB7E683DD46F2B131 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4166A5580ABA6C6C4832B087B7D726C0 /* ASAlertViewController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ASAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A48DF838CD32B60CBA3139D4DA2D0D1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B17BE6694C45CE1BEA1364A49EC15EFF /* FBSnapshotTestCase.xcconfig */;
@@ -1177,6 +1125,39 @@
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A71BB4348C3A5AF62D5DC26E5F7BEAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4166A5580ABA6C6C4832B087B7D726C0 /* ASAlertViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ASAlertViewController/ASAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ASAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ASAlertViewController/ASAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ASAlertViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1295,6 +1276,38 @@
 			};
 			name = Release;
 		};
+		EC5052CFD18ABBDF4164DE602C772BCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F98FCA56DBA1874F88CDE0865CDCEC /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1307,11 +1320,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90300F7FD73A5F6EFD1C6E117B075F21 /* Build configuration list for PBXNativeTarget "ASAlertViewController" */ = {
+		65F403B1375AC492D6E49437BC5046FB /* Build configuration list for PBXNativeTarget "ASAlertViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F9FB7589CC7762EC8624297E1246374 /* Debug */,
-				88E7A8256F4FE3ECB7E683DD46F2B131 /* Release */,
+				A71BB4348C3A5AF62D5DC26E5F7BEAE7 /* Debug */,
+				2EAAB9B2CAD3CBC7EE8A1B184CF5F163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1321,15 +1334,6 @@
 			buildConfigurations = (
 				AC546C5245B29D09BBE20D15D27DCB27 /* Debug */,
 				43B5F061146F25EF22C45AB52E2A180B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B55A8045E87D6D2EEC6937C18CD3EE3F /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C0493725AAD1BC762010FB8C8174C9E /* Debug */,
-				7AB82216F9646E3036E7B914D89810DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1348,6 +1352,15 @@
 			buildConfigurations = (
 				A48DF838CD32B60CBA3139D4DA2D0D1E /* Debug */,
 				B57EE59C0A00DB99D4A5A4068B8C0C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7081FC29C5E5D789E6F11082EA0474E /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5052CFD18ABBDF4164DE602C772BCD /* Debug */,
+				0B6A04E3901612747EAF5E9EC0A1A3C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

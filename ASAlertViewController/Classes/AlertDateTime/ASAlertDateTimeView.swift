@@ -24,23 +24,23 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Variables
 
     var date: Date? {
-        didSet { updateUI() }
+        didSet { setupDatePicker() }
     }
     
     var maxDate: Date? = nil {
-        didSet { updateUI() }
+        didSet { setupDatePicker() }
     }
     
     var minDate: Date? = nil {
-        didSet { updateUI() }
+        didSet { setupDatePicker() }
     }
     
     var type: ASAlertDateTimeType = .dateTime {
-        didSet { updateUI() }
+        didSet { setupDatePicker() }
     }
     
     var interval: Int = 15 {
-        didSet { updateUI() }
+        didSet { setupDatePicker() }
     }
 
     var onValueChange: ((_ date: Date?) -> Void)?
@@ -56,42 +56,22 @@ class ASAlertDateTimeView: UIView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        updateUI()
         addObservers()
     }
 
     // MARK: - Private Methods
-
-    fileprivate func updateUI() {
-        setupDate()
-        setupDatePicker()
-    }
-
-    fileprivate func setupDate() {
-        if date == nil { date = dpCalendar?.clampedDate }
-    }
     
     fileprivate func setupDatePicker() {
-        let formatter = DateFormatter()
-//        formatter.timeZone = .current
-        
         var label = "Hoje"
         
         switch type {
         case .date:
             dpCalendar?.datePickerMode = .date
-            formatter.dateStyle = .long
-            formatter.timeStyle = .none
         case .time:
             dpCalendar?.datePickerMode = .time
             label = "Agora"
-            formatter.dateStyle = .none
-            formatter.timeStyle = .short
         case .dateTime:
             dpCalendar?.datePickerMode = .dateAndTime
-            formatter.dateStyle = .medium
-            formatter.timeStyle = .short
         }
 
         dpCalendar?.date = date ?? Date()
@@ -99,6 +79,8 @@ class ASAlertDateTimeView: UIView {
         dpCalendar?.maximumDate = maxDate
         dpCalendar?.minimumDate = minDate
         dpCalendar?.timeZone = TimeZone.autoupdatingCurrent
+        
+        if date == nil { date = dpCalendar?.clampedDate }
     }
 
     fileprivate func addObservers() {

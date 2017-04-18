@@ -76,7 +76,12 @@ class ViewController: UIViewController {
         
         alert.onSelectedDateAction = { date in
             if let date = date {
-                print(date)
+                let formatter = DateFormatter()
+                formatter.timeZone = .current
+                formatter.locale = .current
+                formatter.timeStyle = .short
+                
+                print(formatter.string(from: date))
             }
         }
         
