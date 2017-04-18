@@ -74,7 +74,7 @@ class ASAlertDateTimeView: UIView {
     
     fileprivate func setupDatePicker() {
         let formatter = DateFormatter()
-        formatter.timeZone = .current
+//        formatter.timeZone = .current
         
         var label = "Hoje"
         
@@ -98,6 +98,7 @@ class ASAlertDateTimeView: UIView {
         dpCalendar?.minuteInterval = interval
         dpCalendar?.maximumDate = maxDate
         dpCalendar?.minimumDate = minDate
+        dpCalendar?.timeZone = TimeZone.autoupdatingCurrent
     }
 
     fileprivate func addObservers() {
