@@ -11,13 +11,19 @@ import UIKit
 
 class ASAlertMultiselectCell: UITableViewCell {
 
+    // MARK: - Variáveis
+    
+    override var isSelected: Bool {
+        didSet { accessoryType = isSelected ? .checkmark : .none }
+    }
+    
     // MARK: - Public methods
 
     func setup(from model: ASAlertMultiselectOption) {
         textLabel?.text = model.title
         detailTextLabel?.text = model.detail
         imageView?.image = model.image
-        accessoryType = model.selected ? .checkmark : .none
+        isSelected = model.isSelected
     }
 
 }

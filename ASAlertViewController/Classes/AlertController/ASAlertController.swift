@@ -112,7 +112,7 @@ open class ASAlertController: UIViewController {
         }
     }
 
-    private func dismiss() {
+    internal func dismiss() {
         dismiss(animated: true, completion: onDismiss)
     }
 

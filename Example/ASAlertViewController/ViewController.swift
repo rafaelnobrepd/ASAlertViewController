@@ -11,13 +11,15 @@ import ASAlertViewController
 
 class Option: ASAlertMultiselectOption {
 
+    private var _isSelected: Bool = false
+    
     var title: String {
-        get { return "teste sldfkjsldkfj sldkfjs ldkfjsdlfs dlfkj" }
+        get { return "Somente hoje" }
         set {}
     }
 
-    var detail: String {
-        get { return "teste" }
+    var detail: String? {
+        get { return nil }
         set {}
     }
 
@@ -26,9 +28,9 @@ class Option: ASAlertMultiselectOption {
         set {}
     }
 
-    var selected: Bool {
-        get { return false }
-        set {}
+    var isSelected: Bool {
+        get { return _isSelected }
+        set { _isSelected = newValue }
     }
 
     var onAction: (() -> Void)? {

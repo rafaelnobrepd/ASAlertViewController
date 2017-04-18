@@ -27,12 +27,14 @@ class ASAlertMultiselectView: UIView {
 
     var options: [ASAlertMultiselectOption] = []
     var onValueChange: ((_ date: Date?) -> Void)?
-
+    
     var nib: ASAlertMultiselectView {
         guard let view = loadNib() as? ASAlertMultiselectView else { fatalError() }
         return view
     }
 
+    private var selectedOptions: [ASAlertMultiselectOption] = []
+    
     // MARK: - Lifecircle Class
 
     override func awakeFromNib() {
@@ -58,7 +60,13 @@ extension ASAlertMultiselectView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        selectedOption?(options[indexPath.row])
+        var option = options[indexPath.row]
+        option.isSelected = !option.isSelected
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.isSelected = option.isSelected
+        
+        selectedOption?(option)
     }
 
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {

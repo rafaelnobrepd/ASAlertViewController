@@ -45,6 +45,7 @@ open class ASAlertDateTimeController: ASAlertController {
         let clearHandler = ASAlertAction("Limpar", type: .destructive, handler: {
             self.onSelectedDateAction?(nil)
         })
+        
         let selectDateHandler = ASAlertAction("Selecionar", type: .default, handler: {
             self.onSelectedDateAction?(self.date)
         })

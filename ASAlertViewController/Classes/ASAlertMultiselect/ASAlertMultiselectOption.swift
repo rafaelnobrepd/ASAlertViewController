@@ -11,9 +11,9 @@ import Foundation
 public protocol ASAlertMultiselectOption {
 
     var title: String { get set }
-    var detail: String { get set }
+    var detail: String? { get set }
     var image: UIImage? { get set }
-    var selected: Bool { get set }
+    var isSelected: Bool { get set }
     var onAction: (() -> Void)? { get set }
 
 }

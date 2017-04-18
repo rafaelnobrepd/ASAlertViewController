@@ -18,12 +18,12 @@ open class ASAlertMultiselectController: ASAlertController {
     }()
 
     fileprivate lazy var customHandlers: [ASAlertHandler] = {
-        let selectValueHandler = ASAlertAction("Selecionar", type: .default, handler: {
-
-        })
-
         let cancelHandler = ASAlertAction("Cancelar", type: .cancel, handler: {
-
+            self.dismiss()
+        })
+        
+        let selectValueHandler = ASAlertAction("Selecionar", type: .default, handler: {
+            
         })
 
         return [selectValueHandler, cancelHandler]
