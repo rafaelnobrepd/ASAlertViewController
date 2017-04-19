@@ -9,37 +9,6 @@
 import UIKit
 import ASAlertViewController
 
-class Option: ASAlertMultiselectOption {
-
-    private var _isSelected: Bool = false
-    
-    var title: String {
-        get { return "Somente hoje" }
-        set {}
-    }
-
-    var detail: String? {
-        get { return nil }
-        set {}
-    }
-
-    var image: UIImage? {
-        get { return nil }
-        set {}
-    }
-
-    var isSelected: Bool {
-        get { return _isSelected }
-        set { _isSelected = newValue }
-    }
-
-    var onAction: (() -> Void)? {
-        get { return nil }
-        set {}
-    }
-
-}
-
 class ViewController: UIViewController {
 
     // MARK: - Actions
@@ -102,11 +71,31 @@ class ViewController: UIViewController {
         alert.present(in: self)
     }
 
-    @IBAction fileprivate func showASAlertMultselectController() {
-        let options = [Option(), Option(), Option(), Option(), Option(), Option(), Option(), Option()]
+    @IBAction fileprivate func showASAlertSelectController() {
+        let options:[ASAlertSelectOption] = [
+            ASAlertSelectAction(title: "Somente hoje"),
+            ASAlertSelectAction(title: "Próximo dia"),
+            ASAlertSelectAction(title: "Próxima semana"),
+            ASAlertSelectAction(title: "Fim do mês"),
+            ASAlertSelectAction(title: "Próximo dia 20")
+        ]
 
-        let alert = ASAlertMultiselectController(title: "Selecione uma opção", message: "Selecione uma das opções abaixo:")
-        alert.addOptions(options)
+        let alert = ASAlertSelectController(title: "Selecione uma opção", message: "Selecione uma das opções abaixo:", options: options)
+        
+        alert.present(in: self)
+    }
+    
+    @IBAction fileprivate func showASAlertMultiselectController() {
+        let options:[ASAlertSelectOption] = [
+            ASAlertSelectAction(title: "Teste"),
+            ASAlertSelectAction(title: "Próximo dia"),
+            ASAlertSelectAction(title: "Próxima semana"),
+            ASAlertSelectAction(title: "Fim do mês"),
+            ASAlertSelectAction(title: "Próximo dia 20")
+        ]
+        
+        let alert = ASAlertMultiselectController(title: "Selecione algumas opções", message: "Selecione as opções abaixo:", options: options)
+        
         alert.present(in: self)
     }
 

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-Gq-AVo">
-                                <rect key="frame" x="30" y="169" width="260" height="230"/>
+                                <rect key="frame" x="30" y="149" width="260" height="270"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-wh-cVb">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
@@ -58,11 +58,18 @@
                                             <action selector="showASAlertDateTimeController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OF1-jx-sIl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85J-l8-aW8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-hW-62r">
                                         <rect key="frame" x="0.0" y="200" width="260" height="30"/>
-                                        <state key="normal" title="ASAlertMultselectController"/>
+                                        <state key="normal" title="ASAlertSelectController"/>
                                         <connections>
-                                            <action selector="showASAlertMultselectController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tJX-nu-F1D"/>
+                                            <action selector="showASAlertSelectController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="73j-o5-NSn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85J-l8-aW8">
+                                        <rect key="frame" x="0.0" y="240" width="260" height="30"/>
+                                        <state key="normal" title="ASAlertMultiselectController"/>
+                                        <connections>
+                                            <action selector="showASAlertMultiselectController" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f14-by-lrg"/>
                                         </connections>
                                     </button>
                                 </subviews>

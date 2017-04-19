@@ -1,5 +1,5 @@
 //
-//  ASAlertMultiselectOption.swift
+//  ASAlertSelectOption.swift
 //  Pods
 //
 //  Created by Adriano Souza Costa on 4/12/17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol ASAlertMultiselectOption {
+public protocol ASAlertSelectOption {
 
     var title: String { get set }
     var detail: String? { get set }
