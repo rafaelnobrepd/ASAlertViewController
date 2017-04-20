@@ -67,8 +67,8 @@ class ASAlertDateTimeView: UIView {
         dpCalendar?.minuteInterval = interval
         dpCalendar?.maximumDate = maxDate
         dpCalendar?.minimumDate = minDate
-        dpCalendar?.timeZone = TimeZone(abbreviation: "UTC")
-        dpCalendar?.locale = Locale.current
+        dpCalendar?.timeZone = TimeZone.autoupdatingCurrent
+        dpCalendar?.locale = Locale.autoupdatingCurrent
         dpCalendar?.date = date ?? Date()
         
         if date == nil { date = dpCalendar?.clampedDate }
