@@ -10,10 +10,10 @@ import Foundation
 
 public protocol ASAlertSelectOption {
 
-    var title: String { get set }
-    var detail: String? { get set }
-    var image: UIImage? { get set }
+    var title: String { get }
+    var detail: String? { get }
+    var image: UIImage? { get }
     var isSelected: Bool { get set }
-    var onAction: (() -> Void)? { get set }
+    var onAction: (() -> Void)? { get }
 
 }

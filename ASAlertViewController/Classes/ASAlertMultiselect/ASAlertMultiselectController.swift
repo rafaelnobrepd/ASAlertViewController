@@ -12,7 +12,7 @@ public class ASAlertMultiselectController: ASAlertSelectController {
     
     // MARK: - Variables
     
-    public var onSelectedOptions: ((_ option: [ASAlertSelectOption]?) -> Void)?
+    public var onSelectedOptions: ((_ options: [ASAlertSelectOption]?) -> Void)?
     
     override internal var customHandlers: [ASAlertHandler] {
         let cancelHandler = ASAlertAction("Cancelar", type: .cancel, handler: {
