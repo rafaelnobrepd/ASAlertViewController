@@ -25,7 +25,7 @@ open class ASAlertController: UIViewController {
     fileprivate var _title: String?
     fileprivate var _message: String?
 
-    private var config: ASAlertConfig = ASAlertConfig.shared
+    public var config: ASAlertConfig = ASAlertConfig.shared
 
     // MARK: - Lifecircle Class
 
