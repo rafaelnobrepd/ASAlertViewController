@@ -18,13 +18,12 @@ open class ASAlertController: UIViewController {
     
     internal var _content: UIView?
     internal var _handlers: [ASAlertHandler] = []
-
-    fileprivate var _title: String?
-    fileprivate var _message: String?
-
-    fileprivate var alertView: ASAlertView = {
+    internal var alertView: ASAlertView = {
         return ASAlertView().nib
     }()
+    
+    fileprivate var _title: String?
+    fileprivate var _message: String?
 
     private var config: ASAlertConfig = ASAlertConfig.shared
 

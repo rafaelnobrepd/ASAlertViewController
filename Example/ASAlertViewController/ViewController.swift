@@ -87,7 +87,6 @@ class ViewController: UIViewController {
     
     @IBAction fileprivate func showASAlertMultiselectController() {
         let options:[ASAlertSelectOption] = [
-            ASAlertSelectAction(title: "Teste"),
             ASAlertSelectAction(title: "Próximo dia"),
             ASAlertSelectAction(title: "Próxima semana"),
             ASAlertSelectAction(title: "Fim do mês"),

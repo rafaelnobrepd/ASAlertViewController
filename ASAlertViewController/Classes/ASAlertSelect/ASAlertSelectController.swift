@@ -43,6 +43,15 @@ open class ASAlertSelectController: ASAlertController {
         super.viewDidLoad()
         setupSelectedOption()
     }
+    
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let heightContent = alertView.lcHeightContent {
+            heightContent.constant = alertSelectView.tableViewHeight()
+            _content?.backgroundColor = .red
+        }
+    }
 
     public init(title: String? = nil, message: String? = nil, options: [ASAlertSelectOption] = []) {
         super.init(title: title, message: message, content: nil)

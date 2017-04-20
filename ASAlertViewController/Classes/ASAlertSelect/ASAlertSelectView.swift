@@ -30,6 +30,13 @@ class ASAlertSelectView: UIView {
         super.awakeFromNib()
         setupTableView()
     }
+    
+    // MARK: - Public Functions
+    
+    func tableViewHeight() -> CGFloat {
+        tvOptions?.layoutIfNeeded()
+        return tvOptions?.contentSize.height ?? 0.0
+    }
 
     // MARK: - Private Methods
 
