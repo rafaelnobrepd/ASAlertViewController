@@ -62,27 +62,29 @@ class ASAlertDateTimeView: UIView {
     // MARK: - Private Methods
     
     fileprivate func setupDatePicker() {
-        var label = "Hoje"
+        setupMode()
         
+        dpCalendar?.minuteInterval = interval
+        dpCalendar?.maximumDate = maxDate
+        dpCalendar?.minimumDate = minDate
+        dpCalendar?.timeZone = TimeZone(abbreviation: "UTC")
+        dpCalendar?.locale = Locale.current
+        dpCalendar?.date = date ?? Date()
+        
+        if date == nil { date = dpCalendar?.clampedDate }
+    }
+
+    private func setupMode() {
         switch type {
         case .date:
             dpCalendar?.datePickerMode = .date
         case .time:
             dpCalendar?.datePickerMode = .time
-            label = "Agora"
         case .dateTime:
             dpCalendar?.datePickerMode = .dateAndTime
         }
-
-        dpCalendar?.date = date ?? Date()
-        dpCalendar?.minuteInterval = interval
-        dpCalendar?.maximumDate = maxDate
-        dpCalendar?.minimumDate = minDate
-        dpCalendar?.timeZone = TimeZone.autoupdatingCurrent
-        
-        if date == nil { date = dpCalendar?.clampedDate }
     }
-
+    
     fileprivate func addObservers() {
         dpCalendar?.addTarget(self, action: #selector(selectDate(_:)), for: .valueChanged)
     }
