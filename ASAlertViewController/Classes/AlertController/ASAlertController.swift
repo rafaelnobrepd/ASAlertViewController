@@ -123,6 +123,7 @@ open class ASAlertController: UIViewController {
             let height = Int(content.bounds.size.height)
 
             content.frame = CGRect(x: 0, y: 0, width: width, height: height)
+            content.autoresizingMask = [.flexibleHeight, .flexibleWidth]
             vwContent.addSubview(content)
 
             alertView.lcHeightContent?.constant = content.bounds.height

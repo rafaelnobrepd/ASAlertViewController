@@ -21,9 +21,6 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CNS-Fl-YBe">
                     <rect key="frame" x="0.0" y="0.0" width="260" height="230"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="230" id="DZA-aK-Sfb"/>
-                    </constraints>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <color key="sectionIndexTrackingBackgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
@@ -34,7 +31,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CNS-Fl-YBe" secondAttribute="bottom" id="56w-Kr-yNf"/>
+                <constraint firstAttribute="bottom" secondItem="CNS-Fl-YBe" secondAttribute="bottom" id="56w-Kr-yNf"/>
                 <constraint firstAttribute="trailing" secondItem="CNS-Fl-YBe" secondAttribute="trailing" id="JeA-VA-oMZ"/>
                 <constraint firstItem="CNS-Fl-YBe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nWs-6J-6vU"/>
                 <constraint firstItem="CNS-Fl-YBe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tr7-Jj-stD"/>

@@ -72,9 +72,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction fileprivate func showASAlertSelectController() {
-        let options:[ASAlertSelectOption] = [ASAlertSelectAction(title: "Teste nobre") {
-                print("sdfsdfsdf")
-            },]
+        let options:[ASAlertSelectOption] = [
+            ASAlertSelectAction(title: "Teste nobre") { print("sdfsdfsdf") }
+        ]
 
         let alert = ASAlertSelectController(title: "Selecione uma opção", message: "Selecione uma das opções abaixo:", options: options)
         
@@ -83,6 +83,10 @@ class ViewController: UIViewController {
     
     @IBAction fileprivate func showASAlertMultiselectController() {
         let options:[ASAlertSelectOption] = [
+            ASAlertSelectAction(title: "Próximo dia"),
+            ASAlertSelectAction(title: "Próxima semana"),
+            ASAlertSelectAction(title: "Fim do mês"),
+            ASAlertSelectAction(title: "Próximo dia 20"),
             ASAlertSelectAction(title: "Próximo dia"),
             ASAlertSelectAction(title: "Próxima semana"),
             ASAlertSelectAction(title: "Fim do mês"),
